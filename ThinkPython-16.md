@@ -1,5 +1,5 @@
 Title: ThinkPython 双语学编程 Chapter 16
-Date: 2016-1-2
+Date: 2016-1-21
 Category: ThinkPython
 Tag: 双语,Python,ThinkPython
 
