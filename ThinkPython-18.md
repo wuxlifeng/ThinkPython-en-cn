@@ -1,4 +1,4 @@
-Title: ThinkPython 双语学编程 Chapter18
+Title: ThinkPython 双语学编程 Chapter 18
 Date: 2016-2-3
 Category: ThinkPython
 Tag: 双语,Python,ThinkPython
