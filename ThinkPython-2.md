@@ -3,11 +3,6 @@ Date: 2015-10-23
 Category: ThinkPython
 Tag: 双语,Python,ThinkPython
 
-Title: ThinkPython 双语学编程 Chapter 2 Variables, expressions and statements 变量，表达式，语句
-Date: 2015-10-23
-Category: 编程
-Tag: 双语,Python,ThinkPython
-
 #Chapter 2  Variables, expressions and statements 变量，表达式，语句
 One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
 >编程语言最强大的功能就是操作变量。变量就是一个有值的代号。
@@ -26,10 +21,16 @@ This example makes three assignments. The first assigns a string to a new variab
 
 A common way to represent variables on paper is to write the name with an arrow pointing to its value. This kind of figure is called a state diagram because it shows what state each of the variables is in (think of it as the variable’s state of mind). Figure 2.1 shows the result of the previous example.
 >平常大家在纸上对变量赋值的方法就是写下名字，然后一个箭头指向它的值。这种图解叫做状态图，因为它能指明各个变量存储的是什么内容。下图就展示了上面例子中赋值语句的结果。
+
+
+
 ________________________________________
  ![Figure 2.1: State diagram.](http://7xnq2o.com1.z0.glb.clouddn.com/ThinkPython2.1.png)
 Figure 2.1: State diagram.
 ________________________________________
+
+
+
 ##2.2  Variable names 变量名称
 
 Programmers generally choose names for their variables that are meaningful—they document what the variable is used for.
@@ -71,6 +72,11 @@ Python 3 has these keywords:
 
 You don’t have to memorize this list. In most development environments, keywords are displayed in a different color; if you try to use one as a variable name, you’ll know.
 >你不用去记忆这些哈。因为一般大多数的开发环境里面，关键词都会有区别于普通代码的颜色提示你，你要是用他们做变量名了，一看就会知道的。
+
+
+
+
+
 ##2.3  Expressions and statements 表达式和语句
 An expression is a combination of values, variables, and operators. A value all by itself is considered an expression, and so is a variable, so the following are all legal expressions:
 >表达式是数值,变量和操作符的组合。单个值本身也被当作一个表达式，变量也是如此，下面这些例子都是一些正确表达式：
@@ -99,6 +105,10 @@ The first line is an assignment statement that gives a value to n. The second li
 
 When you type a statement, the interpreter executes it, which means that it does whatever the statement says. In general, statements don’t have values.
 >输入语句的时候，解释器会执行它，就是会按照语句所说的去做。一般语句是没有值的。
+
+
+
+
 
 ##2.4  Script mode 脚本模式
 So far we have run Python in interactive mode, which means that you interact directly with the interpreter. Interactive mode is a good way to get started, but if you are working with more than a few lines of code, it can be clumsy.
@@ -163,6 +173,12 @@ To check your understanding, type the following statements in the Python interpr
 
 Now put the same statements in a script and run it. What is the output? Modify the script by transforming each expression into a print statement and then run it again.
 >现在再把同样的语句输入到脚本中，然后用Python来运行一下。看看输出是啥样的？把脚本中的表达式修改一下，每一个都加一个打印语句再试试。
+
+
+
+
+
+
 ##2.5  Order of operations 运算符优先级
 When an expression contains more than one operator, the order of evaluation depends on the order of operations. For mathematical operators, Python follows mathematical convention. The acronym PEMDAS is a useful way to remember the rules:
 >表达式可能会包含不止一个运算符，这些不同的运算先后次序就是运算符的优先级。对于数学运算符来说，Python就遵循着数学上的规则。下面这个PEMDAS、是用来记忆这些优先规则的好方法：
@@ -181,6 +197,12 @@ When an expression contains more than one operator, the order of evaluation depe
 
 I don’t work very hard to remember the precedence of operators. If I can’t tell by looking at the expression, I use parentheses to make it obvious.
 >我不会花很大力气来记忆这些运算符的优先级。如果我记不起来，就用括号来让优先级明确一些就好了。
+
+
+
+
+
+
 ##2.6  String operations 字符串操作
 In general, you can’t perform mathematical operations on strings, even if the strings look like numbers, so the following are illegal:
 >一般情况下，咱们不能对字符串进行数学运算的，即使字符串看上去像是数字也不行，所以以下这些都是非法操作：
@@ -206,6 +228,12 @@ The * operator also works on strings; it performs repetition. For example,'Spam'
 
 This use of + and * makes sense by analogy with addition and multiplication. Just as 4*3 is equivalent to 4+4+4, we expect 'Spam'*3 to be the same as'Spam'+'Spam'+'Spam', and it is. On the other hand, there is a significant way in which string concatenation and repetition are different from integer addition and multiplication. Can you think of a property that addition has that string concatenation does not?
 >这种加法和乘法实际上就是拼接和重复的意思。就像4*3等同于4+4+4一样，'Spam'*3 也就等于'Spam'+’Spam’+’Spam'。另外一方面，字符串的拼接重复与整数的加法乘法也有显著区别。你能想到加法具有些特性是字符拼接所不具有的么？
+
+
+
+
+
+
 ##2.7  Comments 注释
 As programs get bigger and more complicated, they get more difficult to read. Formal languages are dense, and it is often difficult to look at a piece of code and figure out what it is doing, or why.
 >程序会越来越庞大，也越复杂了，读起来就会更难了。公式语言很密集，靠阅读来理解代码，总是很困难的。
@@ -243,6 +271,12 @@ v = 5     # velocity in meters/second.
 ```
 Good variable names can reduce the need for comments, but long names can make complex expressions hard to read, so there is a tradeoff.
 >变量命名得当的话，就没必要用太多注释了，不过名字要是太长了，表达式读起来也挺麻烦，所以就得权衡着来了。
+
+
+
+
+
+
 ##2.8  Debugging 调试
 Three kinds of errors can occur in a program: syntax errors, runtime errors, and semantic errors. It is useful to distinguish between them in order to track them down more quickly.
 >程序一般会有三种错误：语法错误，运行错误和语义错误。区分这三种错误有助于更快速地追踪错误。
@@ -264,6 +298,14 @@ The third type of error is “semantic”, which means related to meaning. If th
 Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
 >语义错误Semantic error:
 第三种就是语义错误，顾名思义，是跟意义相关。这种错误是指你的程序运行没问题，也不产生错误信息，但不能正确工作。程序可能做一些和设计目的不同的事情。发现语义错误特别不容易，需要你仔细回顾代码和程序输出，要搞清楚到底程序做了什么。
+
+
+
+
+
+
+
+
 ##2.9  Glossary 术语列表
 variable:
 A name that refers to a value.
