@@ -72,6 +72,7 @@ The last line is a prompt that indicates that the interpreter is ready for you t
 
 Now you’re ready to get started. From here on, I assume that you know how to start the Python interpreter and run code.
 >现在你已经做好开始学习Python的准备了。现在我估计你应该已经知道怎么来启动Python解释器和运行Python代码了。
+
 ##1.3  The first program 第一个程序
 Traditionally, the first program you write in a new language is called “Hello, World!” because all it does is display the words “Hello, World!”. In Python, it looks like this:
 >传统意义上，大家学一门新编程语言要写的第一个程序都被叫做『Hello，World！』，因为这第一个程序就用来显示这个词组『Hello，World！』。在Python中，是这样实现的：
