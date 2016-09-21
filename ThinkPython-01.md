@@ -212,11 +212,11 @@ Natural languages are full of idiom and metaphor. If I say, “The penny dropped
 
 >虽然公式语言和自然语言有很多共同特征，比如代号、结构、语法这些元素，但差别还是显著的，比如：
 
->*   二义性ambiguity:
+>*   二义性 ambiguity:
 自然语言充满二义性，也就是歧义了，人们有时候用上下文线索或者其他信息来帮助处理这种情况。公式语言被设计为尽量不具有二义性，这就意味着一个语句往往只有唯一的一种含义，与上下文无关。
->*   冗余性redundancy:
+>*   冗余性 redundancy:
 为了弥补歧义，减少误解，自然语言有很多冗余，结果就是经常有废话。公式语言要精简的多。
->*   文字修辞literalness:
+>*   文字修辞 literalness:
 自然语言充满习语和隐喻等。比如我说 “The penny dropped”, 可能并不是字面意思说硬币掉了(这个俚语意思是过了一会终于弄明白了)。公式语言的意思严格精准。 
 
 Because we all grow up speaking natural languages, it is sometimes hard to adjust to formal languages. The difference between formal and natural language is like the difference between poetry and prose, but more so:
@@ -228,11 +228,11 @@ The literal meaning of words is more important, and the structure contributes mo
 The meaning of a computer program is unambiguous and literal, and can be understood entirely by analysis of the tokens and structure.
 >咱们大家都是说着自然语言长大的，要调节到公式语言有时候挺难的。这两者之间的差别有点像诗词和散文，但差别更大：
 
->*   诗词Poetry:
+>*   诗词 Poetry:
 单词的运用要兼顾词义和押韵，诗的整体要有一定的意境或者情感上的共鸣。双关很常见，并且多是故意的。
->*   散文Prose:
+>*   散文 Prose:
 文字意思更重要，结构也有重要作用。相比诗词更好理解，但也有一定的双关语歧义。
->*   程序Programs:
+>*   程序 Programs:
 计算机程序的意义必须是无歧义和文采修饰的，能完全用代号和结构的方式进行解析。
 
 Formal languages are more dense than natural languages, so it takes longer to read them. Also, the structure is important, so it is not always best to read from top to bottom, left to right. Instead, learn to parse the program in your head, identifying the tokens and interpreting the structure. Finally, the details matter. Small errors in spelling and punctuation, which you can get away with in natural languages, can make a big difference in a formal language.
