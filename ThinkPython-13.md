@@ -8,7 +8,7 @@ Tag: 双语,Python,ThinkPython
 
 At this point you have learned about Python’s core data structures, and you have seen some of the algorithms that use them. If you would like to know more about algorithms, this might be a good time to read Chapter 13. But you don’t have to read it before you go on; you can read it whenever you are interested.
 This chapter presents a case study with exercises that let you think about choosing data structures and practice using them.
->到现在位置，你已经学过 Python 中最核心的数据结构了，也学过了一些与之对应的各种算法了。如果你想要对算法进行深入的了解，就可以来读一下第十三章。但不读这一章也可以继续；无论什么时候读都可以，感兴趣了就来看即可。
+>到现在为止，你已经学过 Python 中最核心的数据结构了，也学过了一些与之对应的各种算法了。如果你想要对算法进行深入的了解，就可以来读一下第十三章。但不读这一章也可以继续；无论什么时候读都可以，感兴趣了就来看即可。
 >本章通过一个案例和一些练习，来讲解一下如何选择和使用数据结构。
 
 ##13.1  Word frequency analysis 词频统计
