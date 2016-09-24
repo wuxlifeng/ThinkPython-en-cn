@@ -3,7 +3,9 @@ Date: 2015-10-23
 Category: ThinkPython
 Tag: 双语,Python,ThinkPython
 
-#Chapter 2  Variables, expressions and statements 变量，表达式，语句
+#Chapter 2  Variables, expressions and statements 
+> ## 变量，表达式，语句
+
 One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
 >编程语言最强大的功能就是操作变量。变量就是一个有值的代号。
 
