@@ -120,7 +120,7 @@ So far we have run Python in interactive mode, which means that you interact dir
 
 The alternative is to save code in a file called a script and then run the interpreter in script mode to execute the script. By convention, Python scripts have names that end with .py.
 >所以就有另一种选择了，把代码保存成脚本，然后用脚本模式让解释器来运行这些脚本。通常 Python 脚本文件的扩展名是 
-'.py'。
+`.py`。
 
 If you know how to create and run a script on your computer, you are ready to go. Otherwise I recommend using PythonAnywhere again. I have posted instructions for running in script mode at http://tinyurl.com/thinkpython2e.
 >如果你知道怎么创建和运行脚本，那就尽管在自己电脑上尝试好了。否则我就建议你还是用 PythonAnywhere。关于脚本模式的介绍我放到网上了，打开这个链接（http://tinyurl.com/thinkpython2e）去看下哈。
