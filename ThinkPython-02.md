@@ -83,7 +83,7 @@ You don’t have to memorize this list. In most development environments, keywor
 
 ##2.3  Expressions and statements 表达式和语句
 An expression is a combination of values, variables, and operators. A value all by itself is considered an expression, and so is a variable, so the following are all legal expressions:
->表达式是数值,变量和操作符的组合。单个值本身也被当作一个表达式，变量也是如此，下面这些例子都是一些正确表达式：
+>表达式是数值、变量和操作符的组合。单个值本身也被当作一个表达式，变量也是如此，下面这些例子都是一些正确表达式：
 
 ```Python
 >>> 42 
@@ -105,7 +105,7 @@ A statement is a unit of code that has an effect, like creating a variable or di
 ```
 
 The first line is an assignment statement that gives a value to n. The second line is a print statement that displays the value of n.
->上面第一个就是赋值语句，给n赋值。第二行是显示n的值。
+>上面第一个就是赋值语句，给 n 赋值。第二行是显示n的值。
 
 When you type a statement, the interpreter executes it, which means that it does whatever the statement says. In general, statements don’t have values.
 >输入语句的时候，解释器会执行它，就是会按照语句所说的去做。一般语句是没有值的。
@@ -127,8 +127,9 @@ If you know how to create and run a script on your computer, you are ready to go
 
 Because Python provides both modes, you can test bits of code in interactive mode before you put them in a script. But there are differences between interactive mode and script mode that can be confusing.
 >Python两种模式都支持，所以你可以先用交互模式做点测试，然后再写成脚本。但是两种模式之间有些区别的，所以可能也挺麻烦。
+
 For example, if you are using Python as a calculator, you might type：
-举个例子哈，比如咱们把Python当计算器用，你输入以下内容：
+>举个例子哈，比如咱们把Python当计算器用，你输入以下内容：
 
 ```Python
 >>> miles = 26.2 
