@@ -44,7 +44,7 @@ Variable names can be as long as you like. They can contain both letters and num
 >变量名称你随便起多长都可以的。包含字母或者数字都行，但是不能用数字来开头。大写字母也能用，不过还是建议都用小写字母来给变量命名，这个比较传统哈。
 
 The underscore character, _, can appear in a name. It is often used in names with multiple words, such as your_name or airspeed_of_unladen_swallow.
->变量名里面可以有下划线_，一般在多个单词组成的变量名里面往往用到下划线，比如your_name等等。
+>变量名里面可以有下划线 `_`，一般在多个单词组成的变量名里面往往用到下划线，比如your_name等等。
 
 If you give a variable an illegal name, you get a syntax error:
 >你要是给变量起名不合规则，就会出现语法错误提示了：
@@ -58,13 +58,13 @@ SyntaxError: invalid syntax
 SyntaxError: invalid syntax 
 ```
 76trombones is illegal because it begins with a number. more@ is illegal because it contains an illegal character, @. But what’s wrong with class?
->第一个数字开头所以不合规则，第二个有非法字符@，第三个这个class咋不行呢？好奇吧？
+>第一个数字开头所以不合规则，第二个有非法字符 `@`，第三个这个class咋不行呢？好奇吧？
 
 It turns out that class is one of Python’s keywords. The interpreter uses keywords to recognize the structure of the program, and they cannot be used as variable names.
->因为clas是Python里面的一个关键词啦。解释器要用关键词来识别程序的结构，这些关键词是不能用来做变量名的。
+>因为 clas 是 Python 里面的一个关键词啦。解释器要用关键词来识别程序的结构，这些关键词是不能用来做变量名的。
 
 Python 3 has these keywords:
->以下是Python3的关键词哈：
+>以下是 Python3 的关键词哈：
 
 * False      class      finally    is         
 * return None       continue   for        lambda     
