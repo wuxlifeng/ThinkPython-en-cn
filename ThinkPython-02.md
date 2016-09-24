@@ -395,13 +395,14 @@ Repeating my advice from the previous chapter, whenever you learn a new feature,
 >像上一章一样，按我建议的，不论学了什么新内容，你都试着在交互模式上故意犯点错误，看看会怎么样。
 
 *	We’ve seen that n = 42 is legal. What about 42 = n?
->我们都看到了 n=42 是可以的，那 42=n 怎么样？
+>我们都看到了 n = 42 是可以的，那 42 = n 怎么样？
 
 *	How about x = y = 1?
->再试试 x=y=1 呢？
+>再试试 x = y = 1 呢？
 
 *	In some languages every statement ends with a semi-colon, ;. What happens if you put a semi-colon at the end of a Python statement?
->有的语言每个语句结尾都必须有个单引号或者分号，试试在 Python 句末放个会咋样？
+>有的语言每个语句结尾都必须有个分号，试试在 Python 句末放个会咋样？
+> 【wuxlifeng 注释：1.Python 允许语句后跟分号，但不强制要求；2.变量赋值如 n = 42 m = 50，在一行内连着写是不允许的，但中间加分号 n = 42; m = 50 是可以写，打印出 n 与 m 均赋值成功；3.一次打印出 n 与 m？尝试 print(n, m) 结果为 (42, 50)，是有括号的，括号的含义参见 xxx，而尝试打印 print(n m) 与 print(n; m) 均提示语法错误 SyntaxError: invalid syntax。】
 
 *	What if you put a period at the end of a statement?
 >句尾放个句号试试呢？
