@@ -217,10 +217,10 @@ In general, you can’t perform mathematical operations on strings, even if the 
 '2'-'1'    'eggs'/'easy'    'third'*'a charm' 
 ```
 But there are two exceptions, + and *.
->不过+和*可以用在字符串上面。
+>不过 `+` 和 `*` 可以用在字符串上面。
 
 The + operator performs string concatenation, which means it joins the strings by linking them end-to-end. For example:
->+加号的意思就是字符串拼接了，会把两个字符串拼到一起，如下所示：
+> `+` 加号的意思就是字符串拼接了，会把两个字符串拼到一起，如下所示：
 
 ```Python
 >>> first = 'throat' 
@@ -229,11 +229,11 @@ The + operator performs string concatenation, which means it joins the strings b
 throatwarbler 
 ```
 The * operator also works on strings; it performs repetition. For example,'Spam'*3 is 'SpamSpamSpam'. If one of the values is a string, the other has to be an integer.
->*星号也就是乘法运算符也可以用在字符串上面，效果就是重复。比如'Spam'*3 结果就是 
+> `*` 星号也就是乘法运算符也可以用在字符串上面，效果就是重复。比如'Spam'*3 结果就是 
 'SpamSpamSpam'，重复了三次。需要注意的是字符串必须用整数去乘。
 
 This use of + and * makes sense by analogy with addition and multiplication. Just as 4*3 is equivalent to 4+4+4, we expect 'Spam'*3 to be the same as'Spam'+'Spam'+'Spam', and it is. On the other hand, there is a significant way in which string concatenation and repetition are different from integer addition and multiplication. Can you think of a property that addition has that string concatenation does not?
->这种加法和乘法实际上就是拼接和重复的意思。就像4*3等同于4+4+4一样，'Spam'*3 也就等于'Spam'+’Spam’+’Spam'。另外一方面，字符串的拼接重复与整数的加法乘法也有显著区别。你能想到加法具有些特性是字符拼接所不具有的么？
+>这种加法和乘法实际上就是拼接和重复的意思。就像 `4*3` 等同于 `4+4+4` 一样，'Spam'*3  也就等于'Spam'+’Spam’+’Spam'。另外一方面，字符串的拼接重复与整数的加法乘法也有显著区别。你能想到加法具有哪些特性是字符拼接所不具有的么？
 
 
 
