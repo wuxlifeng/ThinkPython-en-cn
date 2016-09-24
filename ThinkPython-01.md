@@ -267,9 +267,8 @@ The process of formulating a problem, finding a solution, and expressing it.
 high-level language:
 A programming language like Python that is designed to be easy for humans to read and write.
 >高级语言：例如Python这样的编程语言，设计初衷为易于被人阅读和书写。
-l
-ow-level language:
-A programming language that is designed to be easy for a computer to run; also called “machine language” or “assembly language”.
+
+low-level language: A programming language that is designed to be easy for a computer to run; also called “machine language” or “assembly language”.
 >低级语言：设计初衷为易于被计算机运行的语言，比如机器语言和汇编语言。
 
 portability:
@@ -355,15 +354,15 @@ This kind of experiment helps you remember what you read; it also helps when you
 >这种尝试能让你对读到的内容有更深刻的记忆；也有助于你编程，因为你在编程的时候也得知道调试信息的意思。所以最好现在就故意犯些错误来看看，比以后毫无准备地遇到要好多了。
 
 1.	In a print statement, what happens if you leave out one of the parentheses, or both? 
-在print语句后面的括号去掉一个或者两个，看看会怎么样？
+> 在print语句后面的括号去掉一个或者两个，看看会怎么样？
 2.	If you are trying to print a string, what happens if you leave out one of the quotation marks, or both?
-Print字符串的时候如果你丢掉一个引号或者两个引号试试看会如何？
+> Print字符串的时候如果你丢掉一个引号或者两个引号试试看会如何？
 3.	You can use a minus sign to make a negative number like -2. What happens if you put a plus sign before a number? What about 2++2?
-输入一个负数试试，比如-2。然后再试试在数字前面添加加号会怎么样？比如2++2。
+> 输入一个负数试试，比如-2。然后再试试在数字前面添加加号会怎么样？比如2++2。
 4.	In math notation, leading zeros are ok, as in 02. What happens if you try this in Python?
-数学上计数用零开头是可以得，比如02，在Python下面试试会怎样？
+> 数学上计数用零开头是可以得，比如02，在Python下面试试会怎样？
 5.	What happens if you have two values with no operator between them?
-两个值中间没有运算符会怎么样？
+> 两个值中间没有运算符会怎么样？
 
  
 
