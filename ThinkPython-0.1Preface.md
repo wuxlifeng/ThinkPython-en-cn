@@ -5,11 +5,11 @@ Tag: 双语,Python,ThinkPython
 
 #Chapter 0  Preface 前言
 ##The strange history of this book
->本书的奇幻历史
+> ##本书的奇幻历史
 
 In January 1999 I was preparing to teach an introductory programming class in Java. I had taught it three times and I was getting frustrated. The failure rate in the class was too high and, even for students who succeeded, the overall level of achievement was too low.
 >在1999年1月的时候呢，我正准备教一门Java的入门编程课。
-我当时已经教过三次了，受挫感很强。班上挂科率特别高，而且即使那些没挂科的学生编程的整体水平也特别低。
+我当时已经教过三次了，挫败感很强。班上挂科率特别高，而且即使那些没挂科学生编程整体水平也特别低。
 
 One of the problems I saw was the books. They were too big, with too much unnecessary detail about Java, and not enough high-level guidance about how to program. And they all suffered from the trap door effect: they would start out easy, proceed gradually, and then somewhere around Chapter 5 the bottom would fall out. The students would get too much new material, too fast, and I would spend the rest of the semester picking up the pieces.
 >当时有很多问题，我首先发现的就是教材。那些教材都特别大部头，有很多关于Java的细节，特别琐碎又并不重要，而且也没有足够的关于如何编程的高层次指导（译者注：就是缺乏战略性指导，没有告诉学生编程的心法）。这些教材总有一些『陷阱门效应』：开头他们都却是挺简单，然后逐步提升，接着突然在某个地方，比如第五章，出现很坑很复杂的陷阱。学生们要突然一下子应对太多新东西，甚至措手不及，而我作为教师就得花费整个后半个学期来一点点给学生们补上。
