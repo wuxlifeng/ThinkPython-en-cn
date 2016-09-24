@@ -3,7 +3,8 @@ Date: 2015-11-30
 Category: ThinkPython
 Tag: 双语,Python,ThinkPython
 
-#Chapter 9  Case study: word play 案例学习：单词游戏
+#Chapter 9  Case study: word play 
+>## 案例学习：单词游戏
 
 This chapter presents the second case study, which involves solving word puzzles by searching for words that have certain properties. For example, we’ll find the longest palindromes in English and search for words whose letters appear in alphabetical order. And I will present another program development plan: reduction to a previously-solved problem.
 >本章我们进行第二个案例学习，这一案例中涉及到了用搜索具有某些特征的单词来猜谜。比如，我们会发现英语中最长的回文词，然后搜索那些按照单词表顺序排列字母的单词。我还会给出一种新的程序开发计划：降低问题的复杂性和难度，还原到以前解决的问题。
