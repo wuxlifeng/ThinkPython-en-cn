@@ -39,16 +39,16 @@ Believe it or not, that’s pretty much all there is to it. Every program you’
 
 ##1.2  Running Python 运行 Python
 One of the challenges of getting started with Python is that you might have to install Python and related software on your computer. If you are familiar with your operating system, and especially if you are comfortable with the command-line interface, you will have no trouble installing Python. But for beginners, it can be painful to learn about system administration and programming at the same time.
->新手在刚接触Python的时候遇到的困难之一就是必须在电脑上安装Python和相关的一些软件。如果你熟悉操作系统，并且还很习惯用命令行界面，那安装Python对你来说就没啥问题了。但对初学者来说，要求他们既要了解系统管理又要学习编程，就可能有些困难了。
+>新手在刚接触 Python 的时候遇到的困难之一就是必须在电脑上安装 Python 和相关的一些软件。如果你熟悉操作系统，并且还很习惯用命令行界面，那安装 Python 对你来说就没啥问题了。但对初学者来说，要求他们既要了解系统管理又要学习编程，就可能有些困难了。
 
 To avoid that problem, I recommend that you start out running Python in a browser. Later, when you are comfortable with Python, I’ll make suggestions for installing Python on your computer.
->为了避免这种问题，我推荐大家可以在开始的时候用浏览器来体验Python。熟悉了之后，再安装Python到计算机上。
+>为了避免这种问题，我推荐大家可以在开始的时候用浏览器来体验 Python。熟悉了之后，再安装 Python 到计算机上。
 
 There are a number of web pages you can use to run Python. If you already have a favorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed instructions for getting started athttp://tinyurl.com/thinkpython2e.
->有很多站点提供在线运行Python的功能。如果你已经用过并且有一定经验了，可以选择你喜欢的。我推荐大家可以试试PythonAnywhere，对此的使用介绍可以在下面的链接中找到http://tinyurl.com/thinkpython2e。
+>有很多站点提供在线运行 Python 的功能。如果你已经用过并且有一定经验了，可以选择你喜欢的。我推荐大家可以试试 PythonAnywhere，对此的使用介绍可以在下面的链接中找到 http://tinyurl.com/thinkpython2e。
 
 There are two versions of Python, called Python 2 and Python 3. They are very similar, so if you learn one, it is easy to switch to the other. In fact, there are only a few differences you will encounter as a beginner. This book is written for Python 3, but I include some notes about Python 2.
->Python现在有两个主要的分支，即Python2 和Python3。如果你学过其中的一个，你会发现他们还挺相似的，而且转换起来也不算难。实际上对于初学者来说，他们只有很细微的差别而已。这本书是用 Python3 写的，但也会对 Python2 进行注解。
+>Python 现在有两个主要的分支，即 Python2 和 Python3。如果你学过其中的一个，你会发现他们还挺相似的，而且转换起来也不算难。实际上对于初学者来说，他们只有很细微的差别而已。这本书是用 Python3 写的，但也会对 Python2 进行注解。
 
 The Python interpreter is a program that reads and executes Python code. Depending on your environment, you might start the interpreter by clicking on an icon, or by typing python on a command line. When it starts, you should see output like this:
 >Python 的解释器是一个读取并执行 Python 代码的程序。根据你的系统环境，你可以点击图标或者在命令行中输入 Python来运行解释器。它运行起来，你会看到类似这样的输出：
@@ -71,11 +71,11 @@ The last line is a prompt that indicates that the interpreter is ready for you t
 ```
 
 Now you’re ready to get started. From here on, I assume that you know how to start the Python interpreter and run code.
->现在你已经做好开始学习Python的准备了。现在我估计你应该已经知道怎么来启动Python解释器和运行Python代码了。
+>现在你已经做好开始学习 Python 的准备了。现在我估计你应该已经知道怎么来启动 Python 解释器和运行 Python 代码了。
 
 ##1.3  The first program 第一个程序
 Traditionally, the first program you write in a new language is called “Hello, World!” because all it does is display the words “Hello, World!”. In Python, it looks like this:
->传统意义上，大家学一门新编程语言要写的第一个程序都被叫做『Hello，World！』，因为这第一个程序就用来显示这个词组『Hello，World！』。在Python中，是这样实现的：
+>传统意义上，大家学一门新编程语言要写的第一个程序都被叫做『Hello，World！』，因为这第一个程序就用来显示这个词组『Hello，World！』。在 Python 中，是这样实现的：
 
 ```python
 >>> print('Hello, World!') 
@@ -89,7 +89,7 @@ The parentheses indicate that print is a function. We’ll get to functions in C
 >括号表明了print是一个函数。关于函数我们到第三章再讨论。
 
 In Python 2, the print statement is slightly different; it is not a function, so it doesn’t use parentheses.
->在Python2中，打印的语句有一点点不一样：print不是一个函数，所以就不用有括号了。
+>在 Python2 中，打印的语句有一点点不一样：print 不是一个函数，所以就不用有括号了。
 ```python
 >>> print 'Hello, World!' 
 ```
@@ -98,7 +98,7 @@ This distinction will make more sense soon, but that’s enough to get started.
 这个区别以后会理解更深入，现在说这点就够了。
 ##1.4  Arithmetic operators 运算符
 After “Hello, World”, the next step is arithmetic. Python provides operators, which are special symbols that represent computations like addition and multiplication.
->在『Hello，World！』之后，下一步就是运算了。Python提供了运算符，就是一些用来表示例如加法、乘法等运算的符号了。
+>在『Hello，World！』之后，下一步就是运算了。Python 提供了运算符，就是一些用来表示例如加法、乘法等运算的符号了。
 
 The operators +, -, and * perform addition, subtraction, and multiplication, as in the following examples:
 >运算符+，-和*表示加法、减法和乘法，如下所示：
@@ -119,16 +119,16 @@ The operator / performs division:
 42.0 
 ```
 You might wonder why the result is 42.0 instead of 42. I’ll explain in the next section.
->你估计在纳闷为啥结果是42.0而不是42，这个下一章节我再解释。
+>你估计在纳闷为啥结果是 42.0 而不是 42，这个下一章节我再解释。
 
 Finally, the operator ** performs exponentiation; that is, it raises a number to a power:
->最后，再说个运算符**，它表示乘方，就是前一个数为底数，后一个数为指数的次幂运算：
+>最后，再说个运算符 **，它表示乘方，就是前一个数为底数，后一个数为指数的次幂运算：
 ```python
 >>> 6**2 + 6 
 42 
 ```
 In some other languages, ^ is used for exponentiation, but in Python it is a bitwise operator called XOR. If you are not familiar with bitwise operators, the result will surprise you:
->在其他的一些编程语言中，^这个符号是乘方的意思，但在Python中这是一个位运算操作符叫做『异或』。要是你不熟悉位运算操作符，结果一定让你很惊讶：
+>在其他的一些编程语言中，^这个符号是乘方的意思，但在 Python 中这是一个位运算操作符叫做『异或』。要是你不熟悉位运算操作符，结果一定让你很惊讶：
 ```python
 >>> 6 ^ 2 
 4 
@@ -138,10 +138,10 @@ I won’t cover bitwise operators in this book, but you can read about them at [
 
 ##1.5  Values and types 值和类型
 A value is one of the basic things a program works with, like a letter or a number. Some values we have seen so far are 2, 42.0, and 'Hello, World!'.
->值就是一个程序操作的基本对象之一，比如一个字母啊，或者数字。刚刚我们看到了一些值的例子了，比如2，42.0，还有那个字符串『Hello，World！』
+>值就是一个程序操作的基本对象之一，比如一个字母啊，或者数字。刚刚我们看到了一些值的例子了，比如 2，42.0，还有那个字符串『Hello，World！』
 
 These values belong to different types: 2 is an integer, 42.0 is a floating-point number, and 'Hello, World!' is a string, so-called because the letters it contains are strung together.
->这些值属于不同的类型：2是一个整形值，42.0是浮点数，『Hello，World！』是字符串咯。之所以叫字符串就是因为有一串字符。（译者注：这本书的作者真心掰开揉碎地讲解每一个点啊，高中生甚至初中生都应该理解起来没有什么问题，所以大家用这本书来学编程绝对是最佳选择了。）
+>这些值属于不同的类型：2 是一个整形值，42.0 是浮点数，『Hello，World！』是字符串咯。之所以叫字符串就是因为有一串字符。（译者注：这本书的作者真心掰开揉碎地讲解每一个点啊，高中生甚至初中生都应该理解起来没有什么问题，所以大家用这本书来学编程绝对是最佳选择了。）
 
 If you are not sure what type a value has, the interpreter can tell you:
 >如果你不确定一个值是什么类型呢，你可以让解释器来告诉你：
@@ -158,7 +158,7 @@ In these results, the word “class” is used in the sense of a category; a typ
 >在这些例子中，『class』这个字样表明这是一类，一种类型就是对值的一种划分。
 
 Not surprisingly, integers belong to the type int, strings belong to str and floating-point numbers belong to float.
->很自然了，整形的就是int了，字符串就是str了，浮点数就是float了。
+>很自然了，整形的就是 int 了，字符串就是 str 了，浮点数就是 float 了。
 
 What about values like '2' and '42.0'? They look like numbers, but they are in quotation marks like strings.
 >那'2' 和 '42.0'这种是啥呢？他们看着像是数字，但带了单引号了。
@@ -172,13 +172,13 @@ They’re strings.
 >真相就是——他们也是字符串了。
 
 When you type a large integer, you might be tempted to use commas between groups of digits, as in 1,000,000. This is not a legal integer in Python, but it is legal:
->咱们现在输入一个大的整数，在中间用逗号分隔试试看，比如1，000，000，并不是Python中合乎语法的整形，但也被接受了：
+>咱们现在输入一个大的整数，在中间用逗号分隔试试看，比如 1，000，000，并不是 Python 中合乎语法的整形，但也被接受了：
 ```python
 >>> 1,000,000 
 (1, 0, 0) 
 ```
 That’s not what we expected at all! Python interprets 1,000,000 as a comma-separated sequence of integers. We’ll learn more about this kind of sequence later.
->出乎意料吧，Python把逗号当做了分隔三个整形数字的分隔符了。我们以后再对这种序列进行讨论。
+>出乎意料吧，Python 把逗号当做了分隔三个整形数字的分隔符了。我们以后再对这种序列进行讨论。
 
 ##1.6  Formal and natural languages 公式语言和自然语言
 Natural languages are the languages people speak, such as English, Spanish, and French. They were not designed by people (although people try to impose some order on them); they evolved naturally.
@@ -190,10 +190,10 @@ Programming languages are formal languages that have been designed to express co
 编程语言是一种用来表达运算的公式语言。
 
 Formal languages tend to have strict syntax rules that govern the structure of statements. For example, in mathematics the statement 3 + 3 = 6 has correct syntax, but 3 + = 3 $ 6 does not. In chemistry H2O is a syntactically correct formula, but 2Zz is not.
->公式语言有严格的语法规则和对语句结构的要求。比如数学式3+3=6是正确的，而3+=3￥6就不是了。化学上H2O 是正确的化学式，而2Zz 就不是。
+>公式语言有严格的语法规则和对语句结构的要求。比如数学式 3+3=6 是正确的，而 3+=3￥6 就不是了。化学上 H2O 是正确的化学式，而 2Zz 就不是。
 
 Syntax rules come in two flavors, pertaining to tokens and structure. Tokens are the basic elements of the language, such as words, numbers, and chemical elements. One of the problems with 3 += 3 $ 6 is that $ is not a legal token in mathematics (at least as far as I know). Similarly, 2Zz is not legal because there is no element with the abbreviation Zz.
->语法规则体现在两个方面，代号和结构。 代号是语言的基础元素，比如单词、数字以及化学元素。3 += 3 $ 6这个式子数学上无意义的一个原因就是因为 $ 并不是数学上的符号 (至少我所学的数学是没有这个符号的)。类似地， 2Zz 也不对，因为没有一种化学元素的缩写是 Zz.
+>语法规则体现在两个方面，代号和结构。 代号是语言的基础元素，比如单词、数字以及化学元素。3 += 3 $ 6 这个式子数学上无意义的一个原因就是因为 $ 并不是数学上的符号 (至少我所学的数学是没有这个符号的)。类似地， 2Zz 也不对，因为没有一种化学元素的缩写是 Zz.
 
 The second type of syntax rule pertains to the way tokens are combined. The equation 3 += 3 is illegal because even though + and = are legal tokens, you can’t have one right after the other. Similarly, in a chemical formula the subscript comes after the element name, not before.
 >第二个语法规则是代号必须有严格的组合结构。3 += 3这个式子数学上错误就因为虽然这些符号都是数学符号，但不能把加号等号放一起。类似地，化学方程式中要先写元素名字后写个数，而不是反着。
@@ -243,13 +243,13 @@ Formal languages are more dense than natural languages, so it takes longer to re
 
 ##1.7  Debugging 调试
 Programmers make mistakes. For whimsical reasons, programming errors are called bugs and the process of tracking them down is called debugging.
->程序员也会犯错的。由于很奇妙的原因，程序的错误被叫做bug，调试的过程就叫debug了。（译者注：一个传言是最早的计算机中经常有虫子进去导致短路之类的，清理虫子就成了常规调试的操作，流传至今。。。）
+>程序员也会犯错的。由于很奇妙的原因，程序的错误被叫做bug，调试的过程就叫 debug 了。（译者注：一个传言是最早的计算机中经常有虫子进去导致短路之类的，清理虫子就成了常规调试的操作，流传至今。。。）
 
 Programming, and especially debugging, sometimes brings out strong emotions. If you are struggling with a difficult bug, you might feel angry, despondent, or embarrassed.
 >编程，尤其是调试的过程，有时候会给人带来强烈的挫败感。面对特别复杂的状况，你可能就感到愤怒、压抑，或者特别难受。
 
 There is evidence that people naturally respond to computers as if they were people. When they work well, we think of them as teammates, and when they are obstinate or rude, we respond to them the same way we respond to rude, obstinate people (Reeves and Nass, The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places).
->别担心，这些都是正常人对计算机的正常反应。计算机工作正常了，我们会觉得他们像是队友一样；一旦工作出错了，对我们很粗暴，我们对他们的反应就像是对待粗暴可恨的人一样（参考Reeves和Nass，The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places）。
+>别担心，这些都是正常人对计算机的正常反应。计算机工作正常了，我们会觉得他们像是队友一样；一旦工作出错了，对我们很粗暴，我们对他们的反应就像是对待粗暴可恨的人一样（参考 Reeves 和 Nass，The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places）。
 
 Preparing for these reactions might help you deal with them. One approach is to think of the computer, as an employee with certain strengths, like speed and precision, and particular weaknesses, like lack of empathy and inability to grasp the big picture.
 >为这些反应做好心理准备，这样你在遇到类似情况就更好应对了。我们也可以把计算机当做一个有一定优点但也有特定缺陷的员工，比如速度快精度高，但缺乏共鸣和应对大场面的能力。
@@ -257,8 +257,9 @@ Your job is to be a good manager: find ways to take advantage of the strengths a
 >你的工作就是做个好的经理人：尽量充分利用员工优势并降低他们缺陷的作用。然后想办法把你的情绪用在解决问题上，而不要让过激的反应干扰工作效率。
 
 Learning to debug can be frustrating, but it is a valuable skill that is useful for many activities beyond programming. At the end of each chapter there is a section, like this one, with my suggestions for debugging. I hope they help!
-》调试的过程挺烦人的，但这个本领很有价值，而且在编程之外的其他领域都有用武之地。在每一章的末尾，都会有这样的一段，我会给出一些关于调试方面的建议。希望能帮到大家！
-1.8  Glossary 术语列表
+>调试的过程挺烦人的，但这个本领很有价值，而且在编程之外的其他领域都有用武之地。在每一章的末尾，都会有这样的一段，我会给出一些关于调试方面的建议。希望能帮到大家！
+
+## 1.8  Glossary 术语列表
 problem solving:
 The process of formulating a problem, finding a solution, and expressing it.
 >问题解决：将问题方程化，找到解决方案，并表达出来的过程。
