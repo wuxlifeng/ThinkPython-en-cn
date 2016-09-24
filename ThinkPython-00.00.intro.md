@@ -75,6 +75,7 @@ Download 下载
 
 *	The LaTeX source code is available from [this GitHub repository](https://github.com/AllenDowney/ThinkPython2).
 >LaTeX代码在GitHub这里可以下载：[this GitHub repository](https://github.com/AllenDowney/ThinkPython2).
+
 *	Here is the HTML version, and here is the HTML code in a zip archive.
 >网页在线阅读 HTML version, 这些网页打包下载 HTML code ，这是一个zip格式的压缩包。
 
