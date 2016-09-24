@@ -9,12 +9,12 @@ Tag: 双语,Python,ThinkPython
 
 
 One of my goals for this book has been to teach you as little Python as possible. When there were two ways to do something, I picked one and avoided mentioning the other. Or sometimes I put the second one into an exercise.
->我在本书中的一个目标就是尽量少教你 Python（译者注：而要多教编程）。有的时候完成一个目的有两种方法，我都会只选择一种而不提其他的。或者有的时候我就把第二个方法放到练习里面。
+>本书中的一个目标就是尽量少教你 Python（译者注：而要多教编程）。有的时候完成一个目的有两种方法，我都会只选择一种而不提其他的。或者有的时候我就把第二个方法放到练习里面。
 
 
 
 Now I want to go back for some of the good bits that got left behind. Python provides a number of features that are not really necessary—you can write good code without them—but with them you can sometimes write code that’s more concise, readable or efficient, and sometimes all three.
->现在我就要往回倒车一下，捡起一些当时略过的重要内容来给大家讲一下。Python 提供了很多并非必须的功能—你完全可以不用这些功能也能写出很好的代码—但用这些功能有时候能让你的代码更加简洁，可读性更强，或者更有效率，甚至有时候能兼顾这三个方面。
+>现在我就要往回倒车一下，捡起一些当时略过的重要内容来给大家讲一下。Python 提供了很多并非必须的功能—-你完全可以不用这些功能也能写出很好的代码—-但用这些功能有时候能让你的代码更加简洁，可读性更强，或者更有效率，甚至有时候能兼顾这三个方面。
 
 
 
@@ -85,7 +85,7 @@ Another use of conditional expressions is handling optional arguments. For examp
 
 
 ```Python
-def __init__(self, name, contents=None):
+def __init__(self, name, contents = None):
 	self.name = name
 	if contents == None:
 		contents = []
@@ -100,7 +100,7 @@ We can rewrite this one like this:
 
 
 ```Python
-def __init__(self, name, contents=None):
+def __init__(self, name, contents = None):
 	self.name = name
 	self.pouch_contents = []
 	if contents == None else contents
@@ -907,7 +907,7 @@ An expression with a for loop in parentheses that yields a generator object.
 
 multiset:
 A mathematical entity that represents a mapping between the elements of a set and the number of times they appear.
->多重集：一个数学上的概念，表示了一种从集合中元素到出现次数只见的映射关系。
+>多重集：一个数学上的概念，表示了一种从集合中元素到出现次数之间的映射关系。
 
 
 
@@ -926,7 +926,7 @@ A function, usually passed as a parameter, used to create objects.
 
 
 The following is a function computes the binomial coefficient recursively.
->线面的函数是递归地计算二项式系数的。
+>下面的函数是递归地计算二项式系数的。
 
 
 ```Python
@@ -956,4 +956,4 @@ Rewrite the body of the function using nested conditional expressions.
 
 
 One note: this function is not very efficient because it ends up computing the same values over and over. You could make it more efficient by memoizing (see Section 11.6). But you will find that it’s harder to memoize if you write it using conditional expressions.
->一点提示：这个函数并不是很有效率，因为总是要一遍一遍地计算同样的值。你可以通过存储已有结果（参考11.6）来提高效率。但你会发现如果你用条件表达式实现，就会导致这种记忆更困难。
+>一点提示：这个函数并不是很有效率，因为总是要一遍一遍地计算同样的值。你可以通过存储已有结果（参考 11.6）来提高效率。但你会发现如果你用条件表达式实现，就会导致这种记忆更困难。
