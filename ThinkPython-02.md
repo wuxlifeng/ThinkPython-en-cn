@@ -290,19 +290,19 @@ Three kinds of errors can occur in a program: syntax errors, runtime errors, and
 *   Syntax error:
 “Syntax” refers to the structure of a program and the rules about that structure. For example, parentheses have to come in matching pairs, so(1 + 2) is legal, but 8) is a syntax error.
 If there is a syntax error anywhere in your program, Python displays an error message and quits, and you will not be able to run the program. During the first few weeks of your programming career, you might spend a lot of time tracking down syntax errors. As you gain experience, you will make fewer errors and find them faster.
->语法错误Syntax error:
-语法是指程序的结构和规则。比如括号要成对用。如果你的程序有某个地方出现了语法错误，Python会显示出错信息并退出，程序就不能运行了。最开始学习编程的这段时间，你遇到的最常见的估计就是这种情况。等你经验多了，基本就犯的少了，而且也很容易发现了。
+>语法错误 Syntax error：
+语法是指程序的结构和规则。比如括号要成对用。如果你的程序有某个地方出现了语法错误，Python 会显示出错信息并退出，程序就不能运行了。最开始学习编程的这段时间，你遇到的最常见的估计就是这种情况。等你经验多了，基本就犯的少了，而且也很容易发现了。
 
 * Runtime error:
 The second type of error is a runtime error, so called because the error does not appear until after the program has started running. These errors are also called exceptions because they usually indicate that something exceptional (and bad) has happened.
 Runtime errors are rare in the simple programs you will see in the first few chapters, so it might be a while before you encounter one.
->运行错误Runtime error:
+>运行错误 Runtime error：
 第二种错误就是运行错误，显而易见了，就是直到运行的时候才会出现的错误。这种错误也被叫做异常，因为一般表示一些意外的尤其是比较糟糕的情况发生了。
 
 * Semantic error:
 The third type of error is “semantic”, which means related to meaning. If there is a semantic error in your program, it will run without generating error messages, but it will not do the right thing. It will do something else. Specifically, it will do what you told it to do.
 Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
->语义错误Semantic error:
+>语义错误 Semantic error：
 第三种就是语义错误，顾名思义，是跟意义相关。这种错误是指你的程序运行没问题，也不产生错误信息，但不能正确工作。程序可能做一些和设计目的不同的事情。发现语义错误特别不容易，需要你仔细回顾代码和程序输出，要搞清楚到底程序做了什么。
 
 
@@ -313,17 +313,19 @@ Identifying semantic errors can be tricky because it requires you to work backwa
 
 
 ##2.9  Glossary 术语列表
-variable: A name that refers to a value.
+variable: 
+A name that refers to a value.
 >变量：有值的量。
 
-assignment: A statement that assigns a value to a variable.
+assignment: 
+A statement that assigns a value to a variable.
 >赋值：给一个变量赋予值。
 
-state diagram:
+state diagram: 
 A graphical representation of a set of variables and the values they refer to.
 >状态图：图形化表征每个变量的值。
 
-keyword:
+keyword: 
 A reserved word that is used to parse a program; you cannot use keywords like if, def, and while as variable names.
 >关键词：系统保留的用于解析程序的词，不能用关键词当做变量名。
 
@@ -385,7 +387,7 @@ The meaning of a program.
 
 semantic error:
 An error in a program that makes it do something other than what the programmer intended.
->语义错误：程序运行的结果和料想的不一样，没有完成设计的功能，而是干了点其他的事情。
+>语义错误：程序运行的结果和料想的不一样，没有完成设计功能，而是干了点其他的事情。
 
 ##2.10  Exercises 练习
 ###Exercise 1  练习1
@@ -394,22 +396,28 @@ Repeating my advice from the previous chapter, whenever you learn a new feature,
 
 *	We’ve seen that n = 42 is legal. What about 42 = n?
 >我们都看到了n=42是可以的，那42=n怎么样？
+
 *	How about x = y = 1?
 >再试试x=y=1呢？
+
 *	In some languages every statement ends with a semi-colon, ;. What happens if you put a semi-colon at the end of a Python statement?
 >有的语言每个语句结尾都必须有个单引号或者分号，试试在Python句末放个会咋样？
+
 *	What if you put a period at the end of a statement?
 >句尾放个句号试试呢？
+
 *	In math notation you can multiply x and y like this: x y. What happens if you try that in Python?
 >数学上你可以把x和y相乘写成xy，Python里面你这么试试看？
 
 ###Exercise 2  
 Practice using the Python interpreter as a calculator:
-1.	The volume of a sphere with radius r is 4/3 π r3. What is the volume of a sphere with radius 5?
+
+1. The volume of a sphere with radius r is 4/3 π r3. What is the volume of a sphere with radius 5?
 2.	Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. Shipping costs $3 for the first copy and 75 cents for each additional copy. What is the total wholesale cost for 60 copies?
 3.	If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?
 
 >把Python解释器当做计算器来做下面的练习：
+
 1.	球体体积是三分之四倍的圆周率乘以半径立方，求半径为5的球体体积。
 2.	加入一本书的封面标价是24.95美元，书店打六折。第一本运费花费3美元，后续每增加一本的运费是75美分。问买60本一共得花多少钱呢？
 3.	我早上六点五十二分出门离家，以8:15的节奏跑了一英里，又以7：12的节奏跑了三英里，然后又是8：15的节奏跑一英里，回到家吃饭是几点？
