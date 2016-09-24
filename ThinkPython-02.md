@@ -7,11 +7,11 @@ Tag: 双语,Python,ThinkPython
 > ## 变量，表达式，语句
 
 One of the most powerful features of a programming language is the ability to manipulate variables. A variable is a name that refers to a value.
->编程语言最强大的功能就是操作变量。变量就是一个有值的代号。
+> **编程语言最强大的功能就是操作变量。** 变量就是一个有值的代号。
 
 ##2.1  Assignment statements 赋值语句 
 An assignment statement creates a new variable and gives it a value:
->赋值语句的作用是创建一个新的变量，并且赋值给这个变量：
+>赋值语句会创建一个新的变量，并赋值给该变量：
 
 ```python
 >>> message = 'And now for something completely different' 
