@@ -31,7 +31,7 @@ Example programs and solutions to some problems are [here](http://www.greenteapr
 ##Description 说明
 
 Think Python is an introduction to Python programming for beginners. 
->Think Python 这本书是面向初学者介绍Python编程。
+>Think Python 这本书是面向初学者介绍 Python 编程。
 
 It starts with basic concepts of programming, and is carefully designed to define all terms when they are first used and to develop each new concept in a logical progression. 
 >首先介绍的是一些编程的基本内容，给出概念和解释，然后循序渐进地深入讲解每个概念。
@@ -53,7 +53,7 @@ What's new in the second edition?
 >浏览器内能Python编程了：初学者遇到的第一个困难就是安装Python。另外有的读者可能不想去直接就安装Python，我们就提供了一个用浏览器来运行Python的简介：使用PythonAnywhere，一个免费的在线Python编程环境。（译者注：中国用户以考虑试试fenby.com，也有类似的实现，还有视频的介绍。）
 
 *	More Python goodies: We've added a chapter to cover some powerful Python features that didn't make it into the first edition, including list comprehensions and additional data structures.
->更多Python彩蛋：单独加了一章，来介绍一些第一版中没有提及的Python功能，比如列表解析和附加的数据结构。
+>更多 Python 彩蛋：单独加了一章，来介绍一些第一版中没有提及的Python功能，比如列表解析和附加的数据结构。
 
 Think Python 2e is a Free Book. 
 >这本书是一本自-和谐-由的书。
@@ -62,7 +62,7 @@ It is available under the [Creative Commons Attribution-NonCommercial 3.0 Unport
 >本书遵循[创作共用署名-非商业性使用-第三版协议](http://creativecommons.org/licenses/by-nc/3.0/)，这意味着你可以自-和谐-由地复制、分发和修改他，只要你有所贡献，并且不用于商业目的，就可以。
 
 If you have comments, corrections or suggestions, please send me email at feedback{at}thinkpython{dot}com.
->如果你有一些评论、修正或者建议，可以发邮件给feedback@thinkpython.com
+>如果你有一些评论、修正或者建议，可以发邮件给 feedback@thinkpython.com
 
 Other Free Books by Allen Downey are available from [Green Tea Press](http://greenteapress.com/).
 >其他由 Allen Downey 编写的自-和谐-由书籍都可以在[Green Tea Press](http://greenteapress.com/)找到.
@@ -71,10 +71,10 @@ Other Free Books by Allen Downey are available from [Green Tea Press](http://gre
 Download 下载
 
 *	Precompiled copies of the book are available in [PDF](http://www.greenteapress.com/thinkpython2/thinkpython2.pdf).
->编译好的PDF版本在这里下载：[PDF](http://www.greenteapress.com/thinkpython2/thinkpython2.pdf)。
+>编译好的 PDF 版本在这里下载：[PDF](http://www.greenteapress.com/thinkpython2/thinkpython2.pdf)。
 
 *	The LaTeX source code is available from [this GitHub repository](https://github.com/AllenDowney/ThinkPython2).
->LaTeX代码在GitHub这里可以下载：[this GitHub repository](https://github.com/AllenDowney/ThinkPython2).
+>LaTeX 代码在 GitHub 这里可以下载：[this GitHub repository](https://github.com/AllenDowney/ThinkPython2).
 
 *	Here is the HTML version, and here is the HTML code in a zip archive.
 >网页在线阅读 HTML version, 这些网页打包下载 HTML code ，这是一个zip格式的压缩包。
@@ -87,14 +87,14 @@ The first edition is [here](http://www.greenteapress.com/thinkpython).
 >第一版在[这里](http://www.greenteapress.com/thinkpython)
 
 A previous edition of this book was published by Cambridge University press with the title Python for Software Design. This edition is available from Amazon.com.
->本书的上一个版本是由剑桥大学出版社出版的，标题是 Python for Software Design. 可以到亚马逊去买到哈。
+>本书的上一个版本是由剑桥大学出版社出版的，标题是 Python for Software Design。亚马逊可以买到。
 
 The original Python version of the book was published by Green Tea Press with the title How to Think Like a Computer Scientist: Learning with Python. This edition is available from from Lulu.com.
->本书的原始版本由Green Tea Press 出版，标题为 How to Think Like a Computer Scientist: Learning with Python. 这个版本可以从这个网站找到 Lulu.com.
+>本书的原始版本由 Green Tea Press 出版，标题为 How to Think Like a Computer Scientist: Learning with Python. 这个版本可以从这个网站找到 Lulu.com.
 
 
 Other Free Books by Allen Downey are available from Green Tea Press.
->其他由 Allen Downey 编写的自-和谐-由书籍都可以在Green Tea Press找到.
+>其他由 Allen Downey 编写的自-和谐-由书籍都可以在 Green Tea Press 找到.
 
 
 
