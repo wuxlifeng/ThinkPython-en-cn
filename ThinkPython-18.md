@@ -134,7 +134,7 @@ Both kinds of attribute are accessed using dot notation. For example, in__str__,
 
 
 Every card has its own suit and rank, but there is only one copy of suit_names and rank_names.
->没一张牌都有自己的花色和牌值，但都只有唯一的一套 suit_names 和 rank_names。
+>每一张牌都有自己的花色和牌值，但都只有唯一的一套 suit_names 和 rank_names。
 
 
 
@@ -186,7 +186,7 @@ Figure 18.1 is a diagram of the Card class object and one Card instance. Card is
 
 
 For built-in types, there are relational operators (<, >, ==, etc.) that compare values and determine when one is greater than, less than, or equal to another. For programmer-defined types, we can override the behavior of the built-in operators by providing a method named __lt__, which stands for “less than”.
->对于内置类型，直接就可以用关系运算符（<, >, ==,等等）比较两个值来判断二者的大小以及是否相等。对与用户自定义类型，咱们就要覆盖掉内置运算符的行为，这就需要提供一个名为__lt__的方法，这个lt 就是『less than』的缩写，意思是『小于』。
+>对于内置类型，直接就可以用关系运算符（<, >, ==,等等）比较两个值来判断二者的大小以及是否相等。对于用户自定义类型，咱们就要覆盖掉内置运算符的行为，这就需要提供一个名为__lt__的方法，这个lt 就是『less than』的缩写，意思是『小于』。
 
 
 
@@ -252,7 +252,7 @@ As an exercise, write an __lt__ method for Time objects. You can use tuple compa
 
 
 Now that we have Cards, the next step is to define Decks. Since a deck is made up of cards, it is natural for each Deck to contain a list of cards as an attribute.
->现在咱们已经有了纸牌的类了，接下来的一不就是定义成副纸牌了。因为一副纸牌上是有各种牌，所以很自然就应该包含一个纸牌列表作为一个属性了。
+>现在咱们已经有了纸牌的类了，接下来的一步就是定义成副纸牌了。因为一副纸牌上是有各种牌，所以很自然就应该包含一个纸牌列表作为一个属性了。
 
 
 
