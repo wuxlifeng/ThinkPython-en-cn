@@ -1,4 +1,5 @@
->* Title: ThinkPython 双语学编程 Chapter 0.5 Preface 前言
+>* Title: ThinkPython 双语学编程 
+>* Chapter 0.5 Preface 前言
 >* Date: 2015-10-21
 >* Category: ThinkPython
 >* Tag: 双语,Python,ThinkPython
