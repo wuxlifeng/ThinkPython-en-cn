@@ -6,10 +6,10 @@ Tag: 双语,Python,ThinkPython
 #Chapter 1  The way of the program 编程之路
 
 The goal of this book is to teach you to think like a computer scientist. This way of thinking combines some of the best features of mathematics, engineering, and natural science. Like mathematicians, computer scientists use formal languages to denote ideas (specifically computations). Like engineers, they design things, assembling components into systems and evaluating tradeoffs among alternatives. Like scientists, they observe the behavior of complex systems, form hypotheses, and test predictions.
->本书的目的是叫你学会像计算机科学家一样来思考。这种思考方式汇聚了数学、工程和自然科学的精华。计算机科学家像数学家一样，使用规范的语言来阐述思想（尤其是一些计算）；像工程师一样设计、组装系统，并且在多重选择中寻找最优解；像自然科学家一样观察复杂系统的行为模式，建立猜想，测试预估的结果。
+>本书的目的是教你学会像计算机科学家一样来思考。这种思考方式汇聚了数学、工程和自然科学的精华。计算机科学家像数学家一样，使用规范语言来阐述思想（尤其是一些计算）；像工程师一样设计、组装系统，并且在多重选择中寻找最优解；像科学家一样观察复杂系统的行为模式，建立猜想，测试预估的结果。
 
 The single most important skill for a computer scientist is problem solving. Problem solving means the ability to formulate problems, think creatively about solutions, and express a solution clearly and accurately. As it turns out, the process of learning to program is an excellent opportunity to practice problem-solving skills. That’s why this chapter is called, “The way of the program”.
->计算机科学家唯一最重要的技能就是『解决问题』。解决问题意味着要有能力把问题进行方程化，创造性地考虑解决思路，并且清晰又精确地表达出解决方案。而学习编程的过程，正是一个培养这种解决问题能力的绝佳机会。本章的标题是『编程之路』，原因就在此。
+>计算机科学家一个最重要的技能就是『解决问题』。解决问题意味着要有能力把问题进行方程化，创造性地思考解决思路，清晰精确地表达解决方案。而学习编程的过程，正是一个培养这种解决问题能力的绝佳机会。本章的标题是『编程之路』，原因就在此。
 
 On one level, you will be learning to program, a useful skill by itself. On another level, you will use programming as a means to an end. As we go along, that end will become clearer.
 >在一定层面上，大家将通过编程本身来学习编程这一重要的技巧。在另外一些层面上，大家也将把编程作为实现一种目的的途径。这一目的会随着我们逐渐学习而越发清楚。
@@ -37,7 +37,7 @@ The details look different in different languages, but a few basic instructions 
 Believe it or not, that’s pretty much all there is to it. Every program you’ve ever used, no matter how complicated, is made up of instructions that look pretty much like these. So you can think of programming as the process of breaking a large, complex task into smaller and smaller subtasks until the subtasks are simple enough to be performed with one of these basic instructions.
 >大家可能不太相信，核心内容就这么多。你用过的所有程序，无论多么复杂，都是由一些这样的指令组合而成的。因此大家可以把编程的过程理解成一个把庞大复杂任务进行拆分来解决的过程，分解到适合使用上述的基本指令来解决为止。
 
-##1.2  Running Python 运行Python
+##1.2  Running Python 运行 Python
 One of the challenges of getting started with Python is that you might have to install Python and related software on your computer. If you are familiar with your operating system, and especially if you are comfortable with the command-line interface, you will have no trouble installing Python. But for beginners, it can be painful to learn about system administration and programming at the same time.
 >新手在刚接触Python的时候遇到的困难之一就是必须在电脑上安装Python和相关的一些软件。如果你熟悉操作系统，并且还很习惯用命令行界面，那安装Python对你来说就没啥问题了。但对初学者来说，要求他们既要了解系统管理又要学习编程，就可能有些困难了。
 
@@ -48,10 +48,10 @@ There are a number of web pages you can use to run Python. If you already have a
 >有很多站点提供在线运行Python的功能。如果你已经用过并且有一定经验了，可以选择你喜欢的。我推荐大家可以试试PythonAnywhere，对此的使用介绍可以在下面的链接中找到http://tinyurl.com/thinkpython2e。
 
 There are two versions of Python, called Python 2 and Python 3. They are very similar, so if you learn one, it is easy to switch to the other. In fact, there are only a few differences you will encounter as a beginner. This book is written for Python 3, but I include some notes about Python 2.
->Python现在有两个主要的分之，即Python2和Python3。如果你学过其中的一个，你会发现他们还挺相似的，而且转换起来也不算难。实际上对于初学者来说，他们只有很细微的差别而已。这本书是用Python3写的，但也会对Python2进行注解。
+>Python现在有两个主要的分支，即Python2 和Python3。如果你学过其中的一个，你会发现他们还挺相似的，而且转换起来也不算难。实际上对于初学者来说，他们只有很细微的差别而已。这本书是用 Python3 写的，但也会对 Python2 进行注解。
 
 The Python interpreter is a program that reads and executes Python code. Depending on your environment, you might start the interpreter by clicking on an icon, or by typing python on a command line. When it starts, you should see output like this:
->Python的解释器是一个读取并执行Python代码的程序。根据你的系统环境，你可以点击图标或者在命令行中输入python来运行解释器。它运行起来，你会看到类似这样的输出：
+>Python 的解释器是一个读取并执行 Python 代码的程序。根据你的系统环境，你可以点击图标或者在命令行中输入 Python来运行解释器。它运行起来，你会看到类似这样的输出：
 ```python
 Python 3.4.0 (default, Jun 19 2015, 14:20:21)  
 [GCC 4.8.2] on linux 
@@ -60,7 +60,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 The first three lines contain information about the interpreter and the operating system it’s running on, so it might be different for you. But you should check that the version number, which is 3.4.0 in this example, begins with 3, which indicates that you are running Python 3. If it begins with 2, you are running (you guessed it) Python 2.
->开头的三行包含了关于解释器和所在操作系统的信息，所以大家各自的情况可能有所不同。不过当你检查版本的时候，比如例子中的是3.4.0，使用3开头的，那就告诉你了，他运行的是Python3。你肯定也能猜到，如果开头的是2那就是Python2咯。
+>开头的三行包含了关于解释器和所在操作系统的信息，所以大家各自的情况可能有所不同。不过当你检查版本的时候，比如例子中的是 3.4.0，使用 3 开头的，那就告诉你了，他运行的是 Python3。你肯定也能猜到，如果开头的是 2 那就是 Python2 咯。
 
 The last line is a prompt that indicates that the interpreter is ready for you to enter code. If you type a line of code and hit Enter, the interpreter displays the result:
 >最后一行那个是提示符，告诉你解释器已经就绪了，你可以输入代码了。如果你输入一行代码然后回车键，解释器就会显示结果了，如下所示：
