@@ -417,6 +417,7 @@ Practice using the Python interpreter as a calculator:
 3.	If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?
 
 >把 Python 解释器当做计算器来做下面的练习：
+
 > 1. 球体体积是三分之四倍的圆周率乘以半径立方，求半径为5的球体体积。
 
 > 2.	加入一本书的封面标价是24.95美元，书店打六折。第一本运费花费3美元，后续每增加一本的运费是75美分。问买60本一共得花多少钱呢？
