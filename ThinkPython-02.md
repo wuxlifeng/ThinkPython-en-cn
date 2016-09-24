@@ -395,19 +395,19 @@ Repeating my advice from the previous chapter, whenever you learn a new feature,
 >像上一章一样，按我建议的，不论学了什么新内容，你都试着在交互模式上故意犯点错误，看看会怎么样。
 
 *	We’ve seen that n = 42 is legal. What about 42 = n?
->我们都看到了n=42是可以的，那42=n怎么样？
+>我们都看到了 n=42 是可以的，那 42=n 怎么样？
 
 *	How about x = y = 1?
->再试试x=y=1呢？
+>再试试 x=y=1 呢？
 
 *	In some languages every statement ends with a semi-colon, ;. What happens if you put a semi-colon at the end of a Python statement?
->有的语言每个语句结尾都必须有个单引号或者分号，试试在Python句末放个会咋样？
+>有的语言每个语句结尾都必须有个单引号或者分号，试试在 Python 句末放个会咋样？
 
 *	What if you put a period at the end of a statement?
 >句尾放个句号试试呢？
 
 *	In math notation you can multiply x and y like this: x y. What happens if you try that in Python?
->数学上你可以把x和y相乘写成xy，Python里面你这么试试看？
+>数学上你可以把 x 和 y 相乘写成 xy，Python 里面你这么试试看？
 
 ###Exercise 2  
 Practice using the Python interpreter as a calculator:
@@ -416,10 +416,11 @@ Practice using the Python interpreter as a calculator:
 2.	Suppose the cover price of a book is $24.95, but bookstores get a 40% discount. Shipping costs $3 for the first copy and 75 cents for each additional copy. What is the total wholesale cost for 60 copies?
 3.	If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?
 
->把Python解释器当做计算器来做下面的练习：
+>把 Python 解释器当做计算器来做下面的练习：
+> 1. 球体体积是三分之四倍的圆周率乘以半径立方，求半径为5的球体体积。
 
-1.	球体体积是三分之四倍的圆周率乘以半径立方，求半径为5的球体体积。
-2.	加入一本书的封面标价是24.95美元，书店打六折。第一本运费花费3美元，后续每增加一本的运费是75美分。问买60本一共得花多少钱呢？
-3.	我早上六点五十二分出门离家，以8:15的节奏跑了一英里，又以7：12的节奏跑了三英里，然后又是8：15的节奏跑一英里，回到家吃饭是几点？
+> 2.	加入一本书的封面标价是24.95美元，书店打六折。第一本运费花费3美元，后续每增加一本的运费是75美分。问买60本一共得花多少钱呢？
+
+> 3.	我早上六点五十二分出门离家，以8:15的节奏跑了一英里，又以7：12的节奏跑了三英里，然后又是8：15的节奏跑一英里，回到家吃饭是几点？
  
 
