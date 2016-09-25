@@ -426,4 +426,4 @@ Practice using the Python interpreter as a calculator:
 
 > 3.	我早上六点五十二分出门离家，以8:15的节奏跑了一英里，又以7：12的节奏跑了三英里，然后又是8：15的节奏跑一英里，回到家吃饭是几点？
  
-
+[Chapter 1](ThinkPython-01.md) | [Chapter 3](ThinkPython-03.md)
