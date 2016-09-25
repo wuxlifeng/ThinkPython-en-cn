@@ -65,7 +65,7 @@ Finally, str converts its argument to a string:
 >>> str(3.14159) 
 '3.14159' 
 ```
-##3.2  Math functions
+##3.2  Math functions 数学函数
 
 Python has a math module that provides most of the familiar mathematical functions. A module is a file that contains a collection of related functions.
 >Python内置了一个数学模块，这一模块提供了绝大部分常用的数学函数。模块就是一系列相关函数的集合成的文件。
@@ -776,3 +776,5 @@ A print statement with no argument ends the current line and goes to the next li
 
 Credit: This exercise is based on an exercise in Oualline, Practical C Programming, Third Edition, O’Reilly Media, 1997.
 >此练习基于Oualline的书《实践C语言编程》第三版，O'Reilly出版社，1997年版
+
+[Chapter 2](ThinkPython-02.md) | [Chapter 4](ThinkPython-04.md)
