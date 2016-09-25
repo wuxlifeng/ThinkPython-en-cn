@@ -96,7 +96,7 @@ The module object contains the functions and variables defined in the module. To
 ```
 
 The first example uses math.log10 to compute a signal-to-noise ratio in decibels (assuming that signal_power and noise_power are defined). The math module also provides log, which computes logarithms base e.
-第一个例子用了数学的log10的函数，来计算信噪比的分贝值（假设信号强度和噪音强度都已知了）。数学模块同事也提供了log，用自然底数e取对数的函数。
+>第一个例子用了数学的log10的函数，来计算信噪比的分贝值（假设信号强度和噪音强度都已知了）。数学模块同事也提供了log，用自然底数e取对数的函数。
 
 The second example finds the sine of radians. The name of the variable is a hint that sin and the other trigonometric functions (cos, tan, etc.) take arguments in radians. To convert from degrees to radians, divide by 180 and multiply by π:
 >第二个例子是对弧度值计算正弦值。通过变量名你应该能推测出正弦以及其他的三角函数（比如余弦、正切等等）都要用弧度值作为参数。所以要把角度的值从度转换成弧度，方法就是除以180然后再乘以圆周率π：
@@ -157,7 +157,7 @@ SyntaxError: can't assign to operator
 
 So far, we have only been using the functions that come with Python, but it is also possible to add new functions. A function definition specifies the name of a new function and the sequence of statements that run when the function is called.
 Here is an example:
->目前我们学到了一些Python自带的函数，自己添加新的函数也是可以的。函数定义要指定这个心函数的名字，还需要一系列语句放到这个函数里面，当调用这个函数的时候，就会运行这些语句了。
+>目前我们学到了一些Python自带的函数，自己添加新的函数也是可以的。函数定义要指定这个新函数的名字，还需要一系列语句放到这个函数里面，当调用这个函数的时候，就会运行这些语句了。
 
 ```Python
 def print_lyrics():
@@ -167,7 +167,7 @@ def print_lyrics():
 
 
 def is a keyword that indicates that this is a function definition. The name of the function is print_lyrics. The rules for function names are the same as for variable names: letters, numbers and underscore are legal, but the first character can’t be a number. You can’t use a keyword as the name of a function, and you should avoid having a variable and a function with the same name.
->这里的def就是一个关键词，意思是这是在定义一个函数。函数的名字就是print_lyrics，函数的命名规则和变量命名规则基本差不多，都是字幕梳子或者下划线，但是不能用数字打头。另外也不能用关键词做函数名，还要注意尽量避免函数名和变量名发生重复。
+>这里的def就是一个关键词，意思是这是在定义一个函数。函数的名字就是print_lyrics，函数的命名规则和变量命名规则基本差不多，都是字母数字或者下划线，但是不能用数字打头。另外也不能用关键词做函数名，还要注意尽量避免函数名和变量名重复。
 
 
 The empty parentheses after the name indicate that this function doesn’t take any arguments.
@@ -218,7 +218,7 @@ I'm a lumberjack, and I'm okay. I sleep all night and I work all day.
 
 
 Once you have defined a function, you can use it inside another function. For example, to repeat the previous refrain, we could write a function called repeat_lyrics:
->一旦你定义了一个函数，就可以在其它函数里面来调用这个函数。比如咱们重复一下刚刚讨论的，写一个叫做重repeat_lyrics的函数。
+>一旦你定义了一个函数，就可以在其它函数里面来调用这个函数。比如咱们重复一下刚刚讨论的，写一个叫做 repeat_lyrics 的函数。
 
 ```Python
 def repeat_lyrics():
@@ -272,7 +272,7 @@ Now move the function call back to the bottom and move the definition of print_l
 
 ##3.6  Flow of execution 运行流程
 To ensure that a function is defined before its first use, you have to know the order statements run in, which is called the flow of execution.
->为了确保一个函数在首次被调用之前已经定义，你必须要之道语句运行的顺序，也就是所谓『运行流程』。
+>为了确保一个函数在首次被调用之前已经定义，你必须要知道语句运行的顺序，也就是所谓『运行流程』。
 
 
 Execution always begins at the first statement of the program. Statements are run one at a time, in order from top to bottom.
@@ -342,7 +342,7 @@ Spam
 
 
 The same rules of composition that apply to built-in functions also apply to programmer-defined functions, so we can use any kind of expression as an argument for print_twice:
-适用于Python内置函数的组合规则对自定义的函数也是适用的，所以我们可以把表达式作为实际参数：
+>适用于Python内置函数的组合规则对自定义的函数也是适用的，所以我们可以把表达式作为实际参数：
 
 ```Python
 >>> print_twice('Spam '*4) 
@@ -668,7 +668,7 @@ A list of the functions that are executing, printed when an exception occurs.
 ###Exercise 1  练习1
 
 Write a function named right_justify that takes a string named s as a parameter and prints the string with enough leading spaces so that the last letter of the string is in column 70 of the display.
->写一个名叫right_justify的函数，形式参数是名为s的字符串，将字符串打印，前面流出足够的空格，让字符串最后一个字幕在第70列显示。
+>写一个名叫 right_justify 的函数，形式参数是名为 s 的字符串，将字符串打印，前面留出足够的空格，让字符串最后一个字幕在第 70 列显示。
 
 
 ```Python
