@@ -370,4 +370,4 @@ This kind of experiment helps you remember what you read; it also helps when you
 
  
 
-[Chapter 0](ThinkPython-00.01.md) | [Chapter 02](ThinkPython-02.md)
+[Chapter 0 Perface](ThinkPython-00.01.Preface.md) | [Chapter 02](ThinkPython-02.md)
