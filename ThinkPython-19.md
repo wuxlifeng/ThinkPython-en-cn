@@ -957,3 +957,6 @@ Rewrite the body of the function using nested conditional expressions.
 
 One note: this function is not very efficient because it ends up computing the same values over and over. You could make it more efficient by memoizing (see Section 11.6). But you will find that it’s harder to memoize if you write it using conditional expressions.
 >一点提示：这个函数并不是很有效率，因为总是要一遍一遍地计算同样的值。你可以通过存储已有结果（参考 11.6）来提高效率。但你会发现如果你用条件表达式实现，就会导致这种记忆更困难。
+
+
+[Chapter 18](ThinkPython-18.md) | 没有下一章了
