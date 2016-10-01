@@ -365,3 +365,4 @@ Write a Python program that searches for solutions to this Puzzler. Hint: you mi
 >写一个 Python 程序，搜索一下这个谜语的解。提示一下：你可能发现字符串的 zfill 方法很有用哦。
 >[样例代码](http://thinkpython2.com/code/cartalk3.py)
 
+[Chapter 8](ThinkPython-08.md) | [Chapter 10](ThinkPython-10.md)
