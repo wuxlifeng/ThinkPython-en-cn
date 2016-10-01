@@ -729,4 +729,4 @@ The exception is if x is less than 3: in that case, you can just draw a straight
 >生成Koch曲线的方法还有很多。点击 [这里](http://en.wikipedia.org/wiki/Koch_snowflake)来查看更多的例子，探索一下看看你喜欢哪个。
 
 
-
+[Chapter 4](ThinkPython-04.md) | [Chapter 6](ThinkPython-06.md)
