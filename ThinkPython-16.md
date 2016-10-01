@@ -467,3 +467,4 @@ The datetime module provides time objects that are similar to the Time objects i
 [Solution](http://thinkpython2.com/code/double.py).
 >[样例代码](http://thinkpython2.com/code/double.py)。
 
+[Chapter 15](ThinkPython-15.md) | [Chapter 17](ThinkPython-17.md)
