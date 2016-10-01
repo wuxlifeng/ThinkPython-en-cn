@@ -476,3 +476,4 @@ Write a function called estimate_pi that uses this formula to compute and return
 >写一个名叫estimate_pi的函数，用上面这个方程来计算并返回一个圆周率π的近似值。要使用一个while循环来计算出总和的每一位，最后一位要小于10的-15次方。你可以对比一下计算结果和Python内置的math.pi。
 >[样例代码](http://thinkpython2.com/code/pi.py)
 
+[Chapter 6](ThinkPython-06.md) | [Chapter 8](ThinkPython-08.md)
