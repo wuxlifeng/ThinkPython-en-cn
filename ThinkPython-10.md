@@ -1184,7 +1184,7 @@ Two words “interlock” if taking alternating letters from each forms a new wo
 2.	Can you find any words that are three-way interlocked; that is, every third letter forms a word, starting from the first, second or third?
 >你能找到那种三路互锁的单词么；就是那种三三排列三个单词的字母能组成一个单词的三个词？
 
-
+[Chapter 9](ThinkPython-09.md) | [Chapter 11](ThinkPython-11.md)
 
 
 
