@@ -839,3 +839,4 @@ Write a program that lists all the words that solve the Puzzler. (Solution)[http
 >你可以用本章练习1的字典来检查一个字符串是否在一个字典之中。检查两个单词是不是同音异形异义词，可以用 CMU 发音字典。可以从(这里)[http://www.speech.cs.cmu.edu/cgi-bin/cmudict]或者(这里)[http://thinkpython2.com/code/c06d]或者(这里)[http://thinkpython2.com/code/pronounce.py]来下载， 该字典提供了一个名为read_dictionary的函数，该函数会读取发音词典，然后返回一个 Python 词典，返回的这个词典会映射每一个单词到描述单词读音的字符串。
 写一个函数来找到所有满足谜语要求的单词。(样例代码)[http://thinkpython2.com/code/homophone.py]。
 
+[Chapter 10](ThinkPython-10.md) | [Chapter 12](ThinkPython-12.md)
