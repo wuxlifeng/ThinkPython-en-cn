@@ -687,3 +687,6 @@ Write a function called gcd that takes parameters a and b and returns their grea
 
 Credit: This exercise is based on an example from Abelson and Sussman’s Structure and Interpretation of Computer Programs.
 >致谢：这个练习借鉴了Abelson和Sussman的 计算机程序结构和解译 一书。
+
+[Chapter 5](ThinkPython-05.md) | [Chapter 7](ThinkPython-07.md)
+
