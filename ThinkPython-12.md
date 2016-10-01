@@ -860,4 +860,4 @@ This exercise is a little more challenging than most, so here are some suggestio
 [Solution](http://thinkpython2.com/code/reducible.py).
 >[样例代码](http://thinkpython2.com/code/reducible.py)。
 
-[Chapter 9](ThinkPython-11.md) | [Chapter 11](ThinkPython-13.md)
+[Chapter 11](ThinkPython-11.md) | [Chapter 13](ThinkPython-13.md)
