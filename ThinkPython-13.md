@@ -810,3 +810,4 @@ Use the graphing program of your choice to plot the results and check whether th
 >
 >（译者注：matplotlib 的安装方法有很多，比如 pip install matplotlib 或者 easy_install -U matplotlib）
 
+[Chapter 12](ThinkPython-12.md) | [Chapter 14](ThinkPython-14.md)
