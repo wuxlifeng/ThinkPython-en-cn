@@ -707,3 +707,4 @@ Because 'c' is the two-eth letter of the alphabet. But beware: the numeric codes
 Potentially offensive jokes on the Internet are sometimes encoded in ROT13, which is a Caesar cypher with rotation 13. If you are not easily offended, find and decode some of them. [Solution](http://thinkpython2.com/code/rotate.py).
 >网上很多有冒犯意义的玩笑都是用 ROT13加密的，也就是移位13的凯撒密码。如果你不太介意，找一下这些密码解密一下吧。[样例代码](http://thinkpython2.com/code/rotate.py).
 
+[Chapter 7](ThinkPython-07.md) | [Chapter 9](ThinkPython-09.md)
