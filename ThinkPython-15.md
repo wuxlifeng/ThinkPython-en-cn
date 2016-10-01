@@ -677,4 +677,4 @@ Write a function called draw_circle that takes a Turtle and a Circle and draws t
 >写一个名为 draw_circle 的函数，接收一个 Turtle 对象和一个 Circle 对象，画个圆这次。
 >[样例代码](http://thinkpython2.com/code/draw.py)。
 
-
+[Chapter 14](ThinkPython-14.md) | [Chapter 16](ThinkPython-16.md)
