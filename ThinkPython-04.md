@@ -595,3 +595,4 @@ Read about spirals at [Wiki](http://en.wikipedia.org/wiki/Spiral); then write a 
 >去[Wiki百科](http://en.wikipedia.org/wiki/Spiral)看一下螺旋线的相关内容;然后写个程序来画阿基米德曲线（曲线中的一种）。[样例](http://thinkpython2.com/code/spiral.py)
 
 
+[Chapter 3](ThinkPython-03.md) | [Chapter 5](ThinkPython-05.md)
