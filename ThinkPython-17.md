@@ -879,3 +879,4 @@ If you get stuck, you can download [This](http://thinkpython2.com/code/GoodKanga
 >如果你搞不定了，可以下载[这个代码](http://thinkpython2.com/code/GoodKangaroo.py)，这个代码中解释了整个问题，并且提供了一个可行的解决方案。
 
 
+[Chapter 16](ThinkPython-16.md) | [Chapter 18](ThinkPython-18.md)
