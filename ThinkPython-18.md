@@ -1029,3 +1029,6 @@ PokerHand.py
 
 [Solution](http://thinkpython2.com/code/PokerHandSoln.py)
 [样例代码](http://thinkpython2.com/code/PokerHandSoln.py)
+
+
+[Chapter 17](ThinkPython-17.md) | [Chapter 19](ThinkPython-19.md)
