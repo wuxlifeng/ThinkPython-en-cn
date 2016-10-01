@@ -908,3 +908,4 @@ popen is deprecated now, which means we are supposed to stop using it and start 
 >注意，popen 已经不被支持了，这就意味着咱们不应该再用它了，然后要用新的 subprocess 模块。不过为了让案例更简单明了，还是用了 popen，引起我发现 subprocess 过于复杂，而且也没太大必要。所以我就打算一直用着 popen，直到这个方法被废弃移除不能使用了再说了。
 
 
+[Chapter 13](ThinkPython-13.md) | [Chapter 15](ThinkPython-15.md)
