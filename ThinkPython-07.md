@@ -6,7 +6,7 @@ Tag: 双语,Python,ThinkPython
 #Chapter 7 Iteration 迭代
 
 This chapter is about iteration, which is the ability to run a block of statements repeatedly. We saw a kind of iteration, using recursion, in Section 5.8. We saw another kind, using a for loop, in Section 4.2. In this chapter we’ll see yet another kind, using a while statement. But first I want to say a little more about variable assignment.
->这一章我们讲迭代，简单说就是指重复去运行一部分代码。在5.8的时候我们接触了一种迭代——递归。在4.2我们还学了另外一种迭代——for循环。在本章，我们会见到新的迭代方式：whie语句。但我要先再稍微讲一下变量赋值。
+>这一章我们讲迭代，简单说就是指重复去运行一部分代码。在 [5.8](ThinkPython-05.md#58--recursion-递归运算) 的时候我们接触了一种迭代——递归。在 [4.2](ThinkPython-04.md#42--simple-repetition-简单的重复) 我们还学了另外一种迭代——for 循环。在本章，我们会见到新的迭代方式：whie 语句。但我要先再稍微讲一下变量赋值。
 
 ##7.1  Reassignment 再赋值
 
@@ -119,7 +119,7 @@ Computers are often used to automate repetitive tasks. Repeating identical or si
 
 
 We have already seen two functions, countdown and print_n, that iterate using recursion. Because iteration is so common, Python provides language features to make it easier. One is the for statement we saw in Section 4.2. We’ll get back to that later. Another is the while statement. Here is a version of countdown that uses a while statement:
->我们已经见过两种使用了递归来进行迭代的函数：倒计时函数countdown，以及n次输出函数print_n。Python还提供了一些功能来简化迭代，因为迭代用的很普遍。其中一个就是我们在4.2中见到的for循环语句。往后我们还要复习一下它。另外一个就是while循环语句。下面就是一个使用了while循环语句来实现的倒计时函数countdown：
+>我们已经见过两种使用了递归来进行迭代的函数：倒计时函数countdown，以及n次输出函数print_n。Python还提供了一些功能来简化迭代，因为迭代用的很普遍。其中一个就是我们在 [4.2](ThinkPython-04.md#42--simple-repetition-简单的重复) 中见到的 for 循环语句。往后我们还要复习一下它。另外一个就是 while 循环语句。下面就是一个使用了 while 循环语句来实现的倒计时函数 countdown：
 
 
 ```Python
@@ -131,7 +131,7 @@ def countdown(n):
 ```
 
 You can almost read the while statement as if it were English. It means, “While n is greater than 0, display the value of n and then decrement n. When you get to 0, display the word Blastoff!”
->while循环语句读起来很容易，几乎就像是英语一样简单。这个函数的意思是：当n大于0，就输出n的值，然后对n减1，到n等于0的时候，就输出单词『Blastoff』。
+>while 循环语句读起来很容易，几乎就像是英语一样简单。这个函数的意思是：当 n 大于 0，就输出n的值，然后对 n 减 1，到 n 等于 0 的时候，就输出单词『Blastoff』。
 
 More formally, here is the flow of execution for a while statement:
 >更正式一点，下面是一个while循环语句的执行流程：
@@ -156,7 +156,7 @@ Otherwise the loop will repeat forever, which is called an infinite loop. An end
 
 
 In the case of countdown, we can prove that the loop terminates: if n is zero or negative, the loop never runs. Otherwise, n gets smaller each time through the loop, so eventually we have to get to 0.
->在倒计时函数countdown里面，咱们能够保证有办法让循环终止：只要n小于等于0了，循环就不进行了。否则的话，n每次就会通过循环来递减，最终还是能到0的。
+>在倒计时函数 countdown 里面，咱们能够保证有办法让循环终止：只要 n 小于等于 0 了，循环就不进行了。否则的话，n每次就会通过循环来递减，最终还是能到 0 的。
 
 
 For some other loops, it is not so easy to tell. For example:
@@ -175,14 +175,14 @@ def sequence(n):
 
 
 The condition for this loop is n != 1, so the loop will continue until n is 1, which makes the condition false.
->这个循环的判断条件是n不等于1，所以循环一直进行，直到n等于1了，条件为假，就不再循环了。
+>这个循环的判断条件是 n 不等于 1，所以循环一直进行，直到 n 等于 1 了，条件为假，就不再循环了。
 
-Each time through the loop, the program outputs the value of n and then checks whether it is even or odd. If it is even, n is divided by 2. If it is odd, the value of n is replaced with n*3 + 1. For example, if the argument passed to sequence is 3, the resulting values of n are 3, 10, 5, 16, 8, 4, 2, 1.
->每次循环的时候，程序都输出n的值，然后检查一下是偶数还是奇数。如果是偶数，就把n除以2。如果是奇数，就把n替换为n乘以3再加1的值。比如让这个函数用3做参数，也就是sequence(3)，得到的n的值就依次为：3, 10, 5, 16, 8, 4, 2, 1.
+Each time through the loop, the program outputs the value of n and then checks whether it is even or odd. If it is even, n is divided by 2. If it is odd, the value of n is replaced with `n*3 + 1`. For example, if the argument passed to sequence is 3, the resulting values of n are 3, 10, 5, 16, 8, 4, 2, 1.
+>每次循环的时候，程序都输出 n 的值，然后检查一下是偶数还是奇数。如果是偶数，就把 n 除以 2。如果是奇数，就把n替换为 n 乘以 3 再加 1 的值。比如让这个函数用 3 做参数，也就是 sequence(3)，得到的n的值就依次为：3, 10, 5, 16, 8, 4, 2, 1.
 
 
 Since n sometimes increases and sometimes decreases, there is no obvious proof that n will ever reach 1, or that the program terminates. For some particular values of n, we can prove termination. For example, if the starting value is a power of two, n will be even every time through the loop until it reaches 1. The previous example ends with such a sequence, starting with 16.
->有时候n在增加，有时候n在降低，所以没有明显证据表明n最终会到1而程序停止。对于一些特定的n值，我们能够确保循环的终止。例如如果起始值是一个2的倍数，n每次循环过后依然是偶数，直到到达1位置。之前的例子都最终得到了一个数列，从16开始的就是了。
+>有时候 n 在增加，有时候 n 在降低，所以没有明显证据表明 n 最终会到 1 而程序停止。对于一些特定的 n 值，我们能够确保循环的终止。例如如果起始值是一个 2 的倍数，n 每次循环过后依然是偶数，直到到达 1 位置。之前的例子都最终得到了一个数列，从 16 开始的就是了。
 
 
 
@@ -193,16 +193,16 @@ See [WikiPedia](http://en.wikipedia.org/wiki/Collatz_conjecture)
 
 
 As an exercise, rewrite the function print_n from Section 5.8 using iteration instead of recursion.
->做一个练习，把5.8里面的那个n次打印函数print_n用迭代的方法来实现。
+>做一个练习，把 [5.8](ThinkPython-05.md#58--recursion-递归运算) 里面的那个 n 次打印函数 print_n 用迭代的方法来实现。
 
 
 ##7.4  break 中断
 
 Sometimes you don’t know it’s time to end a loop until you get half way through the body. In that case you can use the break statement to jump out of the loop.
->有时候你不知道啥时候终止循环，可能正好在中间循环体的时候要终止了。这时候你就可以用break语句来跳出循环。
+>有时候你不知道啥时候终止循环，可能正好在中间循环体的时候要终止了。这时候你就可以用 break 语句来跳出循环。
 
 For example, suppose you want to take input from the user until they type done. You could write:
->比如，假设你要让用户输入一些内容，当他们输入done的时候结束。你就可以用如下的方法实现：
+>比如，假设你要让用户输入一些内容，当他们输入 done 的时候结束。你就可以用如下的方法实现：
 
 
 
@@ -218,12 +218,12 @@ while True:
 
 
 The loop condition is True, which is always true, so the loop runs until it hits the break statement.
->循环条件就是true，意味条件总是真的，所以循环就一直进行，一直到触发了break语句才跳出。
+>循环条件就是 true，意味条件总是真的，所以循环就一直进行，一直到触发了 break 语句才跳出。
 
 
 
 Each time through, it prompts the user with an angle bracket. If the user types done, the break statement exits the loop. Otherwise the program echoes whatever the user types and goes back to the top of the loop. Here’s a sample run:
->每次循环的时候，程序都会有一个大于号>来提示用户。如果用输入了done，break语句就会让程序跳出循环。否则的话程序会重复用户输入的内容，然后回到循环的头部。下面就是一个简单的运行例子：
+>每次循环的时候，程序都会有一个大于号 `>` 来提示用户。如果用输入了 done，break 语句就会让程序跳出循环。否则的话程序会重复用户输入的内容，然后回到循环的头部。下面就是一个简单的运行例子：
 
 ```Python
 >not done
@@ -234,7 +234,7 @@ Done!
 
 
 This way of writing while loops is common because you can check the condition anywhere in the loop (not just at the top) and you can express the stop condition affirmatively (“stop when this happens”) rather than negatively (“keep going until that happens”).
->这种while循环的写法很常见，因为这样你可以在循环的任何一个部位对条件进行检测，而不仅仅是循环的头部，你可以确定地表达循环停止的条件（在这种情况下就停止了），而不是消极地暗示『程序会一直运行，直到某种情况』。
+>这种 while 循环的写法很常见，因为这样你可以在循环的任何一个部位对条件进行检测，而不仅仅是循环的头部，你可以确定地表达循环停止的条件（在这种情况下就停止了），而不是消极地暗示『程序会一直运行，直到某种情况』。
 
 
 ##7.5  Square roots 平方根
@@ -244,14 +244,14 @@ Loops are often used in programs that compute numerical results by starting with
 
 
 For example, one way of computing square roots is Newton’s method. Suppose that you want to know the square root of a. If you start with almost any estimate, x, you can compute a better estimate with the following formula:
->比如，可以用牛顿法来计算平方根。加入你要知道一个数a的平方根。如果你用任意一个估计值x来开始，你可以用下面的公式获得一个更接近的值：
+>比如，可以用牛顿法来计算平方根。加入你要知道一个数 a 的平方根。如果你用任意一个估计值 x 来开始，你可以用下面的公式获得一个更接近的值：
 
 
 $$y = \frac{x + \frac{a}{x}}{2}$$
 
 
 For example, if a is 4 and x is 3:
->比如，如果a是3，x设为3：
+>比如，如果 a 是 3，x 设为 3：
 
 
 ```Python
@@ -266,7 +266,7 @@ For example, if a is 4 and x is 3:
 
 
 The result is closer to the correct answer (square root of 4 is 2). If we repeat the process with the new estimate, it gets even closer:
->得到的结果比初始值3更接近真实值（4的平方根是2）。如果我们用这个结果做新的估计值来重复这个操作，结果就更加接近了：
+>得到的结果比初始值 3 更接近真实值（4 的平方根是 2）。如果我们用这个结果做新的估计值来重复这个操作，结果就更加接近了：
 
 ```Python
 >>> x = y
@@ -302,7 +302,7 @@ In general we don’t know ahead of time how many steps it takes to get to the r
 
 
 When y == x, we can stop. Here is a loop that starts with an initial estimate, x, and improves it until it stops changing:
->当y和x相等的时候，我们就可以停止了。下面这个循环中，用一个初始值x来开始循环，然后进行改进，一直到x的值不再变化为止：
+>当 y 和 x 相等的时候，我们就可以停止了。下面这个循环中，用一个初始值 x 来开始循环，然后进行改进，一直到 x 的值不再变化为止：
 
 
 
@@ -317,11 +317,11 @@ while True:
 
 
 For most values of a this works fine, but in general it is dangerous to test float equality. Floating-point values are only approximately right: most rational numbers, like 1/3, and irrational numbers, like √2, can’t be represented exactly with a float.
->对大多数值来说，这个循环都挺管用的，但一般来说用浮点数来测试等式是很危险的。浮点数的值只能是近似正确：大多数的有理数，比如1/3，以及无理数，比如根号2，都不能用浮点数来准确表达的。
+>对大多数值来说，这个循环都挺管用的，但一般来说用浮点数来测试等式是很危险的。浮点数的值只能是近似正确：大多数的有理数，比如 1/3，以及无理数，比如根号 2，都不能用浮点数来准确表达的。
 
 
 Rather than checking whether x and y are exactly equal, it is safer to use the built-in function abs to compute the absolute value, or magnitude, of the difference between them:
->相比之下，与其对比x和y是否精确相等，倒不如以下方法更安全：用内置的绝对值函数来计算一下差值的绝对值，也叫做数量级。
+>相比之下，与其对比 x 和 y 是否精确相等，倒不如以下方法更安全：用内置的绝对值函数来计算一下差值的绝对值，也叫做数量级。
 
 ```Python
 if abs(y-x) < epsilon:
@@ -330,7 +330,7 @@ if abs(y-x) < epsilon:
 
 
 Where epsilon has a value like 0.0000001 that determines how close is close enough.
->这里可以让epsilon的值为like 0.0000001，差值比这个小就说明已经足够接近了。
+>这里可以让 epsilon 的值为 like 0.0000001，差值比这个小就说明已经足够接近了。
 
 
 ##7.6  Algorithms 算法
@@ -341,10 +341,10 @@ Newton’s method is an example of an algorithm: it is a mechanical process for 
 
 
 To understand what an algorithm is, it might help to start with something that is not an algorithm. When you learned to multiply single-digit numbers, you probably memorized the multiplication table. In effect, you memorized 100 specific solutions. That kind of knowledge is not algorithmic.
->要理解算法是什么，先从一些不是算法的内容来开始也许会有所帮助。当你学个位数字乘法的时候，你可能要背下来整个乘法表。实际上你记住了100个特定的算式。这种知识就不是算法。
+>要理解算法是什么，先从一些不是算法的内容来开始也许会有所帮助。当你学个位数字乘法的时候，你可能要背下来整个乘法表。实际上你记住了 100 个特定的算式。这种知识就不是算法。
 
 But if you were “lazy”, you might have learned a few tricks. For example, to find the product of n and 9, you can write n−1 as the first digit and 10−n as the second digit. This trick is a general solution for multiplying any single-digit number by 9. That’s an algorithm!
->但如果你很『懒』，你就可能会有一些小技巧。比如找到一个n与9的成绩，你可以把n-1写成第一位，10-n携程第二位。这个技巧是应对任何个位数字乘以9的算式。这就是一个算法了！
+>但如果你很『懒』，你就可能会有一些小技巧。比如找到一个 n 与 9 的成绩，你可以把 n-1 写成第一位，10-n 写成第二位。这个技巧是应对任何个位数字乘以 9 的算式。这就是一个算法了！
 
 
 Similarly, the techniques you learned for addition with carrying, subtraction with borrowing, and long division are all algorithms. One of the characteristics of algorithms is that they do not require any intelligence to carry out. They are mechanical processes where each step follows from the last according to a simple set of rules.
@@ -361,11 +361,11 @@ Some of the things that people do naturally, without difficulty or conscious tho
 ##7.7  Debugging 调试
 
 As you start writing bigger programs, you might find yourself spending more time debugging. More code means more chances to make an error and more places for bugs to hide.
->现在你已经开始写一些比较大的程序了，你可能发现自己比原来花更多时间来调试了。代码越多，也就意味着出错的可能也越大了，bug也有了更多的藏身之处了。
+>现在你已经开始写一些比较大的程序了，你可能发现自己比原来花更多时间来调试了。代码越多，也就意味着出错的可能也越大了，bug 也有了更多的藏身之处了。
 
 
 One way to cut your debugging time is “debugging by bisection”. For example, if there are 100 lines in your program and you check them one at a time, it would take 100 steps. Instead, try to break the problem in half. Look at the middle of the program, or near it, for an intermediate value you can check. Add a print statement (or something else that has a verifiable effect) and run the program.
->『对折调试』是一种节省调试时间的方法。比如，如果你的程序有100行，你检查一遍就要大概100步了。而对折方法就是把程序分成两半。看程序中间位置，或者靠近中间位置的，检查一些中间值。在这些位置添加一些print语句（或者其他能够能起到验证效果的东西），然后运行程序。
+>『对折调试』是一种节省调试时间的方法。比如，如果你的程序有 100 行，你检查一遍就要大概 100 步了。而对折方法就是把程序分成两半。看程序中间位置，或者靠近中间位置的，检查一些中间值。在这些位置添加一些 print 语句（或者其他能够能起到验证效果的东西），然后运行程序。
 
 
 If the mid-point check is incorrect, there must be a problem in the first half of the program. If it is correct, the problem is in the second half.
@@ -373,10 +373,10 @@ If the mid-point check is incorrect, there must be a problem in the first half o
 
 
 Every time you perform a check like this, you halve the number of lines you have to search. After six steps (which is fewer than 100), you would be down to one or two lines of code, at least in theory.
->每次你都这样检查，你就让你要检查的代码数量减半了。一般六步之后（远小于100次了），理论上你就差不多已经到代码的末尾一两行了。
+>每次你都这样检查，你就让你要检查的代码数量减半了。一般六步之后（远小于 100 次了），理论上你就差不多已经到代码的末尾一两行了。
 
 In practice it is not always clear what the “middle of the program” is and not always possible to check it. It doesn’t make sense to count lines and find the exact midpoint. Instead, think about places in the program where there might be errors and places where it is easy to put a check. Then choose a spot where you think the chances are about the same that the bug is before or after the check.
->在实际操作当中，程序中间位置并不是总那么明确，也未必就很容易去检查。所以不用数行数来找确定的中间点。相反的，只要考虑一下程序中哪些地方容易调试，然后哪些地方进行检验比较容易就行了。然后你就在你考虑好的位置检验一下看看bug是在那个位置之前还是之后。
+>在实际操作当中，程序中间位置并不是总那么明确，也未必就很容易去检查。所以不用数行数来找确定的中间点。相反的，只要考虑一下程序中哪些地方容易调试，然后哪些地方进行检验比较容易就行了。然后你就在你考虑好的位置检验一下看看 bug 是在那个位置之前还是之后。
 
 ##7.8  Glossary 术语列表
 
@@ -395,7 +395,7 @@ An assignment that gives an initial value to a variable that will be updated.
 
 increment:
 An update that increases the value of a variable (often by one).
->递增：每次给一个变量增加一定的值（一般是加1）
+>递增：每次给一个变量增加一定的值（一般是加 1）
 
 decrement:
 An update that decreases the value of a variable.
@@ -417,7 +417,7 @@ A general process for solving a category of problems.
 ###Exercise 1 练习1
 
 Copy the loop from Section 7.5 and encapsulate it in a function called mysqrt that takes a as a parameter, chooses a reasonable value of x, and returns an estimate of the square root of a.
->从7.5复制一个循环，然后改写成名字叫做mysqrt的函数，该函数用一个a作为参数，选择一个适当的起始值x，然后返回a的平方根的近似值。
+>从 7.5 复制一个循环，然后改写成名字叫做 mysqrt 的函数，该函数用一个a作为参数，选择一个适当的起始值x，然后返回 a 的平方根的近似值。
 
 To test it, write a function named test_square_root that prints a table like this:
 >测试这个函数，写一个叫做test_suqare_root的函数来输出以下这样的表格：
@@ -436,13 +436,13 @@ To test it, write a function named test_square_root that prints a table like thi
 |        |        |        |        |
 
 The first column is a number, a; the second column is the square root of acomputed with mysqrt; the third column is the square root computed by math.sqrt; the fourth column is the absolute value of the difference between the two estimates.
->第一列是数a；第二列是咱们自己写的函数mysqrt计算出来的平方根，第三行是用Python内置的math.sqrt函数计算的平方根，最后一行是这两者的差值的绝对值。
+>第一列是数 a；第二列是咱们自己写的函数 mysqrt 计算出来的平方根，第三行是用 Python 内置的 math.sqrt 函数计算的平方根，最后一行是这两者的差值的绝对值。
 
 
 ###Exercise 2 练习2
 
 The built-in function eval takes a string and evaluates it using the Python interpreter. For example:
->Python的内置函数eval接收字符串作为参数，然后用Python的解释器来运行。例如：
+>Python 的内置函数 eval 接收字符串作为参数，然后用 Python 的解释器来运行。例如：
 
 ```Python
 >>> eval('1 + 2 * 3')
@@ -455,7 +455,7 @@ The built-in function eval takes a string and evaluates it using the Python inte
 ```
 
 Write a function called eval_loop that iteratively prompts the user, takes the resulting input and evaluates it using eval, and prints the result.
->写一个叫做eval_loop的函数，交互地提醒用户，获取输入，然后用eval对输入进行运算，把结果打印出来。
+>写一个叫做 eval_loop 的函数，交互地提醒用户，获取输入，然后用 eval 对输入进行运算，把结果打印出来。
 
 
 It should continue until the user enters 'done', and then return the value of the last expression it evaluated.
@@ -473,7 +473,7 @@ $$\frac{1}{\pi}=\frac{2\sqrt{2}}{99^2}\sum_{k=0}^\infty\frac{(4k)!(26390k+1103)}
 
 Write a function called estimate_pi that uses this formula to compute and return an estimate of π. It should use a while loop to compute terms of the summation until the last term is smaller than 1e-15 (which is Python notation for 10−15). You can check the result by comparing it to math.pi.
 [Solution](http://thinkpython2.com/code/pi.py)
->写一个名叫estimate_pi的函数，用上面这个方程来计算并返回一个圆周率π的近似值。要使用一个while循环来计算出总和的每一位，最后一位要小于10的-15次方。你可以对比一下计算结果和Python内置的math.pi。
+>写一个名叫 estimate_pi 的函数，用上面这个方程来计算并返回一个圆周率π的近似值。要使用一个 while 循环来计算出总和的每一位，最后一位要小于 10 的 -15 次方。你可以对比一下计算结果和 Python 内置的 math.pi。
 >[样例代码](http://thinkpython2.com/code/pi.py)
 
 [Chapter 6](ThinkPython-06.md) | [Chapter 8](ThinkPython-08.md)
