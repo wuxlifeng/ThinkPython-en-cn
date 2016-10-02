@@ -124,7 +124,7 @@ This flexibility can be useful, but there are some subtleties to it that might b
 
 ##5.4  Conditional execution 条件执行
 
-In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly.Conditional statements give us this ability. The simplest form is the if statement:
+In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement:
 >有用的程序必然要有条件检查判断的功能，根据不同条件要让程序有相应的行为。条件语句就让咱们能够实现这种判断。最简单的就是if语句了：
 
 
