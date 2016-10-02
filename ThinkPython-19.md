@@ -314,7 +314,7 @@ Python provides another built-in function, all, that returns True if every eleme
 
 
 In Section 13.6 I use dictionaries to find the words that appear in a document but not in a word list. The function I wrote takes d1, which contains the words from the document as keys, and d2, which contains the list of words. It returns a dictionary that contains the keys from d1 that are not in d2.
->在13.6中，我用了字典来查找存在于文档中而不存在于词汇列表中的词汇。我写的这个函数接收两个参数，一个是 d1是包含了文档中的词作为键，另外一个是 d2包含了词汇列表。程序会返回一个字典，这个字典包含的键存在于 d1而不在 d2中。
+>在 [13.6](ThinkPython-13.md#136--dictionary-subtraction-字典减法) 中，我用了字典来查找存在于文档中而不存在于词汇列表中的词汇。我写的这个函数接收两个参数，一个是 d1是包含了文档中的词作为键，另外一个是 d2包含了词汇列表。程序会返回一个字典，这个字典包含的键存在于 d1而不在 d2中。
 
 
 
