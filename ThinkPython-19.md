@@ -276,21 +276,13 @@ Generator expressions are often used with functions like sum, max, and min:
 Python provides a built-in function, any, that takes a sequence of boolean values and returns True if any of the values are True. It works on lists:
 >Python 提供了一个名为 any 的内置函数，该函数接收一个布尔值序列，只要里面有任意一个是真，就返回真。该函数适用于列表：
 
-
-
 ```Python
 >>> any([False, False, True])
 True
 ```
 
-
-
-
-
 But it is often used with generator expressions:
 >但这个函数多用于生成器表达式中：
-
-
 
 
 ```Python
@@ -298,22 +290,13 @@ But it is often used with generator expressions:
 True
 ```
 
-
-
-
-
 That example isn’t very useful because it does the same thing as the in operator. But we could use any to rewrite some of the search functions we wrote in Section 9.3. For example, we could write avoids like this:
->这个例子没多大用，因为效果和 in 运算符是一样的。但我们能用 any 函数来改写我们在9.3中写的一些搜索函数。例如，我们可以用如下的方式来改写 avoids：
-
-
-
+>这个例子没多大用，因为效果和 in 运算符是一样的。但我们能用 any 函数来改写我们在 [9.3](ThinkPython-09.md#93--search-搜索) 中写的一些搜索函数。例如，我们可以用如下的方式来改写 avoids：
 
 ```Python
 def avoids(word, forbidden):
 	return not any(letter in forbidden for letter in word)
 ```
-
-
 
 The function almost reads like English, “word avoids forbidden if there are not any forbidden letters in word.”
 >这样这个函数读起来基本就跟英语一样了。
@@ -321,14 +304,9 @@ The function almost reads like English, “word avoids forbidden if there are no
 Using any with a generator expression is efficient because it stops immediately if it finds a True value, so it doesn’t have to evaluate the whole sequence.
 >用 any 函数和生成器表达式来配合会很有效率，因为只要发现真值程序就会停止了，所以并不需要对整个序列进行运算。
 
-
-
 Python provides another built-in function, all, that returns True if every element of the sequence is True. As an exercise, use all to re-write uses_all from Section 9.3.
 >Python 还提供了另外一个内置函数 all，该函数在整个序列都是真的情况下才返回真。
->做个练习，用 all 来改写一下9.3中的uses_all 函数。
-
-
-
+>做个练习，用 all 来改写一下 [9.3](ThinkPython-09.md#93--search-搜索) 中的uses_all 函数。
 
 ##19.5  Sets 集合
 
