@@ -24,7 +24,8 @@ Now I want to go back for some of the good bits that got left behind. Python pro
 
 
 We saw conditional statements in Section 5.4. Conditional statements are often used to choose one of two values; for example:
->在5.4中，我们见到了条件语句。条件语句往往用于二选一的情况下；比如：
+>在 [5.4](ThinkPython-05.md#54--conditional-execution-条件执行) 中，我们见到了条件语句。条件语句往往用于二选一的情况下；比如：
+
 
 
 ```Python
@@ -122,7 +123,7 @@ In general, you can replace a conditional statement with a conditional expressio
 
 
 In Section 10.7 we saw the map and filter patterns. For example, this function takes a list of strings, maps the string method capitalize to the elements, and returns a new list of strings:
->在10.7当中，我们看到了映射和过滤模式。例如，下面这个函数接收一个字符串列表，然后将每一个元素都用字符串方法 capitalize 处理成大写的，然后返回一个新的字符串列表：
+>在 [10.7](ThinkPython-10.md#107--map-filter-and-reduce-列表中最重要的三种运算) 当中，我们看到了映射和过滤模式。例如，下面这个函数接收一个字符串列表，然后将每一个元素都用字符串方法 capitalize 处理成大写的，然后返回一个新的字符串列表：
 
 
 ```Python
