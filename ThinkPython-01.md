@@ -1,17 +1,3 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
-- [Chapter 1  The way of the program 编程之路](#)
-	- [1.1  What is a program? 程序是什么？](#)
-	- [1.2  Running Python 运行 Python](#)
-	- [1.3  The first program 第一个程序](#)
-	- [1.4  Arithmetic operators 运算符](#)
-	- [1.5  Values and types 值和类型](#)
-	- [1.6  Formal and natural languages 公式语言和自然语言](#)
-	- [1.7  Debugging 调试](#)
-	- [1.8  Glossary 术语列表](#)
-	- [1.9  Exercises 练习](#)
-		- [Exercise 1  练习1](#)
-
 Title: ThinkPython 双语学编程 Chapter 1
 Date: 2015-10-22
 Category: ThinkPython
