@@ -51,9 +51,6 @@ To create a tuple with a single element, you have to include a final comma:
 <class 'tuple'>
 ```
 
-
-
-
 A value in parentheses is not a tuple:
 >只用括号放一个值则并不是元组：
 
@@ -64,9 +61,8 @@ A value in parentheses is not a tuple:
 <class 'str'>
 ```
 
-
 Another way to create a tuple is the built-in function tuple. With no argument, it creates an empty tuple:
->另一中建立元组的方法是使用内置函数 tuple。不提供参数的情况下，默认就建立一个空的元组。
+>另一种建立元组的方法是使用内置函数 tuple。不提供参数的情况下，默认就建立一个空的元组。
 
 ```Python
 >>> t = tuple()
