@@ -20,7 +20,7 @@ A string is a sequence of characters. You can access the characters one at a tim
 
 
 The second statement selects character number 1 from fruit and assigns it to letter.
->第二个语句选择了 fruit 这个字符串的序号为1的字符，并把这个字符赋值给了 letter 这个变量。
+>第二个语句选择了 fruit 这个字符串的序号为 1 的字符，并把这个字符赋值给了 letter 这个变量。
 （译者注：思考一下这里的 letter 是一个什么类型的变量。）
 
 
@@ -37,7 +37,7 @@ But you might not get what you expect:
 
 
 For most people, the first letter of 'banana' is b, not a. But for computer scientists, the index is an offset from the beginning of the string, and the offset of the first letter is zero.
->大多数人都认为banana 的第『1』个字符应该是 b，而不是 a。但对于计算机科学家来说，索引是字符串从头的偏移量，所以真正的首字母偏移量应该是0.
+>大多数人都认为banana 的第 1 个字符应该是 b，而不是 a。但对于计算机科学家来说，索引是字符串从头的偏移量，所以真正的首字母偏移量应该是0.
 
 ```Python
 >>> letter = fruit[0]
@@ -48,7 +48,7 @@ For most people, the first letter of 'banana' is b, not a. But for computer scie
 
 
 So b is the 0th letter (“zero-eth”) of 'banana', a is the 1th letter (“one-eth”), and n is the 2th letter (“two-eth”).
->所以 b 就是字符串 banana 的第『0』个字符，而 a 是第『1』个，n 就是第『2』个了。
+>所以 b 就是字符串 banana 的第 0 个字符，而 a 是第 1 个，n 就是第 2 个了。
 
 
 As an index you can use an expression that contains variables and operators:
@@ -90,7 +90,7 @@ IndexError: string index out of range
 ```
 
 The reason for the IndexError is that there is no letter in ’banana’ with the index 6. Since we started counting at zero, the six letters are numbered 0 to 5. To get the last character, you have to subtract 1 from length:
->出现索引错误的原因就是banana 这个字符串在第『6』个位置是没有字母的。因为我们从0开始数，所以这一共6个字母的顺序是0到5号。因此要得到最后一次字符，你需要在字符串长度的基础上减去1才行：
+>出现索引错误的原因就是 banana 这个字符串在第『6』个位置是没有字母的。因为我们从 0 开始数，所以这一共 6 个字母的顺序是 0 到 5 号。因此要得到最后一次字符，你需要在字符串长度的基础上减去 1 才行：
 
 ```Python
 >>> last = fruit[length-1]
@@ -99,7 +99,7 @@ The reason for the IndexError is that there is no letter in ’banana’ with th
 ```
 
 Or you can use negative indices, which count backward from the end of the string. The expression fruit[-1] yields the last letter, fruit[-2] yields the second to last, and so on.
->或者你也可以用负数索引，意思就是从字符串的末尾向前数几位。fruit[-1]这个表达式给你最后一个字符，fruit[-2]给出倒数第二个，依此类推。
+>或者你也可以用负数索引，意思就是从字符串的末尾向前数几位。fruit[-1] 这个表达式给你最后一个字符，fruit[-2] 给出倒数第二个，依此类推。
 
 
 ##8.3  Traversal with a for loop 用 for 循环进行遍历
@@ -119,7 +119,7 @@ while index < len(fruit):
 
 
 This loop traverses the string and displays each letter on a line by itself. The loop condition is index < len(fruit), so when index is equal to the length of the string, the condition is false, and the body of the loop doesn’t run. The last character accessed is the one with the index len(fruit)-1, which is the last character in the string.
->这个循环遍历了整个字符串，然后它再把买一个字符显示在一行上面。循环条件是 index 这个变量小于字符串 fruit 的长度，所以当 index 与字符串长度相等的时候，条件就不成立了，循环体就不运行了。最后一个字符被获取的时候，index 正好是len(fruit)-1，这就已经是该字符串的最后一个字符了。
+>这个循环遍历了整个字符串，然后它再把买一个字符显示在一行上面。循环条件是 index 这个变量小于字符串 fruit 的长度，所以当 index 与字符串长度相等的时候，条件就不成立了，循环体就不运行了。最后一个字符被获取的时候，index 正好是 len(fruit)-1，这就已经是该字符串的最后一个字符了。
 
 
 
@@ -148,7 +148,7 @@ The following example shows how to use concatenation (string addition) and a for
 
 
 In Robert McCloskey’s book Make Way for Ducklings, the names of the ducklings are Jack, Kack, Lack, Mack, Nack, Ouack, Pack, and Quack. This loop outputs these names in order:
->在 Robert McCloskey 的一本名叫《Make Way for Ducklings》的书中，小鸭子的名字依次为：Jack, Kack, Lack, Mack, Nack, Ouack, Pack, 和Quack。下面这个循环会依次输出他们的名字：
+>在 Robert McCloskey 的一本名叫《Make Way for Ducklings》的书中，小鸭子的名字依次为：Jack, Kack, Lack, Mack, Nack, Ouack, Pack, 和 Quack。下面这个循环会依次输出他们的名字：
 
 ```Python
 prefixes = 'JKLMNOPQ'
@@ -167,7 +167,7 @@ Jack Kack Lack Mack Nack Oack Pack Qack
 ```
 
 Of course, that’s not quite right because “Ouack” and “Quack” are misspelled. As an exercise, modify the program to fix this error.
->当然了，有点不准确的地方，因为有“Ouack”和 “Quack”两处拼写错了。做个练习，修改一下程序，改正这个错误。
+>当然了，有点不准确的地方，因为有 “Ouack” 和 “Quack” 两处拼写错了。做个练习，修改一下程序，改正这个错误。
 
 
 ##8.4  String slices 字符串切片
@@ -185,7 +185,7 @@ A segment of a string is called a slice. Selecting a slice is similar to selecti
 
 
 The operator [n:m] returns the part of the string from the “n-eth” character to the “m-eth” character, including the first but excluding the last. This behavior is counter intuitive, but it might help to imagine the indices pointing between the characters, as in Figure 8.1.
->[n:m]这种操作符，会返回字符串中从第『n』个到第『m』个的字符，包含开头的第『n』个，但不包含末尾的第『m』个。这个设计可能有点违背直觉，但可能有助于想象这个切片在字符串中的方向，如图8.1。
+>[n:m] 这种操作符，会返回字符串中从第『n』个到第『m』个的字符，包含开头的第『n』个，但不包含末尾的第『m』个。这个设计可能有点违背直觉，但可能有助于想象这个切片在字符串中的方向，如图 8.1。
 ________________________________________
 ![Figure 8.1](http://7xnq2o.com1.z0.glb.clouddn.com/ThinkPythonFigure8.1.png)
 
@@ -222,8 +222,8 @@ If the first index is greater than or equal to the second the result is an empty
 
 An empty string contains no characters and has length 0, but other than that, it is the same as any other string.
 Continuing this example, what do you think fruit[:] means? Try it and see.
->空字符串不包含字符，长度为0，除此之外，都与其他字符串是一样的。
->那么来练习一下，你觉得 fruit[:]这个是什么意思？在程序中试试吧。
+>空字符串不包含字符，长度为 0，除此之外，都与其他字符串是一样的。
+>那么来练习一下，你觉得 fruit[:] 这个是什么意思？在程序中试试吧。
 
 ##8.5  Strings are immutable 字符串不可修改
 
@@ -274,12 +274,12 @@ def find(word, letter):
 
 
 In a sense, find is the inverse of the [] operator. Instead of taking an index and extracting the corresponding character, it takes a character and finds the index where that character appears. If the character is not found, the function returns -1.
->简单来说，find 函数，也就是查找，是方括号操作符[]的逆运算。方括号是之道索引然后提取对应的字符，而查找函数是选定一个字符去查找这个字符出现的索引位置。如果字符没有被报道，函数就返回-1。
+>简单来说，find 函数，也就是查找，是方括号操作符 [] 的逆运算。方括号是之道索引然后提取对应的字符，而查找函数是选定一个字符去查找这个字符出现的索引位置。如果字符没有被报道，函数就返回 -1。
 
 
 This is the first example we have seen of a return statement inside a loop. If word[index] == letter, the function breaks out of the loop and returns immediately.
 If the character doesn’t appear in the string, the program exits the loop normally and returns -1.
->这是我们见过的第一个返回语句位于循环体内的例子。如果word[index]等于letter，函数就跳出循环立刻返回。如果字符在字符串里面没出现，程序正常退出循环并且返回-1。
+>这是我们见过的第一个返回语句位于循环体内的例子。如果 word[index] 等于 letter，函数就跳出循环立刻返回。如果字符在字符串里面没出现，程序正常退出循环并且返回 -1。
 
 This pattern of computation—traversing a sequence and returning when we find what we are looking for—is called a search.
 As an exercise, modify find so that it has a third parameter, the index in word where it should start looking.
@@ -301,7 +301,7 @@ for letter in word:
 
 
 This program demonstrates another pattern of computation called a counter. The variable count is initialized to 0 and then incremented each time an a is found. When the loop exits, count contains the result—the total number of a’s.
->这一程序展示了另外一种计算模式，叫做计数。变量 count 被初始化为0，然后每次在字符串中找到一个 a，就让 count 加1.当循环退出的时候，count 就包含了 a 出现的总次数。
+>这一程序展示了另外一种计算模式，叫做计数。变量 count 被初始化为 0，然后每次在字符串中找到一个 a，就让 count 加 1.当循环退出的时候，count 就包含了 a 出现的总次数。
 
 As an exercise, encapsulate this code in a function named count, and generalize it so that it accepts the string and the letter as arguments.
 Then rewrite the function so that instead of traversing the string, it uses the three-parameter version of find from the previous section.
@@ -377,7 +377,7 @@ This is an example of an optional argument; find can also take a third argument,
 
 
 This search fails because b does not appear in the index range from 1 to 2, not including 2. Searching up to, but not including, the second index makes find consistent with the slice operator.
->这个搜索失败了，因为 b 并没有在索引1到2且不包括2的字符中间出现。搜索到指定的第三个变量作为索引的位置，但不包括该位置，这就让 find 方法与切片操作符相一致。
+>这个搜索失败了，因为 b 并没有在索引 1 到 2 且不包括 2 的字符中间出现。搜索到指定的第三个变量作为索引的位置，但不包括该位置，这就让 find 方法与切片操作符相一致。
 
 
 ##8.9  The in operator 运算符 in
@@ -394,7 +394,7 @@ False
 
 
 For example, the following function prints all the letters from word1 that also appear in word2:
->举个例子，下面的函数显示所有同时在 word1和 word2当中出现的字母：
+>举个例子，下面的函数显示所有同时在 word1 和 word2 当中出现的字母：
 
 
 ```Python
@@ -408,7 +408,7 @@ def in_both(word1, word2):
 
 With well-chosen variable names, Python sometimes reads like English. You could read this loop, “for (each) letter in (the first) word, if (the) letter (appears) in (the second) word, print (the) letter.”
 Here’s what you get if you compare apples and oranges:
->选好变量名的话，Python 有时候读起来就跟英语差不多。你读一下这个循环，就能发现，『对第一个 word 当中的每一个字母letter，如果这个字母也在第二个 word 当中出现，就输出这个字母 letter。』
+>选好变量名的话，Python 有时候读起来就跟英语差不多。你读一下这个循环，就能发现，『对第一个 word 当中的每一个字母 letter，如果这个字母也在第二个 word 当中出现，就输出这个字母 letter。』
 
 ```Python
 >>> in_both('apples', 'oranges')
@@ -472,11 +472,11 @@ def is_reverse(word1, word2):
 ```
 
 The first if statement checks whether the words are the same length. If not, we can return False immediately. Otherwise, for the rest of the function, we can assume that the words are the same length. This is an example of the guardian pattern in Section 6.8.
->第一个 if 语句是检查两个词的长度是否一样。如果不一样长，当场就返回假。对函数其余部分，我们假设两个单词一样长。这里用到了守卫模式，在第6章第8节我们提到过。
+>第一个 if 语句是检查两个词的长度是否一样。如果不一样长，当场就返回假。对函数其余部分，我们假设两个单词一样长。这里用到了守卫模式，在 [6.8](ThinkPython-06.md#68--checking-types-检查类型) 节我们提到过。
 
 i and j are indices: i traverses word1 forward while j traverses word2 backward. If we find two letters that don’t match, we can return False immediately. If we get through the whole loop and all the letters match, we return True.
 If we test this function with the words “pots” and “stop”, we expect the return value True, but we get an IndexError:
->i 和 j 都是索引：i 从头到尾遍历单词 word1，而 j 逆向遍历单词word2.如果我们发现两个字母不匹配，就可以立即返回假。如果经过整个循环，所有字母都匹配，就返回真。
+>i 和 j 都是索引：i 从头到尾遍历单词 word1，而 j 逆向遍历单词 word2.如果我们发现两个字母不匹配，就可以立即返回假。如果经过整个循环，所有字母都匹配，就返回真。
 >如果我们用这个函数来处理单词『pots』和『stop』，我们希望函数返回真，但得到的却是索引错误：
 
 ```Python
@@ -509,7 +509,7 @@ Now when I run the program again, I get more information:
 
 The first time through the loop, the value of j is 4, which is out of range for the string 'pots'. The index of the last character is 3, so the initial value for j should be len(word2)-1.
 If I fix that error and run the program again, I get:
->第一次循环完毕的时候，j 的值是4，这超出了『pots』这个字符串的范围了（译者注：应该是0-3）。最后一个索引应该是3，所以 j 的初始值应该是 len(word2)-1。
+>第一次循环完毕的时候，j 的值是 4，这超出了『pots』这个字符串的范围了（译者注：应该是 0-3）。最后一个索引应该是 3，所以 j 的初始值应该是 len(word2)-1。
 
 ```Python
 >>> is_reverse('pots', 'stop')
@@ -519,15 +519,15 @@ True
 
 
 This time we get the right answer, but it looks like the loop only ran three times, which is suspicious. To get a better idea of what is happening, it is useful to draw a state diagram. During the first iteration, the frame for is_reverse is shown in Figure 8.2.
->这次我们得到了正确的结果，但似乎循环只走了三次，这有点奇怪。为了弄明白带到怎么回事，我们可以画一个状态图。在第一次迭代的过程中，is_reverse 的框架如图8.2所示。
+>这次我们得到了正确的结果，但似乎循环只走了三次，这有点奇怪。为了弄明白带到怎么回事，我们可以画一个状态图。在第一次迭代的过程中，is_reverse 的框架如图 8.2 所示。
 ________________________________________
 ![Figure 8.2](http://7xnq2o.com1.z0.glb.clouddn.com/ThinkPythonFigure8.2.png)
 Figure 8.2: State diagram.
 ________________________________________
 I took some license by arranging the variables in the frame and adding dotted lines to show that the values of i and j indicate characters in word1and word2.
 Starting with this diagram, run the program on paper, changing the values ofi and j during each iteration. Find and fix the second error in this function.
->我通过设置变量框架中添加虚线表明，i和j的值显示在人物word1and word2拿许可证。
-从这个图上运行的程序，文件，更改这些值I和J在每一次迭代过程。发现并解决此函数中的二次错误。
+>我通过设置变量框架中添加虚线表明，i 和 j 的值显示在人物 word1and word2 拿许可证。
+从这个图上运行的程序，文件，更改这些值 I 和 J 在每一次迭代过程。发现并解决此函数中的二次错误。
 
 
 ##8.12  Glossary 术语列表
@@ -548,7 +548,7 @@ One of the values in a sequence.
 
 index:
 An integer value used to select an item in a sequence, such as a character in a string. In Python indices start from 0.
->索引：一个整数值，用来指代一个序列中的特定一个元素，比如在字符串里面就指代一个字符。在 Python 里面索引从0开始计数。
+>索引：一个整数值，用来指代一个序列中的特定一个元素，比如在字符串里面就指代一个字符。在 Python 里面索引从 0 开始计数。
 
 
 
@@ -583,7 +583,7 @@ A pattern of traversal that stops when it finds what it is looking for.
 
 counter:
 A variable used to count something, usually initialized to zero and then incremented.
->计数：一种用来统计某种东西数量的变量，一般初始化为0，然后逐次递增。
+>计数：一种用来统计某种东西数量的变量，一般初始化为 0，然后逐次递增。
 
 
 
@@ -604,19 +604,19 @@ Read the documentation of the string methods at [here](http://docs.python.org/2/
 >阅读 [这里](http://docs.python.org/2/library/stdtypes.html#string-methods)关于字符串的文档。你也许会想要试试其中一些方法，来确保你理解它们的意义。比如 strip 和 replace 都特别有用。
 
 The documentation uses a syntax that might be confusing. For example, in find(sub[, start[, end]]), the brackets indicate optional arguments. So sub is required, but start is optional, and if you include start, then end is optional.
->文档的语法有可能不太好理解。比如在find 这个方法中，方括号表示了可选参数。所以 sub 是必须的参数，但 start 是可选的，如果你包含了 start，end 就是可选的了。
+>文档的语法有可能不太好理解。比如在 find 这个方法中，方括号表示了可选参数。所以 sub 是必须的参数，但 start 是可选的，如果你包含了 start，end 就是可选的了。
 
 
 
 ###Exercise 2  练习2
 There is a string method called count that is similar to the function in Section 8.7. Read the documentation of this method and write an invocation that counts the number of 'a's in 'banana'.
->字符串有个方法叫 count，与咱们在8.7中写的 count 函数很相似。 阅读一下这个方法的文档，然后写一个调用这个方法的代码，统计一下 banana 这个单词中 a 出现的次数 。
+>字符串有个方法叫 count，与咱们在 [8.7](ThinkPython-08.md#87--looping-and-counting-循环和计数) 中写的 count 函数很相似。 阅读一下这个方法的文档，然后写一个调用这个方法的代码，统计一下 banana 这个单词中 a 出现的次数 。
 
 
 
 ###Exercise 3  练习3
 A string slice can take a third index that specifies the “step size;” that is, the number of spaces between successive characters. A step size of 2 means every other character; 3 means every third, etc.
->字符串切片可以使用第三个索引，作为步长来使用；步长的意思就是取字符的间距。一个步长为2的意思就是每隔一个取一个字符；3的意思就是每次取第三个，以此类推。
+>字符串切片可以使用第三个索引，作为步长来使用；步长的意思就是取字符的间距。一个步长为 2 的意思就是每隔一个取一个字符；3 的意思就是每次取第三个，以此类推。
 
 ```Python
 >>> fruit = 'banana'
@@ -628,8 +628,8 @@ A string slice can take a third index that specifies the “step size;” that i
 
 A step size of -1 goes through the word backwards, so the slice [::-1]generates a reversed string.
 Use this idiom to write a one-line version of is_palindrome from Exercise 3.
->步长如果为-1，意思就是倒序读取字符串，所以[::-1]这个切片就会生成一个逆序的字符串了。
->使用这个方法把练习三当中的is_palindrome写成一个一行代码的版本。
+>步长如果为 -1，意思就是倒序读取字符串，所以 [::-1] 这个切片就会生成一个逆序的字符串了。
+>使用这个方法把练习三当中的 is_palindrome 写成一个一行代码的版本。
 
 
 
@@ -684,7 +684,7 @@ A Caesar cypher is a weak form of encryption that involves “rotating” each l
 
 
 To rotate a word, rotate each letter by the same amount. For example, “cheer” rotated by 7 is “jolly” and “melon” rotated by -10 is “cubed”. In the movie 2001: A Space Odyssey, the ship computer is called HAL, which is IBM rotated by -1.
->要对一个词进行移位，要把每个字母都移动同样的数量。比如『cheer』这个单词移位7就是『jolly』，而『melon』移位-10就是『cubed』。在电影《2001 太空漫游》中，飞船的电脑叫 HAL，就是 IBM 移位-1。
+>要对一个词进行移位，要把每个字母都移动同样的数量。比如『cheer』这个单词移位 7 就是『jolly』，而『melon』移位 -10 就是『cubed』。在电影《2001 太空漫游》中，飞船的电脑叫 HAL，就是 IBM 移位 -1。
 
 
 Write a function called rotate_word that takes a string and an integer as parameters, and returns a new string that contains the letters from the original string rotated by the given amount.
@@ -702,9 +702,9 @@ You might want to use the built-in function ord, which converts a character to a
 
 
 Because 'c' is the two-eth letter of the alphabet. But beware: the numeric codes for upper case letters are different.
->c 是字母表中的第『2』个（译者注：从0开始数哈）的位置，所以上述结果是2。但注意：大写字母的数值代码是和小写的不一样的。
+>c 是字母表中的第『2』个（译者注：从 0 开始数哈）的位置，所以上述结果是 2。但注意：大写字母的数值代码是和小写的不一样的。
 
 Potentially offensive jokes on the Internet are sometimes encoded in ROT13, which is a Caesar cypher with rotation 13. If you are not easily offended, find and decode some of them. [Solution](http://thinkpython2.com/code/rotate.py).
->网上很多有冒犯意义的玩笑都是用 ROT13加密的，也就是移位13的凯撒密码。如果你不太介意，找一下这些密码解密一下吧。[样例代码](http://thinkpython2.com/code/rotate.py).
+>网上很多有冒犯意义的玩笑都是用 ROT13 加密的，也就是移位 13 的凯撒密码。如果你不太介意，找一下这些密码解密一下吧。[样例代码](http://thinkpython2.com/code/rotate.py).
 
 [Chapter 7](ThinkPython-07.md) | [Chapter 9](ThinkPython-09.md)
