@@ -47,9 +47,6 @@ As you might expect, you can assign list values to variables:
 []
 ```
 
-
-
-
 ##10.2  Lists are mutable 列表元素可修改
 
 The syntax for accessing the elements of a list is the same as for accessing the characters of a string—the bracket operator. The expression inside the brackets specifies the index. Remember that the indices start at 0:
@@ -76,8 +73,8 @@ Unlike strings, lists are mutable. When the bracket operator appears on the left
 
 The one-eth element of numbers, which used to be 123, is now 5.
 Figure 10.1 shows the state diagram for cheeses, numbers and empty:
->列表 numbers 的第『1』个元素之前是123，现在被改为5了。
->图10.1展示了 cheeses、numbers 和空列表的状态图：
+>列表 numbers 的第『1』个元素之前是 123，现在被改为 5 了。
+>图 10.1 展示了 cheeses、numbers 和空列表的状态图：
 
 
 
@@ -87,7 +84,7 @@ Figure 10.1: State diagram.
 ________________________________________
 
 Lists are represented by boxes with the word “list” outside and the elements of the list inside. cheeses refers to a list with three elements indexed 0, 1 and 2.numbers contains two elements; the diagram shows that the value of the second element has been reassigned from 123 to 5. empty refers to a list with no elements.
->这三个列表都用标记了『list』的三个小盒子表示，盒子外面的是列表的名字，盒子内的就是列表元素了。cheese 是一个有0，1，2三个元素的列表。numbers 包含两个元素；图示表明第二个元素的值从123被重新赋值为5。empty 是一个不包含元素的空列表。
+>这三个列表都用标记了『list』的三个小盒子表示，盒子外面的是列表的名字，盒子内的就是列表元素了。cheese 是一个有 0，1，2 三个元素的列表。numbers 包含两个元素；图示表明第二个元素的值从 123 被重新赋值为 5。empty 是一个不包含元素的空列表。
 
 
 
@@ -118,10 +115,6 @@ True
 False
 ```
 
-
-
-
-
 ##10.3  Traversing a list 遍历一个列表
 
 
@@ -135,8 +128,6 @@ for cheese in cheeses:
 	print(cheese)
 ```
 
-
-
 This works well if you only need to read the elements of the list. But if you want to write or update the elements, you need the indices. A common way to do that is to combine the built-in functions range and len:
 >如果你只是要显示一下列表元素，上面这个代码就够用了。但如果你还想写入或者更新这些元素，你还是需要用索引。一般来说，这需要把两个内置函数 range 和 len 结合起来使用：
 
@@ -149,7 +140,7 @@ for i in range(len(numbers)):
 
 
 This loop traverses the list and updates each element. len returns the number of elements in the list. range returns a list of indices from 0 to n−1, where n is the length of the list. Each time through the loop i gets the index of the next element. The assignment statement in the body uses i to read the old value of the element and to assign the new value.
->这个循环遍历了列表，然后对每个元素都进行了更新。len 这个函数返回的是列表中元素的数量。range 返回的是列表的一系列索引，从0到 n-1，n 就是整个列表的长度了。每次循环的时候，i 都会得到下一个元素的索引值。在循环体内部的赋值语句每次都通过 i 作为索引来读该元素的旧值，进行修改然后赋新值给该元素。
+>这个循环遍历了列表，然后对每个元素都进行了更新。len 这个函数返回的是列表中元素的数量。range 返回的是列表的一系列索引，从 0 到 n-1，n 就是整个列表的长度了。每次循环的时候，i 都会得到下一个元素的索引值。在循环体内部的赋值语句每次都通过 i 作为索引来读该元素的旧值，进行修改然后赋新值给该元素。
 
 
 A for loop over an empty list never runs the body:
@@ -164,7 +155,7 @@ for x in []:
 
 
 Although a list can contain another list, the nested list still counts as a single element. The length of this list is four:
->尽管列表中可以办好另外一个列表，但这种网状的分支列表依然只会被算作一个元素。所以下面这个列表的长度是4：
+>尽管列表中可以办好另外一个列表，但这种网状的分支列表依然只会被算作一个元素。所以下面这个列表的长度是 4：
 
 ```Python
 ['spam', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]
@@ -179,7 +170,7 @@ Although a list can contain another list, the nested list still counts as a sing
 
 
 The + operator concatenates lists:
->加号+运算符可以把列表拼接在一起：
+>加号 `+` 运算符可以把列表拼接在一起：
 
 ```Python
 >>> a = [1, 2, 3]
@@ -192,7 +183,7 @@ The + operator concatenates lists:
 
 
 The * operator repeats a list a given number of times:
->星号*运算符可以将列表重复指定的次数：
+>星号 `*` 运算符可以将列表重复指定的次数：
 
 ```Python
 >>> [0] * 4
@@ -203,7 +194,7 @@ The * operator repeats a list a given number of times:
 
 
 The first example repeats [0] four times. The second example repeats the list[1, 2, 3] three times.
->第一个例子中，[0]这个列表被重复四次。第二个例子把列表[1,2,3]重复了三次。
+>第一个例子中，[0] 这个列表被重复四次。第二个例子把列表 [1,2,3] 重复了三次。
 
 
 
@@ -315,7 +306,7 @@ def add_all(t):
 
 
 total is initialized to 0. Each time through the loop, x gets one element from the list. The += operator provides a short way to update a variable. This augmented assignment statement, total += x is equivalent to total = total + x .
->total 的初始值为0。每次循环的时候，x 都得到列表中一个元素的值。+=这个运算符是更新变量的一种简写。这个运算符是扩展了赋值语句，total += x 就等同于 total = total +x 。
+>total 的初始值为 0。每次循环的时候，x 都得到列表中一个元素的值。`+=` 这个运算符是更新变量的一种简写。这个运算符是扩展了赋值语句，total += x 就等同于 total = total +x 。
 
 
 As the loop runs, total accumulates the sum of the elements; a variable used this way is sometimes called an accumulator.
@@ -367,8 +358,6 @@ An operation like capitalize_all is sometimes called a map because it “maps”
 Another common operation is to select some of the elements from a list and return a sublist. For example, the following function takes a list of strings and returns a list that contains only the uppercase strings:
 >另外一种常见运算是从列表中选取一些元素，然后返回一个次级列表。比如，下面的函数接收一个字符串列表，然后返回一个其中只包含大写字母的字符串所组成的列表：
 
-
-
 ```Python
 def only_upper(t):
 	res = []
@@ -377,8 +366,6 @@ def only_upper(t):
 			res.append(s)
 	return res
 ```
-
-
 
 isupper is a string method that returns True if the string contains only upper case letters.
 >isupper 是一个字符串方法，如果字符串中只包含大写字母就会返回真。
@@ -401,7 +388,7 @@ Most common list operations can be expressed as a combination of map, filter and
 
 
 There are several ways to delete elements from a list. If you know the index of the element you want, you can use pop:
->从一个列表中删除元素有几种方法。如果你知道你要删除元素的索引，你就可以用 pop这个方法来实现：
+>从一个列表中删除元素有几种方法。如果你知道你要删除元素的索引，你就可以用 pop 这个方法来实现：
 
 
 ```Python
@@ -461,10 +448,6 @@ To remove more than one element, you can use del with a slice index:
 ['a', 'f']
 ```
 
-
-
-
-
 As usual, the slice selects all the elements up to but not including the second index.
 >和之前我们看到的一样，切片是含头不含尾，上面这个例子中从第『1』到第『5』个都被切片所选中，但包含开头的第『1』而不包含末尾的第『5』个元素。
 
@@ -487,7 +470,7 @@ A string is a sequence of characters and a list is a sequence of values, but a l
 
 
 Because list is the name of a built-in function, you should avoid using it as a variable name. I also avoid l because it looks too much like 1. So that’s why I use t.
->list 是一个内置函数的名字了，所以你应该避免用它来作为变量名。我还建议应该尽量少用 l，因为有的字体下，l 和1看着很难区分。所以我都用了 t。
+>list 是一个内置函数的名字了，所以你应该避免用它来作为变量名。我还建议应该尽量少用 l，因为有的字体下，l 和 1 看着很难区分。所以我都用了 t。
 
 
 The list function breaks a string into individual letters. If you want to break a string into words, you can use the split method:
@@ -505,7 +488,7 @@ The list function breaks a string into individual letters. If you want to break 
 
 
 An optional argument called a delimiter specifies which characters to use as word boundaries. The following example uses a hyphen as a delimiter:
->可选的参数是定界符，是用来确定单词边界的。下面这个例子中就是把连接号『-』作为定界符：
+>可选的参数是定界符，是用来确定单词边界的。下面这个例子中就是把连接号 `-` 作为定界符：
 
 
 ```Python
@@ -533,7 +516,7 @@ join is the inverse of split. It takes a list of strings and concatenates the el
 
 
 In this case the delimiter is a space character, so join puts a space between words. To concatenate strings without spaces, you can use the empty string,'', as a delimiter.
->上面这个例子中，定界符是一个空格字符，所以 join 就在单词只见放一个空格。要想把字符聚集到一切而不要空格，你就可以用空字符串""作为一个定界符了。
+>上面这个例子中，定界符是一个空格字符，所以 join 就在单词只见放一个空格。要想把字符聚集到一切而不要空格，你就可以用空字符串 "" 作为一个定界符了。
 
 
 
@@ -549,10 +532,8 @@ a = 'banana'
 b = 'banana'
 ```
 
-
-
 We know that a and b both refer to a string, but we don’t know whether they refer to the same string. There are two possible states, shown in Figure 10.2.
->我们知道了 a 和 b 都是字符串，但我们不之道他们到底是不是同一个字符串。这就有可能有两种状态，如图10.2所示。
+>我们知道了 a 和 b 都是字符串，但我们不之道他们到底是不是同一个字符串。这就有可能有两种状态，如图 10.2 所示。
 
 
 ________________________________________
@@ -580,8 +561,6 @@ True
 In this example, Python only created one string object, and both a and b refer to it. But when you create two lists, you get two objects:
 >在这个例子中，Python 只建立了一个字符串对象，然后 a 和 b 都指向它。但当你建立两个列表的时候，你得到的就是两个对象了：
 
-
-
 ```Python
 >>> a = [1, 2, 3]
 >>> b = [1, 2, 3]
@@ -589,10 +568,8 @@ In this example, Python only created one string object, and both a and b refer t
 False
 ```
 
-
-
 So the state diagram looks like Figure 10.3.
->所以这时候的状态图就应该如图10.3所示的样子了。
+>所以这时候的状态图就应该如图 10.3 所示的样子了。
 
 ________________________________________
 ![](http://7xnq2o.com1.z0.glb.clouddn.com/ThinkPythonFigure10.3-%20State%20diagram.png)
@@ -608,7 +585,7 @@ In this case we would say that the two lists are equivalent, because they have t
 
 
 Until now, we have been using “object” and “value” interchangeably, but it is more precise to say that an object has a value. If you evaluate [1, 2, 3], you get a list object whose value is a sequence of integers. If another list has the same elements, we say it has the same value, but it is not the same object.
->目前位置，我们一直把『对象』和『值』来随意交换使用，但实际上更确切的说法是一个对象拥有一个值。如果你计算[1,2,3]，你得到一个列表对象，整个列表对象的整个值是一个整数序列。如果另外一个列表有相同的元素，我们称之含有相同的值，但并不是相同的对象。
+>目前位置，我们一直把『对象』和『值』来随意交换使用，但实际上更确切的说法是一个对象拥有一个值。如果你计算 [1,2,3]，你得到一个列表对象，整个列表对象的整个值是一个整数序列。如果另外一个列表有相同的元素，我们称之含有相同的值，但并不是相同的对象。
 
 
 
@@ -625,10 +602,8 @@ If a refers to an object and you assign b = a, then both variables refer to the 
 True
 ```
 
-
-
 The state diagram looks like Figure 10.4.
->此时的状态图如图10.4所示。
+>此时的状态图如图 10.4 所示。
 
 
 
@@ -690,8 +665,6 @@ def delete_head(t):
 	del t[0]
 ```
 
-
-
 Here’s how it is used:
 >其用法如下：
 
@@ -701,10 +674,8 @@ Here’s how it is used:
 >>> letters ['b', 'c']
 ```
 
-
-
 The parameter t and the variable letters are aliases for the same object. The stack diagram looks like Figure 10.5.
->形式参数 t 和变量 letters 都是同一对象的别名。栈图如图10.5所示。
+>形式参数 t 和变量 letters 都是同一对象的别名。栈图如图 10.5 所示。
 
 
 ________________________________________
@@ -718,7 +689,7 @@ ________________________________________
 Since the list is shared by two frames, I drew it between them.
 It is important to distinguish between operations that modify lists and operations that create new lists. For example, the append method modifies a list, but the + operator creates a new list:
 >因为这个列表被两个框架所公用，我就把它画在了它们之间。
->一定要区分修改列表的运算和产生新列表的运算，这特别重要。比如 append 方法修改一个列表，但加号+运算符是产生一个新的列表：
+>一定要区分修改列表的运算和产生新列表的运算，这特别重要。比如 append 方法修改一个列表，但加号 `+` 运算符是产生一个新的列表：
 
 
 ```Python
@@ -729,9 +700,6 @@ It is important to distinguish between operations that modify lists and operatio
 >>> t2
 None
 ```
-
-
-
 
 append modifies the list and returns None.
 >append 修改了列表，返回的是空。
@@ -748,7 +716,7 @@ append modifies the list and returns None.
 
 
 The + operator creates a new list and leaves the original list unchanged.
->加号+运算符创建了新的列表，并不修改源列表。
+>加号 `+` 运算符创建了新的列表，并不修改源列表。
 
 
 This difference is important when you write functions that are supposed to modify lists. For example, this function does not delete the head of a list:
@@ -759,9 +727,6 @@ This difference is important when you write functions that are supposed to modif
 def bad_delete_head(t):
 	t = t[1:]              # WRONG!
 ```
-
-
-
 
 The slice operator creates a new list and the assignment makes t refer to it, but that doesn’t affect the caller.
 >切片运算符创建了新的列表，然后赋值语句让 t 指向了这个新列表，但这不会影响调用者。
@@ -775,10 +740,8 @@ The slice operator creates a new list and the assignment makes t refer to it, bu
 ```
 
 
-
-
 At the beginning of bad_delete_head, t and t4 refer to the same list. At the end,t refers to a new list, but t4 still refers to the original, unmodified list.
->在bad_delete_head这个函数开始运行的时候，t 和 t4指向同一个列表。在结尾的时候，t 指向了新的列表，但 t4依然还是原来那个列表，而且没修改过。
+>在 bad_delete_head 这个函数开始运行的时候，t 和 t4 指向同一个列表。在结尾的时候，t 指向了新的列表，但 t4 依然还是原来那个列表，而且没修改过。
 
 
 An alternative is to write a function that creates and returns a new list. For example, tail returns all but the first element of a list:
@@ -790,8 +753,6 @@ def tail(t):
 	return t[1:]
 ```
 
-
-
 This function leaves the original list unmodified. Here’s how it is used:
 >这个函数会将源列表保持原样不做修改。下面是用法：
 
@@ -802,11 +763,6 @@ This function leaves the original list unmodified. Here’s how it is used:
 >>> rest
 ['b', 'c']
 ```
-
-
-
-
-
 
 ##10.13  Debugging 调试
 
@@ -855,7 +811,7 @@ Part of the problem with lists is that there are too many ways to do things. For
 
 
 To add an element, you can use the append method or the + operator. Assuming that t is a list and x is a list element, these are correct:
->要加一个元素，可以用 append 方法或者加号+运算符。假设 t 是一个列表，而 x 是一个列表元素，下面的代码都是正确的：
+>要加一个元素，可以用 append 方法或者加号 `+` 运算符。假设 t 是一个列表，而 x 是一个列表元素，下面的代码都是正确的：
 
 
 ```Python
@@ -863,9 +819,6 @@ t.append(x)
 t = t + [x]
 t += [x]
 ```
-
-
-
 
 And these are wrong:
 >下面这就都是错的了：
@@ -883,12 +836,8 @@ Try out each of these examples in interactive mode to make sure you understand w
 
 ###3.	Make copies to avoid aliasing. 尽量做备份，避免用别名。
 
-
-
 If you want to use a method like sort that modifies the argument, but you need to keep the original list as well, you can make a copy.
 >如果你要用 sort 这样的方法来修改参数，又要同时保留源列表，你可以先做个备份。
-
-
 
 ```Python
 >>> t = [3, 1, 2]
@@ -900,10 +849,8 @@ If you want to use a method like sort that modifies the argument, but you need t
 [1, 2, 3]
 ```
 
-
-
 In this example you could also use the built-in function sorted, which returns a new, sorted list and leaves the original alone.
->在这个例子中，你也可以用内置函数sorted，这个函数会返回一个新的整理过的列表，而不会影响源列表。
+>在这个例子中，你也可以用内置函数 sorted，这个函数会返回一个新的整理过的列表，而不会影响源列表。
 
 
 ```Python
@@ -913,10 +860,6 @@ In this example you could also use the built-in function sorted, which returns a
 >>> t2
 [1, 2, 3]
 ```
-
-
-
-
 
 ##10.14  Glossary 术语列表
 
@@ -1032,9 +975,6 @@ Write a function called nested_sum that takes a list of lists of integers and ad
 21
 ```
 
-
-
-
 ###Exercise 2 练习2
 
 
@@ -1121,7 +1061,7 @@ This exercise pertains to the so-called Birthday Paradox, which you can read abo
 If there are 23 students in your class, what are the chances that two of you have the same birthday? You can estimate this probability by generating random samples of 23 birthdays and checking for matches. Hint: you can generate random birthdays with the randint function in the random module.
 You can download my solution from  [Here](http://thinkpython2.com/code/birthday.py).
 >这个练习也可以叫做生日悖论，你可以点击[这里](http://en.wikipedia.org/wiki/Birthday_paradox)来读一下更多背景知识。
->加入你班上有23个学生，这当中两个人同一天出生的概率是多大？你可以评估一下23个随机生日中有相同生日的概率。提示一下：你可以用 randint 函数来生成随机的生日，这个函数包含在 random 模块中。
+>加入你班上有 23 个学生，这当中两个人同一天出生的概率是多大？你可以评估一下 23 个随机生日中有相同生日的概率。提示一下：你可以用 randint 函数来生成随机的生日，这个函数包含在 random 模块中。
 >你可以从 [这里](http://thinkpython2.com/code/birthday.py)下载我的样例代码。
 
 
@@ -1148,7 +1088,7 @@ Because the words are in alphabetical order, we can speed things up with a bisec
 
 
 Either way, you cut the remaining search space in half. If the word list has 113,809 words, it will take about 17 steps to find the word or conclude that it’s not there.
->不论怎样，每次都会把搜索范围缩减到一半。如果词表包含了113809个单词，最多就是17步就能找到单词，或者能确定单词不在词汇表中。
+>不论怎样，每次都会把搜索范围缩减到一半。如果词表包含了 113809 个单词，最多就是 17 步就能找到单词，或者能确定单词不在词汇表中。
 
 
 Write a function called in_bisect that takes a sorted list and a target value and returns the index of the value in the list if it’s there, or None if it’s not.
@@ -1174,7 +1114,7 @@ Two words are a “reverse pair” if each is the reverse of the other. Write a 
 ###Exercise 12 练习12
 
 Two words “interlock” if taking alternating letters from each forms a new word. For example, “shoe” and “**cold**” interlock to form “s**c**h**o**o**l**e**d**”. [Solution](http://thinkpython2.com/code/interlock.py). Credit: This exercise is inspired by an example at [Here](http://puzzlers.org).
->两个单词，依次拼接各自的字母，如果能组成一个新单词，就称之为『互锁』。比如，shoe 和 **cold**就可以镶嵌在一起组成组成 s**c**h**o**o**l**e**d**。（译者注：shoe+**cold**= s**c**h**o**o**l**e**d** ） [样例代码](http://thinkpython2.com/code/interlock.py). 说明：这个练习受到了[这里一处例子](http://puzzlers.org)的启发。
+>两个单词，依次拼接各自的字母，如果能组成一个新单词，就称之为『互锁』。比如，shoe 和 **cold** 就可以镶嵌在一起组成组成 s**c**h**o**o**l**e**d**。（译者注：shoe+**cold**= s**c**h**o**o**l**e**d** ） [样例代码](http://thinkpython2.com/code/interlock.py). 说明：这个练习受到了[这里一处例子](http://puzzlers.org)的启发。
 
 
 1.	Write a program that finds all pairs of words that interlock. Hint: don’t enumerate all pairs!
