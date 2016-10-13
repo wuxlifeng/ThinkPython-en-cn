@@ -10,8 +10,8 @@ This chapter presents a case study that demonstrates a process for designing fun
 
 
 It introduces the turtle module, which allows you to create images using turtle graphics. The turtle module is included in most Python installations, but if you are running Python using PythonAnywhere, you won’t be able to run the turtle examples (at least you couldn’t when I wrote this).
->本章介绍了小乌龟这个模块，这允许你用小龟的图形功能来制作一些图形。乌龟模块在大部分的Python中都有安装，不过如果你在线使用PythnAnywhere，你就无法运行这些乌龟样例了（至少我写这本教材的时候还不行）。
->（译者注：都学到第四章了，你还不本地安装个Python也太说不过去了吧。）
+>本章介绍了小乌龟这个模块，这允许你用小龟的图形功能来制作一些图形。乌龟模块在大部分的 Python 中都有安装，不过如果你在线使用 PythnAnywhere，你就无法运行这些乌龟样例了（至少我写这本教材的时候还不行）。
+>（译者注：都学到第四章了，你还不本地安装个 Python 也太说不过去了吧。）
 
 
 If you have already installed Python on your computer, you should be able to run the examples. Otherwise, now is a good time to install. I have posted instructions at http://tinyurl.com/thinkpython2e.
@@ -24,7 +24,7 @@ Code examples from this chapter are available from http://thinkpython2.com/code/
 ##4.1  The turtle module 乌龟模块
 
 To check whether you have the turtle module, open the Python interpreter and type:
->要检查你是不是已经安装了这个乌龟模块，你要打开Python解释器来输入如下内容：
+>要检查你是不是已经安装了这个乌龟模块，你要打开 Python 解释器来输入如下内容：
 
 
 ```Python
@@ -37,7 +37,7 @@ When you run this code, it should create a new window with small arrow that repr
 >运行上述例子的时候，应该就能新建一个小窗口，还有个小箭头象征小乌龟。如果有的话就对了，把窗口关掉吧先。
 
 Create a file named mypolygon.py and type in the following code:
->建立一个叫做mypolygon.py的文件，在里面输入如下内容：
+>建立一个叫做 mypolygon.py 的文件，在里面输入如下内容：
 
 ```Python
 import turtle 
@@ -48,7 +48,7 @@ turtle.mainloop()
 
 
 The turtle module (with a lowercase ’t’) provides a function called Turtle(with an uppercase ’T’) that creates a Turtle object, which we assign to a variable named bob. Printing bob displays something like:
->这个小乌龟模块（记着是小写的t）提供了一个叫做Turtle（注意这里是大写的，大小写要去分！）的函数，这个函数会创建一个Turtle对象，我们把它赋值给bob这个变量。打印一下bob就能显示如下内容：
+>这个小乌龟模块（记着是小写的 t）提供了一个叫做 Turtle（注意这里是大写的，大小写要去分！）的函数，这个函数会创建一个 Turtle 对象，我们把它赋值给 bob 这个变量。打印一下 bob 就能显示如下内容：
 
 
 ```Bash
@@ -57,13 +57,13 @@ The turtle module (with a lowercase ’t’) provides a function called Turtle(w
 
 
 This means that bob refers to an object with type Turtle as defined in module turtle.
->这就意味着bob已经指向了模块turtle中所定义的Turtle类的一个对象。
+>这就意味着bob已经指向了模块 turtle 中所定义的 Turtle 类的一个对象。
 
 mainloop tells the window to wait for the user to do something, although in this case there’s not much for the user to do except close the window.
->mainloop这个函数是告诉窗口等用户来做些事情，当然本次尝试的情况下用户也就是关闭窗口而已了。
+>mainloop 这个函数是告诉窗口等用户来做些事情，当然本次尝试的情况下用户也就是关闭窗口而已了。
 
 Once you create a Turtle, you can call a method to move it around the window. A method is similar to a function, but it uses slightly different syntax. For example, to move the turtle forward:
->一旦你创建了一个Trutle，你就可以调用一些方法让他在窗口中移动。方法跟函数有点相似，但语法的使用稍微不太一样。比如你可以让小乌龟往前走：
+>一旦你创建了一个 Trutle，你就可以调用一些方法让他在窗口中移动。方法跟函数有点相似，但语法的使用稍微不太一样。比如你可以让小乌龟往前走：
 
 ```Python
 bob.fd(100) 
@@ -71,7 +71,7 @@ bob.fd(100)
 
 
 The method, fd, is associated with the turtle object we’re calling bob. Calling a method is like making a request: you are asking bob to move forward.
->fd这个方法，是turtle类这个叫做bob的对象所包含的。调用这个方法就像是做出一个请求一样：你再让bob向前移动。
+>fd 这个方法，是 turtle 类这个叫做 bob 的对象所包含的。调用这个方法就像是做出一个请求一样：你再让 bob 向前移动。
 
 The argument of fd is a distance in pixels, so the actual size depends on your display.
 >fd这个方法的参数是像素数距离，所以实际的大小依赖于你显示器的情况了。
