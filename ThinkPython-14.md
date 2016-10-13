@@ -41,7 +41,7 @@ An alternative is to store the state of the program in a database. In this chapt
 
 A text file is a sequence of characters stored on a permanent medium like a hard drive, flash memory, or CD-ROM. We saw how to open and read a file in Section 9.1.
 >文本文件就是一系列的字符串，存储在一个永久介质中，比如硬盘、闪存或者光盘之类的东西里面。
->在9.1的时候我们就看到过如何打开和读取一个文件了。
+>在 [9.1](ThinkPython-09.md#91--reading-word-lists-读取字符列表) 的时候我们就看到过如何打开和读取一个文件了。
 
 
 To write a file, you have to open it with mode 'w' as a second parameter:
@@ -74,7 +74,7 @@ open returns a file object that provides methods for working with the file. The 
 
 
 The return value is the number of characters that were written. The file object keeps track of where it is, so if you call write again, it adds the new data to the end of the file.
->返回值是已写入字符的数量。文件对象会记录所在位置，所以如果你再次调用write方法，会从文件结尾的地方继续添加新的内容。
+>返回值是已写入字符的数量。文件对象会记录所在位置，所以如果你再次调用 write 方法，会从文件结尾的地方继续添加新的内容。
 
 
 
@@ -109,7 +109,7 @@ If you don’t close the file, it gets closed for you when the program ends.
 
 
 The argument of write has to be a string, so if we want to put other values in a file, we have to convert them to strings. The easiest way to do that is with str:
->write 方法必须用字符串来做参数，所以如果要把其他类型的值写入文件，就得先转换成字符串才行。最简单的方法就是用 str函数：
+>write 方法必须用字符串来做参数，所以如果要把其他类型的值写入文件，就得先转换成字符串才行。最简单的方法就是用 str 函数：
 
 >>> x = 52
 >>> fout.write(str(x))
@@ -118,7 +118,7 @@ The argument of write has to be a string, so if we want to put other values in a
 
 
 An alternative is to use the format operator, %. When applied to integers, % is the modulus operator. But when the first operand is a string, % is the format operator.
->另外一个方法就是用格式运算符，也就是百分号%。在用于整数的时候，百分号%是取余数的运算符。但当第一个运算对象是字符串的时候，百分号%就成了格式运算符了。
+>另外一个方法就是用格式运算符，也就是百分号 %。在用于整数的时候，百分号 % 是取余数的运算符。但当第一个运算对象是字符串的时候，百分号 % 就成了格式运算符了。
 
 
 
@@ -128,7 +128,7 @@ The first operand is the format string, which contains one or more format sequen
 
 
 For example, the format sequence '%d' means that the second operand should be formatted as a decimal integer:
->例如，'%d'这个格式序列的意思就是第二个运算对象要被格式化成为一个十进制的整数：
+>例如，'%d' 这个格式序列的意思就是第二个运算对象要被格式化成为一个十进制的整数：
 
 
 ```Python
@@ -139,7 +139,7 @@ For example, the format sequence '%d' means that the second operand should be fo
 
 
 The result is the string '42', which is not to be confused with the integer value 42.
->你看，经过格式化后，结果就是字符串'42'了，而不是再是整数值42了。
+>你看，经过格式化后，结果就是字符串 '42' 了，而不是再是整数值 42 了。
 
 
 A format sequence can appear anywhere in the string, so you can embed a value in a sentence:
@@ -158,7 +158,7 @@ If there is more than one format sequence in the string, the second argument has
 
 
 The following example uses '%d' to format an integer, '%g' to format a floating-point number, and '%s' to format a string:
->下面的例子中，用了'%d'来格式化输出整型值，用'%g'来格式化浮点数，'%s'就是给字符串用的了。
+>下面的例子中，用了 '%d' 来格式化输出整型值，用 '%g' 来格式化浮点数，'%s' 就是给字符串用的了。
 
 
 ```Python
@@ -211,17 +211,17 @@ The os module provides functions for working with files and directories (“os�
 
 
 cwd stands for “current working directory”. The result in this example is/home/dinsdale, which is the home directory of a user named dinsdale.
->cwd 代表的是『current working directory』（即当前工作目录）的缩写。刚刚这个例子中返回的结果是/home/dinsdale，这就是一个名字叫 dinsdale 的人的个人账户所在位置了。
+>cwd 代表的是『current working directory』（即当前工作目录）的缩写。刚刚这个例子中返回的结果是 /home/dinsdale，这就是一个名字叫 dinsdale 的人的个人账户所在位置了。
 
 
 
 A string like ’/home/dinsdale’ that identifies a file or directory is called a path.
->像是’/home/dinsdale’这样表示一个文件或者目录的字符串就叫做路径。
+>像是 ’/home/dinsdale’ 这样表示一个文件或者目录的字符串就叫做路径。
 
 
 
 A simple filename, like memo.txt is also considered a path, but it is a relative path because it relates to the current directory. If the current directory is/home/dinsdale, the filename memo.txt would refer to /home/dinsdale/memo.txt.
->一个简单的文件名，比如 memo.txt 也可以被当做路径，但这是相对路径，因为这种路径是指代了文件与当前工作目录的相对位置。如果当前目录是/home/dinsdale，那么 memo.txt 这个文件名指代的就是/home/dinsdale/memo.txt 这个文件了。
+>一个简单的文件名，比如 memo.txt 也可以被当做路径，但这是相对路径，因为这种路径是指代了文件与当前工作目录的相对位置。如果当前目录是 /home/dinsdale，那么 memo.txt 这个文件名指代的就是 /home/dinsdale/memo.txt 这个文件了。
 
 
 A path that begins with / does not depend on the current directory; it is called an absolute path. To find the absolute path to a file, you can use os.path.abspath:
@@ -346,7 +346,7 @@ IsADirectoryError: [Errno 21] Is a directory: '/home'
 
 
 To avoid these errors, you could use functions like os.path.exists and os.path.isfile, but it would take a lot of time and code to check all the possibilities (if “Errno 21” is any indication, there are at least 21 things that can go wrong).
->你可以用像是os.path.exists、os.path.isfile 等等这类的函数来避免上面这些错误，不过这就需要很长时间，还要检查很多代码（比如“Errno 21”就表明有至少21处地方有可能存在错误）。
+>你可以用像是 os.path.exists、os.path.isfile 等等这类的函数来避免上面这些错误，不过这就需要很长时间，还要检查很多代码（比如 “Errno 21” 就表明有至少21处地方有可能存在错误）。
 
 
 
@@ -533,7 +533,7 @@ In other words, pickling and then unpickling has the same effect as copying the 
 
 
 You can use pickle to store non-strings in a database. In fact, this combination is so common that it has been encapsulated in a module called shelve.
->有 pickle了，就可以把非字符串的数据也存到数据库里面了。实际上这种结合方式特别普遍，已经封装到一个叫shelve的模块中了。
+>有 pickle了，就可以把非字符串的数据也存到数据库里面了。实际上这种结合方式特别普遍，已经封装到一个叫 shelve 的模块中了。
 
 
 
@@ -561,7 +561,7 @@ For example, the Unix command ls -l normally displays the contents of the curren
 
 The argument is a string that contains a shell command. The return value is an object that behaves like an open file. You can read the output from the ls process one line at a time with readline or get the whole thing at once with read:
 >参数 cmd 是包含了 shell 命令的一个字符串。返回的结果是一个对象，用起来就像是一个打开了的文件一样。
->可以读取ls 进程的输出，用 readline 的话每次读取一行，用 read 的话就一次性全部读取：
+>可以读取 ls 进程的输出，用 readline 的话每次读取一行，用 read 的话就一次性全部读取：
 
 
 ```Python
@@ -635,7 +635,7 @@ print(linecount('wc.py'))
 
 
 If you run this program, it reads itself and prints the number of lines in the file, which is 7. You can also import it like this:
->如果运行这个程序，程序就会读取自己本身，然后输出文件中的行数，也就是7行了。你还可以导入这个模块，如下所示：
+>如果运行这个程序，程序就会读取自己本身，然后输出文件中的行数，也就是 7 行了。你还可以导入这个模块，如下所示：
 
 ```Python
 >>> import wc
@@ -682,12 +682,12 @@ if __name__ == '__main__':
 
 
 __name__ is a built-in variable that is set when the program starts. If the program is running as a script, __name__ has the value '__main__'; in that case, the test code runs. Otherwise, if the module is being imported, the test code is skipped.
->__name__ 是一个内置变量，当程序开始运行的时候被设置。如果程序是作为脚本来运行的，__name__ 的值就是'__main__'；这样的话，if条件满足，测试代码就会运行。而如果该代码被用作模块导入了，if 条件不满足，测试的代码就不会运行了。
+>__name__ 是一个内置变量，当程序开始运行的时候被设置。如果程序是作为脚本来运行的，__name__ 的值就是 '__main__'；这样的话，if 条件满足，测试代码就会运行。而如果该代码被用作模块导入了，if 条件不满足，测试的代码就不会运行了。
 
 
 
 As an exercise, type this example into a file named wc.py and run it as a script. Then run the Python interpreter and import wc. What is the value of __name__when the module is being imported?
->做个联系吧，把上面的例子输入到一个名为 wc.py 的文件中，然后作为脚本运行。然后再运行 Python 解释器，然后导入 wc 作为模块。看看作为模块导入的时候__name__ 的值是什么？
+>做个联系吧，把上面的例子输入到一个名为 wc.py 的文件中，然后作为脚本运行。然后再运行 Python 解释器，然后导入 wc 作为模块。看看作为模块导入的时候 __name__ 的值是什么？
 
 
 
@@ -737,7 +737,7 @@ This can be helpful for debugging.
 
 One other problem you might run into is that different systems use different characters to indicate the end of a line. Some systems use a newline, represented \n. Others use a return character, represented \r. Some use both. If you move files between different systems, these inconsistencies can cause problems.
 >另外一个问题就是不同操作系统可能用不同字符表示行尾。
->有的用一个换行符，也就是\n。有的用一个返回字符，也就是\r。有的两个都亏。如果你把文件在不同操作系统只见移动，这种不兼容性就可能导致问题了。
+>有的用一个换行符，也就是 \n。有的用一个返回字符，也就是 \r。有的两个都亏。如果你把文件在不同操作系统只见移动，这种不兼容性就可能导致问题了。
 
 
 
@@ -763,7 +763,7 @@ Pertaining to a program that runs indefinitely and keeps at least some of its da
 
 format operator:
 An operator, %, that takes a format string and a tuple and generates a string that includes the elements of the tuple formatted as specified by the format string.
->格式运算符：%运算符，处理字符串和元组，然后生成一个包含元组中元素的字符串，根据给定的格式字符串进行格式化。
+>格式运算符：% 运算符，处理字符串和元组，然后生成一个包含元组中元素的字符串，根据给定的格式字符串进行格式化。
 
 
 
@@ -775,7 +775,7 @@ A string, used with the format operator, that contains format sequences.
 
 format sequence:
 A sequence of characters in a format string, like %d, that specifies how a value should be formatted.
->格式序列：格式字符串内的一串字符，比如%d，规定了一个值如何进行格式化。
+>格式序列：格式字符串内的一串字符，比如 %d，规定了一个值如何进行格式化。
 
 
 
@@ -866,7 +866,7 @@ If an error occurs while opening, reading, writing or closing files, your progra
 
 
 If you download my solution to Exercise 2 from [Here](http://thinkpython2.com/code/anagram_sets.py), you’ll see that it creates a dictionary that maps from a sorted string of letters to the list of words that can be spelled with those letters. For example, ’opst’ maps to the list [’opts’, ’post’, ’pots’, ’spot’, ’stop’, ’tops’].
->如果你从 [这里](http://thinkpython2.com/code/anagram_sets.py)下载了我的样例代码，你会发现该程序创建了一个字典，建立了从一个有序字母字符串到一个单词列表的映射，列表中的单词可以由这些字母拼成。例如'opst'就映射到了列表 [’opts’, ’post’, ’pots’, ’spot’, ’stop’, ’tops’].
+>如果你从 [这里](http://thinkpython2.com/code/anagram_sets.py)下载了我的样例代码，你会发现该程序创建了一个字典，建立了从一个有序字母字符串到一个单词列表的映射，列表中的单词可以由这些字母拼成。例如 'opst' 就映射到了列表 [’opts’, ’post’, ’pots’, ’spot’, ’stop’, ’tops’].
 
 
 
@@ -882,13 +882,13 @@ Write a module that imports anagram_sets and provides two new functions:store_an
 
 
 In a large collection of MP3 files, there may be more than one copy of the same song, stored in different directories or with different file names. The goal of this exercise is to search for duplicates.
->现在有很多 MP3文件的一个大集合里面，一定有很多同一首歌重复了，然后存在不同的目录或者保存的名字不同。本次练习的目的就是要找到这些重复的内容。
+>现在有很多 MP3 文件的一个大集合里面，一定有很多同一首歌重复了，然后存在不同的目录或者保存的名字不同。本次练习的目的就是要找到这些重复的内容。
 
 
 
 
 1.	Write a program that searches a directory and all of its subdirectories, recursively, and returns a list of complete paths for all files with a given suffix (like .mp3). Hint: os.path provides several useful functions for manipulating file and path names.
->首先写一个程序，搜索一个目录并且递归搜索所有子目录，然后返回一个全部给定后缀（比如.mp3）的文件的路径。提示：os.path 提供了一些函数，能用来处理文件和路径名称。
+>首先写一个程序，搜索一个目录并且递归搜索所有子目录，然后返回一个全部给定后缀（比如 .mp3）的文件的路径。提示：os.path 提供了一些函数，能用来处理文件和路径名称。
 
 
 
