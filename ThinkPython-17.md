@@ -51,7 +51,7 @@ Python is an object-oriented programming language, which means that it provides 
 
 
 For example, the Time class defined in Chapter 16 corresponds to the way people record the time of day, and the functions we defined correspond to the kinds of things people do with times. Similarly, the Point and Rectangle classes in Chapter 15 correspond to the mathematical concepts of a point and a rectangle.
->例如，第16章中定义的 Time 类就代表了人们生活中计算一天时间的方法，然后当时咱们写的那些函数就对应着人们对时间的处理。同理，在第15章定义的 Point 和 Rectangle 类就对应着现实中的数学概念上的点和矩形。
+>例如，[第 16 章](ThinkPython-16.md#161--time-时间)中定义的 Time 类就代表了人们生活中计算一天时间的方法，然后当时咱们写的那些函数就对应着人们对时间的处理。同理，在第 15 章定义的 Point 和 Rectangle 类就对应着现实中的数学概念上的点和矩形。
 
 
 
