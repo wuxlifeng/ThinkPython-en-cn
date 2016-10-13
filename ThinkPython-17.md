@@ -51,7 +51,7 @@ Python is an object-oriented programming language, which means that it provides 
 
 
 For example, the Time class defined in Chapter 16 corresponds to the way people record the time of day, and the functions we defined correspond to the kinds of things people do with times. Similarly, the Point and Rectangle classes in Chapter 15 correspond to the mathematical concepts of a point and a rectangle.
->例如，[第 16 章](ThinkPython-16.md#161--time-时间)中定义的 Time 类就代表了人们生活中计算一天时间的方法，然后当时咱们写的那些函数就对应着人们对时间的处理。同理，在第 15 章定义的 Point 和 Rectangle 类就对应着现实中的数学概念上的点和矩形。
+>例如，[第 16 章](ThinkPython-16.md#161--time-时间)中定义的 Time 类就代表了人们生活中计算一天时间的方法，然后当时咱们写的那些函数就对应着人们对时间的处理。同理，在[第 15 章](ThinkPython-15.md#151--programmer-defined-types-用户自定义类型)定义的 Point 和 Rectangle 类就对应着现实中的数学概念上的点和矩形。
 
 
 
@@ -112,7 +112,7 @@ In the next few sections, we will take the functions from the previous two chapt
 
 
 In Chapter 16, we defined a class named Time and in Section 16.1, you wrote a function named print_time:
->在16.1，我们定义过一个名为Time 的类，当时写过月名为 print_time 的函数：
+>在 [16.1](ThinkPython-16.md#161--time-时间)，我们定义过一个名为Time 的类，当时写过月名为 print_time 的函数：
 
 
 ```Python
@@ -125,7 +125,7 @@ def print_time(time):
 
 
 To call this function, you have to pass a Time object as an argument:
->要调用这个函数，就必须给传递过去一个TIme 对象作为参数：
+>要调用这个函数，就必须给传递过去一个 TIme 对象作为参数：
 
 
 
@@ -224,7 +224,7 @@ This change in perspective might be more polite, but it is not obvious that it i
 
 
 As an exercise, rewrite time_to_int (from Section 16.4) as a method. You might be tempted to rewrite int_to_time as a method, too, but that doesn’t really make sense because there would be no object to invoke it on.
->做个练习吧，重写一下 time_to_int（参见16.4），把这个函数写成一个方法。你也可以试着把 int_to_time 也携程方法，不过这可能不太行得通，因为把这个函数改成方法的话，没有对象来调用方法。
+>做个练习吧，重写一下 time_to_int（参见 [16.4](ThinkPython-16.md#164--prototyping-versus-planning-原型与规划)），把这个函数写成一个方法。你也可以试着把 int_to_time 也携程方法，不过这可能不太行得通，因为把这个函数改成方法的话，没有对象来调用方法。
 
 
 
@@ -239,7 +239,7 @@ As an exercise, rewrite time_to_int (from Section 16.4) as a method. You might b
 
 
 Here’s a version of increment (from Section 16.3) rewritten as a method:
->下面是 increment 函数（参见16.4）被改写成的方法：
+>下面是 increment 函数（参见 [16.4](ThinkPython-16.md#164--prototyping-versus-planning-原型与规划)）被改写成的方法：
 
 ```Python
 # inside class Time:
@@ -267,7 +267,7 @@ Here’s how you would invoke increment:
 
 The subject, start, gets assigned to the first parameter, self. The argument,1337, gets assigned to the second parameter, seconds.
 This mechanism can be confusing, especially if you make an error. For example, if you invoke increment with two arguments, you get:
->主语，start，用自己（self）赋值给第一个参数。然后参数，1337，赋值给了第二个参数，秒值seconds。
+>主语，start，用自己（self）赋值给第一个参数。然后参数，1337，赋值给了第二个参数，秒值 seconds。
 >这种表述挺混乱，如果弄错了就更麻烦了。比如，如果你用两个参数调用了 increment 函数，你会得到如下的错误：
 
 
@@ -304,7 +304,7 @@ parrot and cage are positional, and dead is a keyword argument.
 
 
 Rewriting is_after (from Section 16.1) is slightly more complicated because it takes two Time objects as parameters. In this case it is conventional to name the first parameter self and the second parameter other:
->重写 is_after（参见16.1），这就比较有难度了，因为这个函数接收两个 Time 对象作为参数。在这个情况下，一般就把第一个参数命名为 self，第二个命名为 other：
+>重写 is_after（参见 [16.1](ThinkPython-16.md#161--time-时间)），这就比较有难度了，因为这个函数接收两个 Time 对象作为参数。在这个情况下，一般就把第一个参数命名为 self，第二个命名为 other：
 
 
 ```Python
@@ -339,7 +339,7 @@ One nice thing about this syntax is that it almost reads like English: “end is
 
 
 The init method (short for “initialization”) is a special method that gets invoked when an object is instantiated. Its full name is __init__ (two underscore characters, followed by init, and then two more underscores). An init method for the Time class might look like this:
->init 方法（就是对『initialization』的缩写，初始化的意思，这个方法相当于C++中的构造函数）是一种特殊的方法，在对象被实例化的时候被调用。这个方法的全名是__init__（两个下划线，然后是 init，然后还是两个下划线）。在 Time 类当中，init 方法示例如下：
+>init 方法（就是对『initialization』的缩写，初始化的意思，这个方法相当于 C++ 中的构造函数）是一种特殊的方法，在对象被实例化的时候被调用。这个方法的全名是 __init__（两个下划线，然后是 init，然后还是两个下划线）。在 Time 类当中，init 方法示例如下：
 
 
 
@@ -364,7 +364,7 @@ It is common for the parameters of __init__ to have the same names as the attrib
 
 
 stores the value of the parameter hour as an attribute of self.
-就存储了参数 hour 的值，赋给了属性变量hour本身。
+就存储了参数 hour 的值，赋给了属性变量 hour 本身。
 
 
 
@@ -422,7 +422,7 @@ __str__ is a special method, like __init__, that is supposed to return a string 
 >__str__ 是一种特殊的方法，就跟__init__差不多，str 方法是接收一个对象，返回一个代表该对象的字符串。
 
 For example, here is a str method for Time objects:
->例如，下面就是Time 对象的一个 str 方法：
+>例如，下面就是 Time 对象的一个 str 方法：
 
 
 ```Python
@@ -463,7 +463,7 @@ As an exercise, write a str method for the Point class. Create a Point object an
 
 By defining other special methods, you can specify the behavior of operators on programmer-defined types. For example, if you define a method named__add__ for the Time class, you can use the + operator on Time objects.
 Here is what the definition might look like:
->通过定义一些特定的方法，咱们就能针对自定义类型，让运算符有特定的作用。比如，如果你在 Time 类中定义了一个名字为__add__的方法，你就可以对 Time 对象使用『+』加号运算符。
+>通过定义一些特定的方法，咱们就能针对自定义类型，让运算符有特定的作用。比如，如果你在 Time 类中定义了一个名字为 __add__ 的方法，你就可以对 Time 对象使用『+』加号运算符。
 
 
 
@@ -497,7 +497,7 @@ When you apply the + operator to Time objects, Python invokes __add__. When you 
 
 
 Changing the behavior of an operator so that it works with programmer-defined types is called operator overloading. For every operator in Python there is a corresponding special method, like __add__. For more details, see [Here](http://docs.python.org/3/reference/datamodel.html#specialnames).
->针对用户自定义类型，让运算符有相应的行为，这就叫做运算符重载。Python 当中每一个运算符都有一个对应的方法，比如__add__。更多内容可以看一下 [这里的文档](http://docs.python.org/3/reference/datamodel.html#specialnames)。
+>针对用户自定义类型，让运算符有相应的行为，这就叫做运算符重载。Python 当中每一个运算符都有一个对应的方法，比如 __add__。更多内容可以看一下 [这里的文档](http://docs.python.org/3/reference/datamodel.html#specialnames)。
 
 
 As an exercise, write an add method for the Point class.
@@ -513,7 +513,7 @@ As an exercise, write an add method for the Point class.
 
 
 In the previous section we added two Time objects, but you also might want to add an integer to a Time object. The following is a version of __add__ that checks the type of other and invokes either add_time or increment:
->在前面的章节中，我们把两个 Time 对象进行了相加，但也许有时候需要把一个整数加到 Time 对象上面。下面这一个版本的__add__方法就能够实现检查类型，然后调用add_time 方法或者是 increment 方法：
+>在前面的章节中，我们把两个 Time 对象进行了相加，但也许有时候需要把一个整数加到 Time 对象上面。下面这一个版本的 __add__ 方法就能够实现检查类型，然后调用 add_time 方法或者是 increment 方法：
 
 
 
@@ -537,12 +537,12 @@ def increment(self, seconds):
 
 
 The built-in function isinstance takes a value and a class object, and returns True if the value is an instance of the class.
->内置函数isinstance 接收一个值和一个类的对象，如果该值是这个类的一个实例，就会返回真。
+>内置函数 isinstance 接收一个值和一个类的对象，如果该值是这个类的一个实例，就会返回真。
 
 
 
 If other is a Time object, __add__ invokes add_time. Otherwise it assumes that the parameter is a number and invokes increment. This operation is called a type-based dispatch because it dispatches the computation to different methods based on the type of the arguments.
->如果拿来相加的是一个 Time 对象，__add__就会调用 add_time 方法。其他情况下，程序会把参数当做一个数字，然后就调用 increment 方法。这种运算就是根据对象进行的，因为在针对不同类型参数的时候，运算符会进行不同的计算。
+>如果拿来相加的是一个 Time 对象，__add__ 就会调用 add_time 方法。其他情况下，程序会把参数当做一个数字，然后就调用 increment 方法。这种运算就是根据对象进行的，因为在针对不同类型参数的时候，运算符会进行不同的计算。
 
 
 
@@ -573,7 +573,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'instance'
 
 
 The problem is, instead of asking the Time object to add an integer, Python is asking an integer to add a Time object, and it doesn’t know how. But there is a clever solution for this problem: the special method __radd__, which stands for “right-side add”. This method is invoked when a Time object appears on the right side of the + operator. Here’s the definition:
->这里的问题就在于，Python 并没有让一个 Time 对象来加一个整数，而是去调用了整形的加法去把一个 Time 对象加到整数上面去，这就用系统原本的加法，而这个加法不能处理 Time 对象。有一个很聪明的方法来解决这个问题：用一个特殊的方法__radd__，这个方法的意思就是『右加』。在一个 Time 对象出现在加号运算符右侧的时候，该方法就会被调用了。下面就是这个方法的定义：
+>这里的问题就在于，Python 并没有让一个 Time 对象来加一个整数，而是去调用了整形的加法去把一个 Time 对象加到整数上面去，这就用系统原本的加法，而这个加法不能处理 Time 对象。有一个很聪明的方法来解决这个问题：用一个特殊的方法 __radd__，这个方法的意思就是『右加』。在一个 Time 对象出现在加号运算符右侧的时候，该方法就会被调用了。下面就是这个方法的定义：
 
 
 ```Python
@@ -596,11 +596,11 @@ And here’s how it’s used:
 
 
 As an exercise, write an add method for Points that works with either a Point object or a tuple:
->做个练习，为 Point 类来写一个加法的方法，要求能处理Point 对象或者一个元组：
+>做个练习，为 Point 类来写一个加法的方法，要求能处理 Point 对象或者一个元组：
 
 
 •	If the second operand is a Point, the method should return a new Point whose x coordinate is the sum of the x coordinates of the operands, and likewise for the y coordinates.
->如果第二个运算数是一个Point，该方法就应该返回一个新的Point，新点的横纵坐标分别为两个点坐标相加。
+>如果第二个运算数是一个 Point，该方法就应该返回一个新的 Point，新点的横纵坐标分别为两个点坐标相加。
 
 
 
@@ -621,7 +621,7 @@ Type-based dispatch is useful when it is necessary, but (fortunately) it is not 
 
 
 Many of the functions we wrote for strings also work for other sequence types. For example, in Section 11.2 we used histogram to count the number of times each letter appears in a word.
->我们之前为字符串写的很多函数，也都可以用到其他序列类型上面。比如在11.2我们用 histogram 来统计一个单词中每个字母出现的次数。
+>我们之前为字符串写的很多函数，也都可以用到其他序列类型上面。比如在 [11.2](ThinkPython-11.md#112--dictionary-as-a-collection-of-counters-用字典作为计数器) 我们用 histogram 来统计一个单词中每个字母出现的次数。
 
 
 ```Python
@@ -638,7 +638,7 @@ def histogram(s):
 
 
 This function also works for lists, tuples, and even dictionaries, as long as the elements of s are hashable, so they can be used as keys in d.
->这个函数也可以用于列表、元组，甚至字典，只要s 的元素是散列的，就能用做 d 当中的键。
+>这个函数也可以用于列表、元组，甚至字典，只要 s 的元素是散列的，就能用做 d 当中的键。
 
 
 
@@ -841,7 +841,7 @@ The principle that the interface provided by an object should not depend on its 
 
 
 Download the code from this chapter from [Here](http://thinkpython2.com/code/Time2.py). Change the attributes of Time to be a single integer representing seconds since midnight. Then modify the methods (and the function int_to_time) to work with the new implementation. You should not have to modify the test code in main. When you are done, the output should be the same as before. [Solution](http://thinkpython2.com/code/Time2_soln.py)
->从[这里](http://thinkpython2.com/code/Time2.py)下载本章的代码。把 Time 中的属性改变成一个单独的整型变量，用来表示自从午夜至今的秒数。然后修改一下各个方法（以及 int_to_time 函数），让所有功能都能在新的实现下正常工作。尽量就让自己不用去更改main 当中的测试代码。你改完之后，输出应该与之前相同。[样例代码](http://thinkpython2.com/code/Time2_soln.py)
+>从[这里](http://thinkpython2.com/code/Time2.py)下载本章的代码。把 Time 中的属性改变成一个单独的整型变量，用来表示自从午夜至今的秒数。然后修改一下各个方法（以及 int_to_time 函数），让所有功能都能在新的实现下正常工作。尽量就让自己不用去更改 main 当中的测试代码。你改完之后，输出应该与之前相同。[样例代码](http://thinkpython2.com/code/Time2_soln.py)
 
 
 
@@ -849,26 +849,26 @@ Download the code from this chapter from [Here](http://thinkpython2.com/code/Tim
 
 
 This exercise is a cautionary tale about one of the most common, and difficult to find, errors in Python. Write a definition for a class named Kangaroo with the following methods:
->这个练习是一个广为流传的寓言故事，其中包含了一个使用 Python的时候最常见但也是最难发现的错误。写一个名为袋鼠的类的定义，要求有如下的方法：
+>这个练习是一个广为流传的寓言故事，其中包含了一个使用 Python 的时候最常见但也是最难发现的错误。写一个名为袋鼠的类的定义，要求有如下的方法：
 
 
 1.	An __init__ method that initializes an attribute named pouch_contents to an empty list.
->一个__init__方法，用来初始化一个名为 puntch_contents（就是袋鼠的袋子中内容的意思） 的属性，把该属性初始化为一个空列表。
+>一个 __init__方法，用来初始化一个名为 puntch_contents（就是袋鼠的袋子中内容的意思） 的属性，把该属性初始化为一个空列表。
 
 
 
 2.	A method named put_in_pouch that takes an object of any type and adds it to pouch_contents.
->一个名为put_in_pouch 的方法，接收任意类型的一个对象，把这个对象放进 pouch_contents 中。
+>一个名为 put_in_pouch 的方法，接收任意类型的一个对象，把这个对象放进 pouch_contents 中。
 
 
 
 3.	A __str__ method that returns a string representation of the Kangaroo object and the contents of the pouch.
->一个__str__方法，返回袋鼠对象的字符串表示，以及袋鼠袋子中的内容。
+>一个 __str__ 方法，返回袋鼠对象的字符串表示，以及袋鼠袋子中的内容。
 
 
 
 Test your code by creating two Kangaroo objects, assigning them to variables named kanga and roo, and then adding roo to the contents of kanga’s pouch.
->通过建立两个袋鼠对象来测试一下你的代码，把它们俩分别命名为 kanga 和 roo，然后把roo 添加到 kanga 的袋子中。
+>通过建立两个袋鼠对象来测试一下你的代码，把它们俩分别命名为 kanga 和 roo，然后把 roo 添加到 kanga 的袋子中。
 
 
 
