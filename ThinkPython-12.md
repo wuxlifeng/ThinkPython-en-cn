@@ -408,7 +408,7 @@ Each time through the loop, Python selects the next tuple in the list and assign
 
 
 If you combine zip, for and tuple assignment, you get a useful idiom for traversing two (or more) sequences at the same time. For example, has_match takes two sequences, t1 and t2, and returns True if there is an index i such that t1[i] == t2[i]:
->如果结合使用 zip、for 循环以及元组赋值，就能得到一种能同时遍历两个以上序列的代码组合。比如下面例子中的 has_match 这个函数，接收两个序列t1和 t2作为参数，然后如果存在一个索引位置 i 使得 t1[i] == t2[i]就返回真：
+>如果结合使用 zip、for 循环以及元组赋值，就能得到一种能同时遍历两个以上序列的代码组合。比如下面例子中的 has_match 这个函数，接收两个序列 t1 和 t2 作为参数，然后如果存在一个索引位置 i 使得 t1[i] == t2[i]就返回真：
 
 
 ```Python
@@ -438,7 +438,7 @@ The result from enumerate is an enumerate object, which iterates a sequence of p
 0 a 1 b 2 c
 ```
 Again.
->enumerate 函数的返回值是一个枚举对象，它会遍历整个成对序列；每一对都包括一个索引（从0开始）以及给定序列的一个元素。在本节的例子中，输出依然如下：
+>enumerate 函数的返回值是一个枚举对象，它会遍历整个成对序列；每一对都包括一个索引（从 0 开始）以及给定序列的一个元素。在本节的例子中，输出依然如下：
 >
 
 
@@ -550,7 +550,7 @@ ________________________________________
 
 
 But in a larger diagram you might want to leave out the details. For example, a diagram of the telephone directory might appear as in Figure 12.2.
->但随着图解规模变大，你也许需要省略掉一些细节。比如电话字典的图解可能会像图12.2所示。
+>但随着图解规模变大，你也许需要省略掉一些细节。比如电话字典的图解可能会像图 12.2 所示。
 
 
 
@@ -631,7 +631,7 @@ Lists, dictionaries and tuples are examples of data structures; in this chapter 
 
 
 To help debug these kinds of errors, I have written a module called structshape that provides a function, also called structshape, that takes any kind of data structure as an argument and returns a string that summarizes its shape. You can download it from [Here](http://thinkpython2.com/code/structshape.py).
->要想有助于解决这类错误，我写了一个叫做structshape 的模块，该模块提供了一个同名函数，接收任何一种数据结构作为参数，然后返回一个字符串来总结该数据结构的形态。可以从 [这里](http://thinkpython2.com/code/structshape.py)下载。
+>要想有助于解决这类错误，我写了一个叫做 structshape 的模块，该模块提供了一个同名函数，接收任何一种数据结构作为参数，然后返回一个字符串来总结该数据结构的形态。可以从 [这里](http://thinkpython2.com/code/structshape.py)下载。
 
 
 Here’s the result for a simple list:
@@ -647,7 +647,7 @@ Here’s the result for a simple list:
 
 
 A fancier program might write “list of 3 ints”, but it was easier not to deal with plurals. Here’s a list of lists:
->更带劲点的程序可能还应该写“list of 3 ints”，但不理会单复数变化有利于简化问题。下面是一个列表的列表：
+>更带劲点的程序可能还应该写 “list of 3 ints”，但不理会单复数变化有利于简化问题。下面是一个列表的列表：
 
 
 ```Python
@@ -698,7 +698,7 @@ And here’s a dictionary with 3 items that map integers to strings.
 
 
 If you are having trouble keeping track of your data structures, structshape can help.
->如果你追踪自己的数据结构有困难，structshape这个模块能有所帮助。
+>如果你追踪自己的数据结构有困难，structshape 这个模块能有所帮助。
 
 
 
@@ -762,7 +762,7 @@ An error caused because a value has the wrong shape; that is, the wrong type or 
 
 ###Exercise 1 练习1
 Write a function called most_frequent that takes a string and prints the letters in decreasing order of frequency. Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at [Here](http://en.wikipedia.org/wiki/Letter_frequencies). [Solution](http://thinkpython2.com/code/most_frequent.py).
->写一个名为most_frequent的函数，接收一个字符串，然后用出现频率降序来打印输出字母。找一些不同语言的文本素材，然后看看不同语言情况下字母的频率变化多大。然后用你的结果与[这里](http://en.wikipedia.org/wiki/Letter_frequencies)的数据进行对比。[样例代码](http://thinkpython2.com/code/most_frequent.py)。
+>写一个名为 most_frequent 的函数，接收一个字符串，然后用出现频率降序来打印输出字母。找一些不同语言的文本素材，然后看看不同语言情况下字母的频率变化多大。然后用你的结果与[这里](http://en.wikipedia.org/wiki/Letter_frequencies)的数据进行对比。[样例代码](http://thinkpython2.com/code/most_frequent.py)。
 
 
 
@@ -781,7 +781,7 @@ More anagrams!
 >更多变位词了！
 
 1.	Write a program that reads a word list from a file (see Section 9.1) and prints all the sets of words that are anagrams.
->写一个函数，读取一个文件中的一个单词列表（参考9.1），然后输出所有的变位词。
+>写一个函数，读取一个文件中的一个单词列表（参考 [9.1](ThinkPython-09.md#91--reading-word-lists-读取字符列表)），然后输出所有的变位词。
 
 Here is an example of what the output might look like:
 >下面是可能的输出样式的示范：
