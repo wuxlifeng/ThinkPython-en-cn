@@ -206,7 +206,7 @@ This approach can be effective, especially if you don’t yet have a deep unders
 
 
 An alternative is designed development, in which high-level insight into the problem can make the programming much easier. In this case, the insight is that a Time object is really a three-digit number in base 60 (see [Here](http://en.wikipedia.org/wiki/Sexagesimal))! The second attribute is the “ones column”, the minute attribute is the “sixties column”, and the hour attribute is the “thirty-six hundreds column”.
->另一种模式就是设计规划开发，这种情况下对问题的深入透彻的理解就让开发容易很多了。本节中的根本性认识就在于 TIme 对象实际上是一个三位的六十进制数字(参考 [这里的解释](http://en.wikipedia.org/wiki/Sexagesimal)。)！秒数也就是个位，分数也就是六十位，小时数就是三千六百位。
+>另一种模式就是设计规划开发，这种情况下对问题的深入透彻的理解就让开发容易很多了。本节中的根本性认识就在于 TIme 对象实际上是一个三位的六十进制数字(参考 [这里的解释](http://en.wikipedia.org/wiki/Sexagesimal))！秒数也就是个位，分数也就是六十位，小时数就是三千六百位。
 
 
 When we wrote add_time and increment, we were effectively doing addition in base 60, which is why we had to carry from one column to the next.
@@ -247,7 +247,7 @@ def int_to_time(seconds):
 
 
 You might have to think a bit, and run some tests, to convince yourself that these functions are correct. One way to test them is to check that time_to_int(int_to_time(x)) == x for many values of x. This is an example of a consistency check.
->你最好先考虑好了，然后多进行几次测试运行，然后要确保这些函数都是正确的。比如你就可以试着用很多个 x 的值来运算time_to_int(int_to_time(x)) == x。这也是连贯性检测的一个例子。
+>你最好先考虑好了，然后多进行几次测试运行，然后要确保这些函数都是正确的。比如你就可以试着用很多个 x 的值来运算 time_to_int(int_to_time(x)) == x。这也是连贯性检测的一个例子。
 
 
 
@@ -264,7 +264,7 @@ def add_time(t1, t2):
 
 
 This version is shorter than the original, and easier to verify. As an exercise, rewrite increment using time_to_int and int_to_time.
->这个版本就比最开始那个版本短多了，也更容易去检验了。接下来就做个联系吧，用time_to_int 和 int_to_time 这两个函数来重写一下 increment。
+>这个版本就比最开始那个版本短多了，也更容易去检验了。接下来就做个联系吧，用 time_to_int 和 int_to_time 这两个函数来重写一下 increment。
 
 
 
@@ -296,7 +296,7 @@ Ironically, sometimes making a problem harder (or more general) makes it easier 
 
 
 A Time object is well-formed if the values of minute and second are between 0 and 60 (including 0 but not 60) and if hour is positive. hour and minute should be integral values, but we might allow second to have a fraction part.
->对于一个 Time 对象来说，只要分和秒的值在0-60的前闭后开区间（即可以为0但不可以为60），并且小时数为正数，就是格式正确的。小时和分钟都应该是整数，但秒是可以为小数的。
+>对于一个 Time 对象来说，只要分和秒的值在 0-60 的前闭后开区间（即可以为 0 但不可以为 60），并且小时数为正数，就是格式正确的。小时和分钟都应该是整数，但秒是可以为小数的。
 
 
 
@@ -424,7 +424,7 @@ Code examples from this chapter are available from [Here](http://thinkpython2.co
 
 
 Write a function called mul_time that takes a Time object and a number and returns a new Time object that contains the product of the original Time and the number.
->写一个函数，名为mul_time，接收一个Time 对象和一个数值，返回一个二者相乘得到的新的Time 对象。
+>写一个函数，名为 mul_time，接收一个 Time 对象和一个数值，返回一个二者相乘得到的新的 Time 对象。
 
 
 Then use mul_time to write a function that takes a Time object that represents the finishing time in a race, and a number that represents the distance, and returns a Time object that represents the average pace (time per mile).
