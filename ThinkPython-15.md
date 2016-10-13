@@ -26,7 +26,7 @@ We have used many of Python’s built-in types; now we are going to define a new
 
 
 In mathematical notation, points are often written in parentheses with a comma separating the coordinates. For example, (0,0) represents the origin, and (x,y) represents the point x units to the right and y units up from the origin.
->数学符号上对点的表述一般是一个括号内有两个坐标，坐标用逗号分隔开。比如，（0，0）就表示为原点，（x,y）就表示了该点从原点向右偏移 x，向上偏移 y。
+>数学符号上对点的表述一般是一个括号内有两个坐标，坐标用逗号分隔开。比如，（0，0）就表示为原点，（x, y）就表示了该点从原点向右偏移 x，向上偏移 y。
 
 
 
@@ -76,7 +76,7 @@ Defining a class named Point creates a class object.
 
 
 Because Point is defined at the top level, its “full name” is __main__.Point.
->因为 Point 是在顶层位置定义的，所以全名就是__main__.Point。
+>因为 Point 是在顶层位置定义的，所以全名就是 __main__.Point。
 
 
 
@@ -98,7 +98,7 @@ Creating a new object is called instantiation, and the object is an instance of 
 
 
 When you print an instance, Python tells you what class it belongs to and where it is stored in memory (the prefix 0x means that the following number is in hexadecimal).
->用 Print 输出一个实例的时候，Python 会告诉你该实例所属的类，以及在内存中存储的位置（前缀为0x 意味着下面的这些数值是十六进制的。）
+>用 Print 输出一个实例的时候，Python 会告诉你该实例所属的类，以及在内存中存储的位置（前缀为 0x 意味着下面的这些数值是十六进制的。）
 
 
 
@@ -291,7 +291,7 @@ Figure 15.2: Object diagram.
 ________________________________________
 
 Figure 15.2 shows the state of this object. An object that is an attribute of another object is embedded.
->图15.2展示了这个对象的状态图。一个类去作为另外一个类的属性，就叫做嵌入。
+>图 15.2 展示了这个对象的状态图。一个类去作为另外一个类的属性，就叫做嵌入。
 
 
 
@@ -303,7 +303,7 @@ Figure 15.2 shows the state of this object. An object that is an attribute of an
 
 
 Functions can return instances. For example, find_center takes a Rectangle as an argument and returns a Point that contains the coordinates of the center of the Rectangle:
->函数亏返回实例。比如 find_center 就接收一个 Rectangle （矩阵）对象作为参数，然后以一个Point（点）对象的形式返回矩形中心位置的坐标所在点：
+>函数亏返回实例。比如 find_center 就接收一个 Rectangle （矩阵）对象作为参数，然后以一个 Point（点）对象的形式返回矩形中心位置的坐标所在点：
 
 
 ```Python
@@ -344,7 +344,7 @@ box.height = box.height + 100
 
 
 You can also write functions that modify objects. For example, grow_rectangle takes a Rectangle object and two numbers, dwidth and dheight, and adds the numbers to the width and height of the rectangle:
->你还可以写专门的函数来修改对象。比如grow_rectangle这个函数就接收一个矩形对象和dwidth 与 dheight两个数值，然后把这两个数值加到矩形的宽度和高度值上。
+>你还可以写专门的函数来修改对象。比如 grow_rectangle 这个函数就接收一个矩形对象和 dwidth 与 dheight 两个数值，然后把这两个数值加到矩形的宽度和高度值上。
 
 
 
@@ -405,7 +405,7 @@ Copying an object is often an alternative to aliasing. The copy module contains 
 
 
 p1 and p2 contain the same data, but they are not the same Point.
->p1和 p2包含的数据是相同的，但并不是同一个点对象。
+>p1 和 p2 包含的数据是相同的，但并不是同一个点对象。
 
 
 
@@ -422,8 +422,8 @@ False
 
 
 The is operator indicates that p1 and p2 are not the same object, which is what we expected. But you might have expected == to yield True because these points contain the same data. In that case, you will be disappointed to learn that for instances, the default behavior of the == operator is the same as the is operator; it checks object identity, not object equivalence. That’s because for programmer-defined types, Python doesn’t know what should be considered equivalent. At least, not yet.
->is 运算符表明 p1和 p2不是同一个对象，这就是我们所预料的。但你可能本想着是==运算符应该得到的是 True 因为这两个点包含的数据是一样的。这样的话你就会很失望地发现对于实例来说，==运算符的默认行为就跟 is 运算符是一样的；它也还是检查对象的身份，而不是对象的相等性。这是因为你用的是用户自定义的类型，Python 不值得如何去衡量是否相等。至少是现在还不能。
->（译者注：==运算符的实现需要运算符重载，也就是多态的一种，来实现，也就是对用户自定义类型，需要用户自定义运算符，而不能简单地继续用内置运算符。因为自定义类型的运算是 Python 没法确定的，得用户自己来确定。）
+>is 运算符表明 p1 和 p2 不是同一个对象，这就是我们所预料的。但你可能本想着是==运算符应该得到的是 True 因为这两个点包含的数据是一样的。这样的话你就会很失望地发现对于实例来说，==运算符的默认行为就跟 is 运算符是一样的；它也还是检查对象的身份，而不是对象的相等性。这是因为你用的是用户自定义的类型，Python 不值得如何去衡量是否相等。至少是现在还不能。
+>（译者注：== 运算符的实现需要运算符重载，也就是多态的一种，来实现，也就是对用户自定义类型，需要用户自定义运算符，而不能简单地继续用内置运算符。因为自定义类型的运算是 Python 没法确定的，得用户自己来确定。）
 
 
 
@@ -456,7 +456,7 @@ ________________________________________
 
 
 Figure 15.3 shows what the object diagram looks like. This operation is called a shallow copy because it copies the object and any references it contains, but not the embedded objects.
->图15.3展示了此时的类图的情况。这种运算叫做浅复制，因为复制了对象与对象内包含的所有引用，但不复制内嵌的对象。
+>图 15.3 展示了此时的类图的情况。这种运算叫做浅复制，因为复制了对象与对象内包含的所有引用，但不复制内嵌的对象。
 
 
 
@@ -494,7 +494,7 @@ As an exercise, write a version of move_rectangle that creates and returns a new
 
 
 When you start working with objects, you are likely to encounter some new exceptions. If you try to access an attribute that doesn’t exist, you get an AttributeError:
->当你开始使用对象的时候，你就容易遇到一些新的异常。如果你试图读取一个不存在的属性，就会得到一个属性错误AttributeError：
+>当你开始使用对象的时候，你就容易遇到一些新的异常。如果你试图读取一个不存在的属性，就会得到一个属性错误 AttributeError：
 
 
 ```Python
@@ -568,7 +568,7 @@ except AttributeError:
 
 
 This approach can make it easier to write functions that work with different types; more on that topic is coming up in Section 17.9.
->这样写一些处理不同类型变量的函数就更容易了；关于这一话题的更多内容会在17.9中展开。
+>这样写一些处理不同类型变量的函数就更容易了；关于这一话题的更多内容会在 [17.9](ThinkPython-17.md#179--polymorphism-多态) 中展开。
 
 
 
@@ -636,7 +636,7 @@ A diagram that shows objects, their attributes, and the values of the attributes
 
 
 Write a definition for a class named Circle with attributes center and radius, where center is a Point object and radius is a number.
->写一个名为 Circle 的类的定义，属性为圆心center和半径radius，center 是一个点对象，半径是一个数值。
+>写一个名为 Circle 的类的定义，属性为圆心 center 和半径 radius，center 是一个点对象，半径是一个数值。
 
 
 
@@ -646,7 +646,7 @@ Instantiate a Circle object that represents a circle with its center at (150, 10
 
 
 Write a function named point_in_circle that takes a Circle and a Point and returns True if the Point lies in or on the boundary of the circle.
->写一个名为 point_in_circle 的函数，接收一个 Circle 和一个 Point 对象作为参数，如果点在圆内或者圆的线上就返回True。
+>写一个名为 point_in_circle 的函数，接收一个 Circle 和一个 Point 对象作为参数，如果点在圆内或者圆的线上就返回 True。
 
 
 Write a function named rect_in_circle that takes a Circle and a Rectangle and returns True if the Rectangle lies entirely in or on the boundary of the circle.
