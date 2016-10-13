@@ -45,7 +45,7 @@ The function dict creates a new dictionary with no items. Because dict is the na
 
 
 The squiggly-brackets, {}, represent an empty dictionary. To add items to the dictionary, you can use square brackets:
->大括号，也叫花括号，就是{}，代表了一个空字典。要在字典里面加项，可以使用方括号：
+>大括号，也叫花括号，就是 {}，代表了一个空字典。要在字典里面加项，可以使用方括号：
 
 
 ```Python
@@ -101,7 +101,7 @@ But that’s not a problem because the elements of a dictionary are never indexe
 
 The key ’two’ always maps to the value 'dos' so the order of the items doesn’t matter.
 If the key isn’t in the dictionary, you get an exception:
->键'two'总会映射到键值'dos'，所以项的排列顺序并不要紧。
+>键 'two' 总会映射到键值 'dos'，所以项的排列顺序并不要紧。
 >如果你字典中没有你指定的键，你就得到如下提示：
 
 
@@ -146,13 +146,13 @@ True
 
 
 The in operator uses different algorithms for lists and dictionaries. For lists, it searches the elements of the list in order, as in Section 8.6. As the list gets longer, the search time gets longer in direct proportion.
->in 运算符在字典中和列表中有不同的算法了。对列表来说，它就按照顺序搜索列表中的每一个元素，如8.6所示。随着列表越来越长了，这种搜索就消耗更多的时间，才能找到正确的位置。
+>in 运算符在字典中和列表中有不同的算法了。对列表来说，它就按照顺序搜索列表中的每一个元素，如 [8.6](ThinkPython-08.md#86--searching-搜索) 所示。随着列表越来越长了，这种搜索就消耗更多的时间，才能找到正确的位置。
 
 
 
 
 For dictionaries, Python uses an algorithm called a hashtable that has a remarkable property: the in operator takes about the same amount of time no matter how many items are in the dictionary. I explain how that’s possible in Section 13.4, but the explanation might not make sense until you’ve read a few more chapters.
->而对字典来说，Python 使用了一种叫做哈希表的算法，这就有一种很厉害的特性：in 运算符在对字典来使用的时候无论字典规模多大，无论里面的项有多少个，花费的时间都是基本一样的。我在13.4会解释一下其实现原理，不过你要多学几章之后才能理解对此的解释。
+>而对字典来说，Python 使用了一种叫做哈希表的算法，这就有一种很厉害的特性：in 运算符在对字典来使用的时候无论字典规模多大，无论里面的项有多少个，花费的时间都是基本一样的。我在 [13.4](ThinkPython-13.md#134--most-common-words-最常用的单词) 会解释一下其实现原理，不过你要多学几章之后才能理解对此的解释。
 
 
 ##11.2  Dictionary as a collection of counters 用字典作为计数器
@@ -163,11 +163,11 @@ Suppose you are given a string and you want to count how many times each letter 
 
 
 1.	You could create 26 variables, one for each letter of the alphabet. Then you could traverse the string and, for each character, increment the corresponding counter, probably using a chained conditional.
->你可以建立26个变量，每一个代表一个字母。然后你遍历整个字符串，每个字母的个数都累加到对应的计数器里面，可能会用到分支条件判断。
+>你可以建立 26 个变量，每一个代表一个字母。然后你遍历整个字符串，每个字母的个数都累加到对应的计数器里面，可能会用到分支条件判断。
 
 
 2.	You could create a list with 26 elements. Then you could convert each character to a number (using the built-in function ord), use the number as an index into the list, and increment the appropriate counter.
->你可以建立一个有26个元素的列表。然后你把每个字母转换成一个数字（用内置的 ord 函数），用这些数字作为这个列表的索引，然后累加相应的计数器。
+>你可以建立一个有 26 个元素的列表。然后你把每个字母转换成一个数字（用内置的 ord 函数），用这些数字作为这个列表的索引，然后累加相应的计数器。
 
 
 3.	You could create a dictionary with characters as keys and counters as the corresponding values. The first time you see a character, you would add an item to the dictionary. After that you would increment the value of an existing item.
@@ -203,7 +203,7 @@ The name of the function is histogram, which is a statistical term for a collect
 The first line of the function creates an empty dictionary. The for loop traverses the string. Each time through the loop, if the character c is not in the dictionary, we create a new item with key c and the initial value 1 (since we have seen this letter once). If c is already in the dictionary we increment d[c].
 Here’s how it works:
 >函数的名字为 histogram，这是一个统计学术语，意思是计数（或者频次）的集合。
->函数的第一行创建了一个空字典。for 循环遍历了整个字符串、每次经过循环的时候，如果字符 c 没有在字典中，就在字典中创建一个新的项，键为 c，初始值为1（因为这就算遇到一次了）。如果 c 已经存在于字典中了，就对 d[c]进行一下累加。
+>函数的第一行创建了一个空字典。for 循环遍历了整个字符串、每次经过循环的时候，如果字符 c 没有在字典中，就在字典中创建一个新的项，键为 c，初始值为 1（因为这就算遇到一次了）。如果 c 已经存在于字典中了，就对 d[c] 进行一下累加。
 >下面是使用的样例：
 
 
@@ -217,7 +217,7 @@ Here’s how it works:
 
 The histogram indicates that the letters ’a’ and 'b' appear once; 'o' appears twice, and so on.
 Dictionaries have a method called get that takes a key and a default value. If the key appears in the dictionary, get returns the corresponding value; otherwise it returns the default value. For example:
->histogram的结果表明字母a 和 b 出现了一次，o 出现了两次，等等。
+>histogram的结果表明字母 a 和 b 出现了一次，o 出现了两次，等等。
 >字典有一个方法，叫做 get，接收一个键和一个默认值。如果这个键在字典中存在，get 就会返回对应的键值；如果不存在，它就会返回这个默认值。比如：
 
 
@@ -395,7 +395,7 @@ ________________________________________
 
 Figure 11.1 is a state diagram showing hist and inverse. A dictionary is represented as a box with the type dict above it and the key-value pairs inside. If the values are integers, floats or strings, I draw them inside the box, but I usually draw lists outside the box, just to keep the diagram simple.
 Lists can be values in a dictionary, as this example shows, but they cannot be keys. Here’s what happens if you try:
->图11.1为hist 和 inverse 两个字典的状态图。字典用方框表示，上方标示了类型 dict，方框内为键值对。如果键值为整数、浮点数或者字符串，就把它们放到一个方框内，不过通常我习惯把它们放到方框外面，这样图表看着简单干净。
+>图 11.1 为 hist 和 inverse 两个字典的状态图。字典用方框表示，上方标示了类型 dict，方框内为键值对。如果键值为整数、浮点数或者字符串，就把它们放到一个方框内，不过通常我习惯把它们放到方框外面，这样图表看着简单干净。
 >如图所示，用字典中的键值组成列表，而不能用键。如果你要用键的话，就会遇到如下所示的错误：
 
 
@@ -437,8 +437,8 @@ Since dictionaries are mutable, they can’t be used as keys, but they can be us
 
 If you played with the fibonacci function from Section 6.7, you might have noticed that the bigger the argument you provide, the longer the function takes to run. Furthermore, the run time increases quickly.
 To understand why, consider Figure 11.2, which shows the call graph forfibonacci with n=4:
->如果你试过了6.7中提到的斐波那契数列，你估计会发现随着参数增大，函数运行的时间也变长了。另外，运行时间的增长很显著。
->要理解这是怎么回事，就要参考一下图11.2，图中展示了当 n=4的时候函数调用的情况。
+>如果你试过了 [6.7](ThinkPython-06.md#67--one-more-example-斐波拉契数列) 中提到的斐波那契数列，你估计会发现随着参数增大，函数运行的时间也变长了。另外，运行时间的增长很显著。
+>要理解这是怎么回事，就要参考一下图 11.2，图中展示了当 n=4 的时候函数调用的情况。
 
 
 
@@ -450,13 +450,13 @@ ________________________________________
 
 
 A call graph shows a set of function frames, with lines connecting each frame to the frames of the functions it calls. At the top of the graph, fibonacci with n=4 calls fibonacci with n=3 and n=2. In turn, fibonacci with n=3 calls fibonacciwith n=2 and n=1. And so on.
->调用图展示了一系列的函数图框，图框直接的连线表示了函数只见的调用关系。顶层位置函数的参数 n =4，调用了 n=3和 n=2两种情况的函数。相应的 n=3的时候要调用 n=2和 n=1两种情况。依此类推。
+>调用图展示了一系列的函数图框，图框直接的连线表示了函数只见的调用关系。顶层位置函数的参数 n =4，调用了 n=3 和 n=2 两种情况的函数。相应的 n=3 的时候要调用 n=2 和 n=1 两种情况。依此类推。
 
 
 
 
 Count how many times fibonacci(0) and fibonacci(1) are called. This is an inefficient solution to the problem, and it gets worse as the argument gets bigger.
->算算fibonacci(0)和fibonacci(1)要被调用多少次吧。这样的解决方案是低效率的，随着参数增大，效率就越来越低了。
+>算算 fibonacci(0) 和 fibonacci(1) 要被调用多少次吧。这样的解决方案是低效率的，随着参数增大，效率就越来越低了。
 
 
 
@@ -479,7 +479,7 @@ def fibonacci(n):
 
 
 known is a dictionary that keeps track of the Fibonacci numbers we already know. It starts with two items: 0 maps to 0 and 1 maps to 1.
->known 是一个用来保存已经计算斐波那契函数值的字典。开始项目有两个，0对应0，1对应1，各自分别是各自的斐波那契函数值。
+>known 是一个用来保存已经计算斐波那契函数值的字典。开始项目有两个，0 对应 0，1 对应 1，各自分别是各自的斐波那契函数值。
 
 
 
@@ -529,7 +529,7 @@ def example2():
 
 
 But if you run it you will see that the value of been_called doesn’t change. The problem is that example2 creates a new local variable named been_called. The local variable goes away when the function ends, and has no effect on the global variable.
->你可以运行一下，并不报错，只是 been_called 的值并不会变化。这个情况的原因是 example2这个函数创建了一个新的名为 been_called 的局部变量。函数结束之后，局部变量就释放了，并不会影响全局变量。
+>你可以运行一下，并不报错，只是 been_called 的值并不会变化。这个情况的原因是 example2 这个函数创建了一个新的名为 been_called 的局部变量。函数结束之后，局部变量就释放了，并不会影响全局变量。
 
 
 To reassign a global variable inside a function you have to declare the global variable before you use it:
@@ -569,7 +569,7 @@ UnboundLocalError: local variable 'count' referenced before assignment
 
 
 Python assumes that count is local, and under that assumption you are reading it before writing it. The solution, again, is to declare count global.
->Python 会假设这个 count 是局部的，然后基于这样的假设，你就是在写出该变量之前就试图读取。这样问题的解决方法依然就是声称count 为全局变量。
+>Python 会假设这个 count 是局部的，然后基于这样的假设，你就是在写出该变量之前就试图读取。这样问题的解决方法依然就是声称 count 为全局变量。
 
 
 ```Python
@@ -786,7 +786,7 @@ Read the documentation of the dictionary method setdefault and use it to write a
 ###Exercise 3 练习3
 
 Memoize the Ackermann function from Exercise 2 and see if memoization makes it possible to evaluate the function with bigger arguments. Hint: no. (Solution)[http://thinkpython2.com/code/ackermann_memo.py].
->用备忘的方法来改进一下第二章练习中的Ackermann函数，看看是不是能让让函数处理更大的参数。提示：不行。(样例代码)[http://thinkpython2.com/code/ackermann_memo.py]。
+>用备忘的方法来改进一下第二章练习中的 Ackermann 函数，看看是不是能让让函数处理更大的参数。提示：不行。(样例代码)[http://thinkpython2.com/code/ackermann_memo.py]。
 
 
 
@@ -818,7 +818,7 @@ Write a program that reads a word list and finds all the rotate pairs. (Solution
 Here’s another Puzzler from (Car Talk)[http://www.cartalk.com/content/puzzlers]:
 This was sent in by a fellow named Dan O’Leary. He came upon a common one-syllable, five-letter word recently that has the following unique property. When you remove the first letter, the remaining letters form a homophone of the original word, that is a word that sounds exactly the same. Replace the first letter, that is, put it back and remove the second letter and the result is yet another homophone of the original word. And the question is, what’s the word?
 >下面是一个来自(Car Talk)[http://www.cartalk.com/content/puzzlers]的谜语：
->这条谜语来自一个名叫 Dan O'Leary的朋友。他最近发现一个单词，这个单词有一个音节，五个字母，然后有以下所述的特定性质。
+>这条谜语来自一个名叫 Dan O'Leary 的朋友。他最近发现一个单词，这个单词有一个音节，五个字母，然后有以下所述的特定性质。
 >去掉第一个字母，得到的是与原词同音异形异义词，发音与原词一模一样。替换一下首字母，也就是把第一个字母放回去，然后把第二个字母去掉，得到的是另外一个这样的同音异形异义词。那么问题来了，这是个什么词呢？
 
 
@@ -836,7 +836,7 @@ But there is, however, at least one word that Dan and we know of, which will yie
 You can use the dictionary from Exercise 1 to check whether a string is in the word list.
 To check whether two words are homophones, you can use the CMU Pronouncing Dictionary. You can download it from (Here)[http://www.speech.cs.cmu.edu/cgi-bin/cmudict] or from   (Here)[http://thinkpython2.com/code/c06d] and you can also download (Here)[http://thinkpython2.com/code/pronounce.py], which provides a function namedread_dictionary that reads the pronouncing dictionary and returns a Python dictionary that maps from each word to a string that describes its primary pronunciation.
 Write a program that lists all the words that solve the Puzzler. (Solution)[http://thinkpython2.com/code/homophone.py].
->你可以用本章练习1的字典来检查一个字符串是否在一个字典之中。检查两个单词是不是同音异形异义词，可以用 CMU 发音字典。可以从(这里)[http://www.speech.cs.cmu.edu/cgi-bin/cmudict]或者(这里)[http://thinkpython2.com/code/c06d]或者(这里)[http://thinkpython2.com/code/pronounce.py]来下载， 该字典提供了一个名为read_dictionary的函数，该函数会读取发音词典，然后返回一个 Python 词典，返回的这个词典会映射每一个单词到描述单词读音的字符串。
+>你可以用本章练习 1 的字典来检查一个字符串是否在一个字典之中。检查两个单词是不是同音异形异义词，可以用 CMU 发音字典。可以从(这里)[http://www.speech.cs.cmu.edu/cgi-bin/cmudict]或者(这里)[http://thinkpython2.com/code/c06d]或者(这里)[http://thinkpython2.com/code/pronounce.py]来下载， 该字典提供了一个名为read_dictionary的函数，该函数会读取发音词典，然后返回一个 Python 词典，返回的这个词典会映射每一个单词到描述单词读音的字符串。
 写一个函数来找到所有满足谜语要求的单词。(样例代码)[http://thinkpython2.com/code/homophone.py]。
 
 [Chapter 10](ThinkPython-10.md) | [Chapter 12](ThinkPython-12.md)
