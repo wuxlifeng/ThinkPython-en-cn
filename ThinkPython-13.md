@@ -56,12 +56,12 @@ Print the number of different words used in the book. Compare different books by
 
 ###Exercise 3  练习3
 Modify the program from the previous exercise to print the 20 most frequently-used words in the book.
->再接着修改程序，输出一下每本书中最频繁出现的20个词。
+>再接着修改程序，输出一下每本书中最频繁出现的 20 个词。
 
 
 ###Exercise 4  练习4
 Modify the previous program to read a word list (see Section 9.1) and then print all the words in the book that are not in the word list. How many of them are typos? How many of them are common words that should be in the word list, and how many of them are really obscure?
->接着修改，让程序能读取一个单词列表（参考9.1），然后输出一下所有包含在书中，但不包含于单词列表中的单词。看看这些单词中有多少是排版错误的？有多少是本应被单词列表包含的常用单词？有多少是很晦涩艰深的罕见词汇？
+>接着修改，让程序能读取一个单词列表（参考 [9.1](ThinkPython-09.md#91--reading-word-lists-读取字符列表)），然后输出一下所有包含在书中，但不包含于单词列表中的单词。看看这些单词中有多少是排版错误的？有多少是本应被单词列表包含的常用单词？有多少是很晦涩艰深的罕见词汇？
 
 
 ##13.2  Random numbers 随机数
@@ -82,7 +82,7 @@ The random module provides functions that generate pseudorandom numbers (which I
 
 
 The function random returns a random float between 0.0 and 1.0 (including 0.0 but not 1.0). Each time you call random, you get the next number in a long series. To see a sample, run this loop:
->函数 random 返回一个在0.0到1.0的前闭后开区间（就是包括0.0但不包括1.0，这个特性在 Python 随处都是，比如序列的索引等等）的随机数。每次调用 random，就会得到一个很长的数列中的下一个数。如下这个循环就是一个例子了：
+>函数 random 返回一个在 0.0 到 1.0 的前闭后开区间（就是包括 0.0 但不包括 1.0，这个特性在 Python 随处都是，比如序列的索引等等）的随机数。每次调用 random，就会得到一个很长的数列中的下一个数。如下这个循环就是一个例子了：
 
 
 ```Python
@@ -94,7 +94,7 @@ print(x)
 
 
 The function randint takes parameters low and high and returns an integer between low and high (including both).
->randint函数接收两个参数作为下界和上界，然后返回一个二者之间的整数，这个整数可以是下界或者上界。
+>randint 函数接收两个参数作为下界和上界，然后返回一个二者之间的整数，这个整数可以是下界或者上界。
 
 ```Python
 >>> random.randint(5, 10)
@@ -119,7 +119,7 @@ To choose an element from a sequence at random, you can use choice:
 
 
 The random module also provides functions to generate random values from continuous distributions including Gaussian, exponential, gamma, and a few more.
->random 模块还提供了其他一些函数，可以计算某些连续分布的随机值，比如Gaussian高斯分布, exponential指数分布, gamma γ分布等等。
+>random 模块还提供了其他一些函数，可以计算某些连续分布的随机值，比如 Gaussian 高斯分布, exponential 指数分布, gamma γ 分布等等。
 
 
 
@@ -127,7 +127,7 @@ The random module also provides functions to generate random values from continu
 
 
 Write a function named choose_from_hist that takes a histogram as defined in Section 11.2 and returns a random value from the histogram, chosen with probability in proportion to frequency. For example, for this histogram:
->写一个名为 choose_from_hist 的函数，用这个函数来处理一下11.2中定义的那个histogram函数，从histogram 的值当中随机选择一个，这个选择的概率按照比例来定。比如下面这个histogram：
+>写一个名为 choose_from_hist 的函数，用这个函数来处理一下 [11.2](ThinkPython-11.md#112--dictionary-as-a-collection-of-counters-用字典作为计数器) 中定义的那个 histogram 函数，从 histogram 的值当中随机选择一个，这个选择的概率按照比例来定。比如下面这个 histogram：
 
 
 ```Python
@@ -139,7 +139,7 @@ Write a function named choose_from_hist that takes a histogram as defined in Sec
 
 
 your function should return ’a’ with probability 2/3 and ’b’ with probability 1/3.
->你的函数就应该返回a 的概率为2/3，返回b 的概率为1/3
+>你的函数就应该返回 a 的概率为 2/3，返回 b 的概率为 1/3
 
 
 
@@ -186,11 +186,11 @@ This program reads emma.txt, which contains the text of Emma by Jane Austen.
 >上面这个程序读取的是 emma.txt 这个文件，该文件是简奥斯汀的小说《艾玛》。
 
 process_file loops through the lines of the file, passing them one at a time to process_line. The histogram hist is being used as an accumulator.
->process_file这个函数遍历整个文件，逐行读取，然后把每行的内容发给process_line函数。词频统计函数 hist 在该程序中是一个累加器。
+>process_file 这个函数遍历整个文件，逐行读取，然后把每行的内容发给 process_line 函数。词频统计函数 hist 在该程序中是一个累加器。
 
 
 process_line uses the string method replace to replace hyphens with spaces before using split to break the line into a list of strings. It traverses the list of words and uses strip and lower to remove punctuation and convert to lower case. (It is a shorthand to say that strings are “converted”; remember that string are immutable, so methods like strip and lower return new strings.)
->process_line使用字符串的方法 replace把各种连字符都用空格替换，然后用 split 方法把整行打散成一个字符串列表。程序遍历整个单词列表，然后用 strip 和 lower 这两个方法移除了标点符号，并且把所有字母都转换成小写的。（一定要记住，这里说的『转换』是图方便而已，实际上并不能转换，要记住字符串是不可以修改的，strip 和 lower 这些方法都是返回了新的字符串，一定要记得！）
+>process_line 使用字符串的方法 replace 把各种连字符都用空格替换，然后用 split 方法把整行打散成一个字符串列表。程序遍历整个单词列表，然后用 strip 和 lower 这两个方法移除了标点符号，并且把所有字母都转换成小写的。（一定要记住，这里说的『转换』是图方便而已，实际上并不能转换，要记住字符串是不可以修改的，strip 和 lower 这些方法都是返回了新的字符串，一定要记得！）
 
 
 
@@ -269,7 +269,7 @@ for freq, word in t[:10]:
 
 
 I use the keyword argument sep to tell print to use a tab character as a “separator”, rather than a space, so the second column is lined up. Here are the results from Emma:
->此处用了关键词 sep 来让 print 输出的时候以一个tab跳表符来作为分隔，而不是一个空格，这样第二列就会对齐。下面就是对《艾玛》这本小说的统计结果：
+>此处用了关键词 sep 来让 print 输出的时候以一个 tab 跳表符来作为分隔，而不是一个空格，这样第二列就会对齐。下面就是对《艾玛》这本小说的统计结果：
 >(译者注：这个效果在 Python 下很明显，此处 markdown 我刚开始熟悉，不清楚咋实现。)
 
 
@@ -313,7 +313,7 @@ def print_most_common(hist, num=10):
 
 The first parameter is required; the second is optional. The default value of num is 10.
 If you only provide one argument:
->上面这个函数中，第一个参数是必须输入的；而第二个参数就是可选的了。第二个参数 num 的默认值是10.
+>上面这个函数中，第一个参数是必须输入的；而第二个参数就是可选的了。第二个参数 num 的默认值是 10.
 >如果只提供第一个参数：
 
 ```Python
@@ -341,7 +341,7 @@ Finding the words from the book that are not in the word list from words.txt is 
 >有的单词存在于书当中，但没有包含在文件 words.txt 的单词列表中，找这些单词就有点难了，你估计已经意识到了，这是一种集合的减法；也就是要从一个集合（也就是书）中所有不被另一个集合（也就是单词列表）包含的单词。
 
 subtract takes dictionaries d1 and d2 and returns a new dictionary that contains all the keys from d1 that are not in d2. Since we don’t really care about the values, we set them all to None.
->下面的代码中定义的 subtrac t这个函数，接收两个字典 d1和 d2，然后返回一个新字典，这个新字典包含所有 d1中包含而 d2中不包含的键。键值就无所谓了，就都设置为空即可。
+>下面的代码中定义的 subtrac t这个函数，接收两个字典 d1 和 d2，然后返回一个新字典，这个新字典包含所有 d1 中包含而 d2 中不包含的键。键值就无所谓了，就都设置为空即可。
 
 
 ```Python
@@ -355,7 +355,7 @@ def subtract(d1, d2):
 
 
 To find the words in the book that are not in words.txt, we can use process_file to build a histogram for words.txt, and then subtract:
->要找到书中含有而words.txt 中不含有的单词，就可以用 process_file 函数来建立一个 words.txt 的词频统计，然后用 subtract 函数来相减：
+>要找到书中含有而 words.txt 中不含有的单词，就可以用 process_file 函数来建立一个 words.txt 的词频统计，然后用 subtract 函数来相减：
 
 ```Python
 words = process_file('words.txt')
@@ -391,7 +391,7 @@ Some of these words are names and possessives. Others, like “rencontre”, are
 
 
 Python provides a data structure called set that provides many common set operations. You can read about them in Section 19.5, or read the documentation at [Here](http://docs.python.org/3/library/stdtypes.html#types-set).
->Python 提供了一个数据结构叫 set（集合），该类型提供了很多常见的集合运算。可以在19.5阅读一下，或者阅读一下[这里的官方文档](http://docs.python.org/3/library/stdtypes.html#types-set)。
+>Python 提供了一个数据结构叫 set（集合），该类型提供了很多常见的集合运算。可以在 [19.5](ThinkPython-19.md#195--sets-集合) 阅读一下，或者阅读一下[这里的官方文档](http://docs.python.org/3/library/stdtypes.html#types-set)。
 
 Write a program that uses set subtraction to find words in the book that are not in the word list. [Solution](http://thinkpython2.com/code/analyze_book2.py).
 >写一个程序吧，用集合的减法，来找一下书中包含而列表中不包含的单词吧。 [样例代码](http://thinkpython2.com/code/analyze_book2.py)。
@@ -416,7 +416,7 @@ def random_word(h):
 
 
 The expression [word] * freq creates a list with freq copies of the string word. The extend method is similar to append except that the argument is a sequence.
->上面代码中的[word] * freq表达式建立了一个列表，列表中字符串单词的出现次数即其原来的词频数。extend 方法和 append 方法相似，区别是前者的参数是一个序列，而后者是单独的元素。
+>上面代码中的 [word] * freq 表达式建立了一个列表，列表中字符串单词的出现次数即其原来的词频数。extend 方法和 append 方法相似，区别是前者的参数是一个序列，而后者是单独的元素。
 
 
 This algorithm works, but it is not very efficient; each time you choose a random word, it rebuilds the list, which is as big as the original book. An obvious improvement is to build the list once and then make multiple selections, but the list is still big.
@@ -430,11 +430,11 @@ An alternative is:
 >用键来存储书中单词的列表。
 
 2.	Build a list that contains the cumulative sum of the word frequencies (see Exercise 2). The last item in this list is the total number of words in the book, n.
->再建立一个列表，该列表包含所有词频的累加总和（参考练习2）。该列表的最后一个元素是书中所有单词的总数 n。
+>再建立一个列表，该列表包含所有词频的累加总和（参考练习 2）。该列表的最后一个元素是书中所有单词的总数 n。
 
 
 3.	Choose a random number from 1 to n. Use a bisection search (See Exercise 10) to find the index where the random number would be inserted in the cumulative sum.
->选择一个1到 n 之间的随机数。使用折半法搜索（参考练习10），找到随机数在累计总和中所在位置的索引值。
+>选择一个 1 到 n 之间的随机数。使用折半法搜索（参考练习 10），找到随机数在累计总和中所在位置的索引值。
 
 
 4.	Use the index to find the corresponding word in the word list.
@@ -468,7 +468,7 @@ A series of random words seldom makes sense because there is no relationship bet
 
 
 One way to measure these kinds of relationships is Markov analysis, which characterizes, for a given sequence of words, the probability of the words that might come next. For example, the song Eric, the Half a Bee begins:
->衡量单词之间关系的一种方法就是马科夫分析法，这一方法就是：对给定的单词序列，分析一个词跟着另一个词后面出现的概率。比如，Eric, the Half a Bee这首歌的开头：
+>衡量单词之间关系的一种方法就是马科夫分析法，这一方法就是：对给定的单词序列，分析一个词跟着另一个词后面出现的概率。比如，Eric, the Half a Bee 这首歌的开头：
 
 
 
@@ -539,7 +539,7 @@ What happens if you increase the prefix length? Does the random text make more s
 
 
 Credit: This case study is based on an example from Kernighan and Pike, The Practice of Programming, Addison-Wesley, 1999.
->引用：这个案例研究是基于Kernighan 和 Pike 在1999年由Addison-Wesley出版社出版的《The Practice of Programming》一书中的一个例子。
+>引用：这个案例研究是基于 Kernighan 和 Pike 在 1999 年由 Addison-Wesley 出版社出版的《The Practice of Programming》一书中的一个例子。
 
 
 
@@ -608,7 +608,7 @@ For the collection of suffixes, the operations we need to perform include adding
 
 
 Adding a new suffix is equally easy for the list implementation or the histogram. Choosing a random element from a list is easy; choosing from a histogram is harder to do efficiently (see Exercise 7).
->添加新后缀，无论是用列表还是用词频字典，实现起来都一样容易。不过从列表中选择一个随机元素很容易；但从词频字典中选择随机元素实现起来就不太有效率了（参考练习7）。
+>添加新后缀，无论是用列表还是用词频字典，实现起来都一样容易。不过从列表中选择一个随机元素很容易；但从词频字典中选择随机元素实现起来就不太有效率了（参考练习 7）。
 
 
 
@@ -791,10 +791,10 @@ $$
 $$
 
 
->（译者注：Zipf定律是美国学者G.K.齐普夫提出的。可以表述为：在自然语言的语料库里，一个单词出现的频率与它在频率表里的排名成反比。）
+>（译者注：Zipf 定律是美国学者 G.K.齐普夫提出的。可以表述为：在自然语言的语料库里，一个单词出现的频率与它在频率表里的排名成反比。）
 
 So if you plot log f versus log r, you should get a straight line with slope −s and intercept log c.
->因此如果你将 log f 和 log r 进行二维坐标系投点，就应该得到一条直线，斜率是-s，截距是 log c。
+>因此如果你将 log f 和 log r 进行二维坐标系投点，就应该得到一条直线，斜率是 -s，截距是 log c。
 
 
 Write a program that reads a text from a file, counts word frequencies, and prints one line for each word, in descending order of frequency, with log f and log r.
