@@ -6,7 +6,7 @@ Tag: 双语,Python,ThinkPython
 #Chapter 7 Iteration 迭代
 
 This chapter is about iteration, which is the ability to run a block of statements repeatedly. We saw a kind of iteration, using recursion, in Section 5.8. We saw another kind, using a for loop, in Section 4.2. In this chapter we’ll see yet another kind, using a while statement. But first I want to say a little more about variable assignment.
->这一章我们讲迭代，简单说就是指重复去运行一部分代码。在 [5.8](ThinkPython-05.md#58--recursion-递归运算) 的时候我们接触了一种迭代——递归。在 [4.2](ThinkPython-04.md#42--simple-repetition-简单的重复) 我们还学了另外一种迭代——for 循环。在本章，我们会见到新的迭代方式：whie 语句。但我要先再稍微讲一下变量赋值。
+>这一章我们讲迭代，简单说就是指重复去运行一部分代码。在 [5.8](ThinkPython-05.md#58--recursion-递归运算) 的时候我们接触了一种迭代——递归。在 [4.2](ThinkPython-04.md#42--simple-repetition-简单的重复) 我们还学了另外一种迭代—— for 循环。在本章，我们会见到新的迭代方式：whie 语句。但我要先再稍微讲一下变量赋值。
 
 ##7.1  Reassignment 再赋值
 
@@ -34,16 +34,16 @@ Figure 7.1 shows what reassignment looks like in a state diagram.
 
 
 At this point I want to address a common source of confusion. Because Python uses the equal sign (=) for assignment, it is tempting to interpret a statement like a = b as a mathematical proposition of equality; that is, the claim that a and b are equal. But this interpretation is wrong.
->这里我就要强调一下大家常发生的误解。因为Python使用单等号（=）来赋值，所以有的人会以为像a=b这样的语句就如同数学上的表达一样来表达两者相等，这种想法是错误的！
+>这里我就要强调一下大家常发生的误解。因为 Python 使用单等号 `=` 来赋值，所以有的人会以为像 a=b 这样的语句就如同数学上的表达一样来表达两者相等，这种想法是错误的！
 
 
 First, equality is a symmetric relationship and assignment is not. For example, in mathematics, if a=7 then 7=a. But in Python, the statement a = 7 is legal and 7 = a is not.
->首先，数学上的等号所表示的相等是一个对称的关系，而Python中等号的赋值操作是不对称的。比如，在数学上，如果a=7，那么7=a。而在Python，a=7这个是合乎语法的，而7=a是错误的。
->（译者注：这里就是说Python中等号是一种单向的运算，就是把等号右边的值赋给等号左边的变量，而Python中其实也有数学上相等判断的表达式，就是双等号（==），这个是有对称性的，就是说a==b，那么b==a，或者a==3，3==a也可以。）
+>首先，数学上的等号所表示的相等是一个对称的关系，而 Python 中等号的赋值操作是不对称的。比如，在数学上，如果 a=7，那么 7=a。而在 Python，a=7 这个是合乎语法的，而 7=a 是错误的。
+>（译者注：这里就是说 Python 中等号是一种单向的运算，就是把等号右边的值赋给等号左边的变量，而 Python 中其实也有数学上相等判断的表达式，就是双等号 `==`，这个是有对称性的，就是说 a==b，那么 b==a，或者 a==3，3==a 也可以。）
 
 
 Also, in mathematics, a proposition of equality is either true or false for all time. If a=b now, then a will always equal b. In Python, an assignment statement can make two variables equal, but they don’t have to stay that way:
->另外在数学上，一个相等关系要么是真，要么是假。比如a=b，那么a就会永远等于b。在Python里面，赋值语句可以让两个变量相等，但可以不始终都相等，如下所示：
+>另外在数学上，一个相等关系要么是真，要么是假。比如 a=b，那么 a 就会永远等于 b。在 Python 里面，赋值语句可以让两个变量相等，但可以不始终都相等，如下所示：
 
 
 ```Python
@@ -56,7 +56,7 @@ Also, in mathematics, a proposition of equality is either true or false for all 
 
 
 The third line changes the value of a but does not change the value of b, so they are no longer equal.
->第三行改变了a的值，但没有改变b的值，所以它们就不再相等了。
+>第三行改变了 a 的值，但没有改变 b 的值，所以它们就不再相等了。
 
 Reassigning variables is often useful, but you should use it with caution. If the values of variables change frequently, it can make the code difficult to read and debug.
 >对变量进行再赋值总是很有用的，但你用的时候要做好备注和提示。如果变量的值频繁变化，就可能让代码难以阅读和调试。
@@ -86,7 +86,7 @@ A common kind of reassignment is an update, where the new value of the variable 
 
 This means “get the current value of x, add one, and then update x with the new value.”
 If you try to update a variable that doesn’t exist, you get an error, because Python evaluates the right side before it assigns a value to x:
->上面的语句的意思是：获取x当前的值，在此基础上加1，然后把结果作为新值赋给x。如果你对不存在的变量进行更新，你就会得到错误了，因为Python要先进行等号右边的运算，然后才能赋值给x。
+>上面的语句的意思是：获取 x 当前的值，在此基础上加 1，然后把结果作为新值赋给 x。如果你对不存在的变量进行更新，你就会得到错误了，因为 Python 要先进行等号右边的运算，然后才能赋值给 x。
 
 
 
@@ -106,7 +106,7 @@ Before you can update a variable, you have to initialize it, usually with a simp
 ```
 
 Updating a variable by adding 1 is called an increment; subtracting 1 is called a decrement.
->对一个变量每次加1也可以叫做一种递增，每次减去1就可以叫做递减了。
+>对一个变量每次加 1 也可以叫做一种递增，每次减去 1 就可以叫做递减了。
 
 
 
@@ -119,7 +119,7 @@ Computers are often used to automate repetitive tasks. Repeating identical or si
 
 
 We have already seen two functions, countdown and print_n, that iterate using recursion. Because iteration is so common, Python provides language features to make it easier. One is the for statement we saw in Section 4.2. We’ll get back to that later. Another is the while statement. Here is a version of countdown that uses a while statement:
->我们已经见过两种使用了递归来进行迭代的函数：倒计时函数countdown，以及n次输出函数print_n。Python还提供了一些功能来简化迭代，因为迭代用的很普遍。其中一个就是我们在 [4.2](ThinkPython-04.md#42--simple-repetition-简单的重复) 中见到的 for 循环语句。往后我们还要复习一下它。另外一个就是 while 循环语句。下面就是一个使用了 while 循环语句来实现的倒计时函数 countdown：
+>我们已经见过两种使用了递归来进行迭代的函数：倒计时函数 countdown，以及 n 次输出函数 print_n。Python还提供了一些功能来简化迭代，因为迭代用的很普遍。其中一个就是我们在 [4.2](ThinkPython-04.md#42--simple-repetition-简单的重复) 中见到的 for 循环语句。往后我们还要复习一下它。另外一个就是 while 循环语句。下面就是一个使用了 while 循环语句来实现的倒计时函数 countdown：
 
 
 ```Python
@@ -134,13 +134,13 @@ You can almost read the while statement as if it were English. It means, “Whil
 >while 循环语句读起来很容易，几乎就像是英语一样简单。这个函数的意思是：当 n 大于 0，就输出n的值，然后对 n 减 1，到 n 等于 0 的时候，就输出单词『Blastoff』。
 
 More formally, here is the flow of execution for a while statement:
->更正式一点，下面是一个while循环语句的执行流程：
+>更正式一点，下面是一个 while 循环语句的执行流程：
 
 1.	Determine whether the condition is true or false.
 >判断循环条件的真假。
 
 2.	If false, exit the while statement and continue execution at the next statement.
->如果是假的，退出while语句，继续运行后面的语句。
+>如果是假的，退出 while 语句，继续运行后面的语句。
 
 3.	If the condition is true, run the body and then go back to step 1.
 >如果条件为真，执行循环体，然后再调回到第一步。
@@ -156,7 +156,7 @@ Otherwise the loop will repeat forever, which is called an infinite loop. An end
 
 
 In the case of countdown, we can prove that the loop terminates: if n is zero or negative, the loop never runs. Otherwise, n gets smaller each time through the loop, so eventually we have to get to 0.
->在倒计时函数 countdown 里面，咱们能够保证有办法让循环终止：只要 n 小于等于 0 了，循环就不进行了。否则的话，n每次就会通过循环来递减，最终还是能到 0 的。
+>在倒计时函数 countdown 里面，咱们能够保证有办法让循环终止：只要 n 小于等于 0 了，循环就不进行了。否则的话，n 每次就会通过循环来递减，最终还是能到 0 的。
 
 
 For some other loops, it is not so easy to tell. For example:
@@ -178,7 +178,7 @@ The condition for this loop is n != 1, so the loop will continue until n is 1, w
 >这个循环的判断条件是 n 不等于 1，所以循环一直进行，直到 n 等于 1 了，条件为假，就不再循环了。
 
 Each time through the loop, the program outputs the value of n and then checks whether it is even or odd. If it is even, n is divided by 2. If it is odd, the value of n is replaced with `n*3 + 1`. For example, if the argument passed to sequence is 3, the resulting values of n are 3, 10, 5, 16, 8, 4, 2, 1.
->每次循环的时候，程序都输出 n 的值，然后检查一下是偶数还是奇数。如果是偶数，就把 n 除以 2。如果是奇数，就把n替换为 n 乘以 3 再加 1 的值。比如让这个函数用 3 做参数，也就是 sequence(3)，得到的n的值就依次为：3, 10, 5, 16, 8, 4, 2, 1.
+>每次循环的时候，程序都输出 n 的值，然后检查一下是偶数还是奇数。如果是偶数，就把 n 除以 2。如果是奇数，就把 n 替换为 n 乘以 3 再加 1 的值。比如让这个函数用 3 做参数，也就是 sequence(3)，得到的 n 的值就依次为：3, 10, 5, 16, 8, 4, 2, 1.
 
 
 Since n sometimes increases and sometimes decreases, there is no obvious proof that n will ever reach 1, or that the program terminates. For some particular values of n, we can prove termination. For example, if the starting value is a power of two, n will be even every time through the loop until it reaches 1. The previous example ends with such a sequence, starting with 16.
@@ -188,7 +188,7 @@ Since n sometimes increases and sometimes decreases, there is no obvious proof t
 
 The hard question is whether we can prove that this program terminates for all positive values of n. So far, no one has been able to prove it or disprove it! 
 See [WikiPedia](http://en.wikipedia.org/wiki/Collatz_conjecture)
->真正的难题是，我们能否证明这个程序对任意正数的n值都能终止循环。目前为止，没有人能够证明或者否定这个命题。
+>真正的难题是，我们能否证明这个程序对任意正数的 n 值都能终止循环。目前为止，没有人能够证明或者否定这个命题。
 参考[维基百科](http://en.wikipedia.org/wiki/Collatz_conjecture)
 
 
@@ -417,10 +417,10 @@ A general process for solving a category of problems.
 ###Exercise 1 练习1
 
 Copy the loop from Section 7.5 and encapsulate it in a function called mysqrt that takes a as a parameter, chooses a reasonable value of x, and returns an estimate of the square root of a.
->从 7.5 复制一个循环，然后改写成名字叫做 mysqrt 的函数，该函数用一个a作为参数，选择一个适当的起始值x，然后返回 a 的平方根的近似值。
+>从 7.5 复制一个循环，然后改写成名字叫做 mysqrt 的函数，该函数用一个 a 作为参数，选择一个适当的起始值 x，然后返回 a 的平方根的近似值。
 
 To test it, write a function named test_square_root that prints a table like this:
->测试这个函数，写一个叫做test_suqare_root的函数来输出以下这样的表格：
+>测试这个函数，写一个叫做 test_suqare_root 的函数来输出以下这样的表格：
 
 | a |mysqrt(a)|math.sqrt(a)|diff |
 |--------|--------|--------|--------|
@@ -465,7 +465,7 @@ It should continue until the user enters 'done', and then return the value of th
 ##Exercise 3 练习3
 
 The mathematician Srinivasa Ramanujan found an infinite series that can be used to generate a numerical approximation of 1 / π:
->传奇的数学家拉马努金发现了一个无穷级数（1914年的论文），能够用来计算圆周率倒数的近似值：
+>传奇的数学家拉马努金发现了一个无穷级数（1914 年的论文），能够用来计算圆周率倒数的近似值：
 
 $$\frac{1}{\pi}=\frac{2\sqrt{2}}{99^2}\sum_{k=0}^\infty\frac{(4k)!(26390k+1103)}{(k!)^4396^{4k}}$$
 
