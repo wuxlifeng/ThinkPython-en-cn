@@ -4,6 +4,7 @@ Category: ThinkPython
 Tag: 双语,Python,ThinkPython
 
 #Think Python
+
 >2nd Edition
 >by Allen B. Downey
 >翻译 大胖哥
@@ -14,7 +15,7 @@ This is a very classical book for newbies of programing. There are some versions
 >这是一本很经典的编程入门书籍。网上有过一些翻译，不过我觉得咱们还是自己来一下比较好！
 
 This is the second edition of Think Python. It uses Python 3, with notes on differences in Python 2. If you are using Python 2, you might want to use [the first edition](http://www.greenteapress.com/thinkpython/index.html).
->这是Think Python这本书的第二版，本次使用的是Python3，与Python2有很多不同，这些不同之处会有标注。如果你用Python2的货，还是建议你去阅读[上一个版本](http://www.greenteapress.com/thinkpython/index.html)。
+>这是 Think Python 这本书的第二版，本次使用的是 Python3，与 Python2 有很多不同，这些不同之处会有标注。如果你用 Python2 的货，还是建议你去阅读[上一个版本](http://www.greenteapress.com/thinkpython/index.html)。
 
 Buy the first edition at [Amazon.com ](http://amzn.to/Owtmjy)
 >到[亚马逊](http://amzn.to/Owtmjy)购买本书
@@ -44,16 +45,16 @@ What's new in the second edition?
 >第二版有啥新东西呢？
 
 *	We've upgraded to Python 3: All examples in the book are now Python 3, and the supporting code has been updated to run in both Python 2 and 3.
->开始用Python3了：书里面所有样例都用Python3来实现，参考代码也都做了升级，用Python2或者3都能运行。
+>开始用 Python3 了：书里面所有样例都用 Python3 来实现，参考代码也都做了升级，用 Python2 或者 3 都能运行。
 
 *	We've removed the roadblocks: Based on reader feedback, we know where people had problems, so we've fixed or removed the pain points.
 >去掉了一些比较难的内容：基于读者反馈，我们认识到大家存在某些困难，所以就调整或者去掉了一些难点。
 
 *	Python in the browser: For beginners, one of the challenges of getting started is installing Python. For readers who don't want to install Python right away, we provide instructions for running Python in a browser using PythonAnywhere, a free online programming environment.
->浏览器内能Python编程了：初学者遇到的第一个困难就是安装Python。另外有的读者可能不想去直接就安装Python，我们就提供了一个用浏览器来运行Python的简介：使用PythonAnywhere，一个免费的在线Python编程环境。（译者注：中国用户以考虑试试fenby.com，也有类似的实现，还有视频的介绍。）
+>浏览器内能 Python 编程了：初学者遇到的第一个困难就是安装 Python。另外有的读者可能不想去直接就安装 Python，我们就提供了一个用浏览器来运行 Python 的简介：使用 PythonAnywhere，一个免费的在线 Python 编程环境。（译者注：中国用户以考虑试试 fenby.com，也有类似的实现，还有视频的介绍。）
 
 *	More Python goodies: We've added a chapter to cover some powerful Python features that didn't make it into the first edition, including list comprehensions and additional data structures.
->更多 Python 彩蛋：单独加了一章，来介绍一些第一版中没有提及的Python功能，比如列表解析和附加的数据结构。
+>更多 Python 彩蛋：单独加了一章，来介绍一些第一版中没有提及的 Python 功能，比如列表解析和附加的数据结构。
 
 Think Python 2e is a Free Book. 
 >这本书是一本自-和谐-由的书。
@@ -77,7 +78,7 @@ Download 下载
 >LaTeX 代码在 GitHub 这里可以下载：[this GitHub repository](https://github.com/AllenDowney/ThinkPython2).
 
 *	Here is the HTML version, and here is the HTML code in a zip archive.
->网页在线阅读 HTML version, 这些网页打包下载 HTML code ，这是一个zip格式的压缩包。
+>网页在线阅读 HTML version, 这些网页打包下载 HTML code ，这是一个 zip 格式的压缩包。
 
 
 ##Earlier Versions 
