@@ -55,13 +55,12 @@ The result is this book, now with the less grandiose title Think Python. Some of
 *	I expanded the discussion of program development plans and basic design patterns.
 *	I added appendices about debugging and analysis of algorithms.
 
->结果就产生了现在这本书，现在标题简化了很多 —— Think Python。主要的改变如下：
-
+>* 结果就产生了现在这本书，现在标题简化了很多 —— Think Python。主要的改变如下：
 >* 在每一章的末尾，我加了关于 debug 的部分。这些内容提供了关于 debug 的一些整体策略，比如如何找到和避免 bug，还有就是关于 Python 一些陷阱进行了提醒。
 >* 我加了更多的练习，从简单的理解方面的测试，到一些比较充足的项目。大多数练习都有解决方案的样本链接。
->*我还添加了一些案例研究，包含练习、解决方案和讨论的更大规模的样例。
->*此外我还扩展了关于程序开发规划和基本设计模式的讨论。
->*关于 debug 和算法分析，还额外加了一些附录。
+>* 我还添加了一些案例研究，包含练习、解决方案和讨论的更大规模的样例。
+>* 此外我还扩展了关于程序开发规划和基本设计模式的讨论。
+>* 关于 debug 和算法分析，还额外加了一些附录。
 	
 The second edition of Think Python has these new features:
 
