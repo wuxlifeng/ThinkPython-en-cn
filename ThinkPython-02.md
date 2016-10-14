@@ -123,7 +123,7 @@ The alternative is to save code in a file called a script and then run the inter
 `.py`。
 
 If you know how to create and run a script on your computer, you are ready to go. Otherwise I recommend using PythonAnywhere again. I have posted instructions for running in script mode at http://tinyurl.com/thinkpython2e.
->如果你知道怎么创建和运行脚本，那就尽管在自己电脑上尝试好了。否则我就建议你还是用 PythonAnywhere。关于脚本模式的介绍我放到网上了，打开这个链接（http://tinyurl.com/thinkpython2e）去看下哈。
+>如果你知道怎么创建和运行脚本，那就尽管在自己电脑上尝试好了。否则我就建议你还是用 PythonAnywhere。关于脚本模式的介绍我放到网上了，打开这个链接 ( http://tinyurl.com/thinkpython2e )去看下哈。
 
 Because Python provides both modes, you can test bits of code in interactive mode before you put them in a script. But there are differences between interactive mode and script mode that can be confusing.
 >Python两种模式都支持，所以你可以先用交互模式做点测试，然后再写成脚本。但是两种模式之间有些区别的，所以可能也挺麻烦。
