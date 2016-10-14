@@ -44,8 +44,8 @@ One of the challenges of getting started with Python is that you might have to i
 To avoid that problem, I recommend that you start out running Python in a browser. Later, when you are comfortable with Python, I’ll make suggestions for installing Python on your computer.
 >为了避免这种问题，我推荐大家可以在开始的时候用浏览器来体验 Python。熟悉了之后，再安装 Python 到计算机上。
 
-There are a number of web pages you can use to run Python. If you already have a favorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed instructions for getting started athttp://tinyurl.com/thinkpython2e.
->有很多站点提供在线运行 Python 的功能。如果你已经用过并且有一定经验了，可以选择你喜欢的。我推荐大家可以试试 PythonAnywhere，对此的使用介绍可以在下面的链接中找到 http://tinyurl.com/thinkpython2e。
+There are a number of web pages you can use to run Python. If you already have a favorite, go ahead and use it. Otherwise I recommend PythonAnywhere. I provide detailed instructions for getting started at http://tinyurl.com/thinkpython2e.
+>有很多站点提供在线运行 Python 的功能。如果你已经用过并且有一定经验了，可以选择你喜欢的。我推荐大家可以试试 PythonAnywhere，对此的使用介绍可以在下面的链接中找到 http://tinyurl.com/thinkpython2e 
 
 There are two versions of Python, called Python 2 and Python 3. They are very similar, so if you learn one, it is easy to switch to the other. In fact, there are only a few differences you will encounter as a beginner. This book is written for Python 3, but I include some notes about Python 2.
 >Python 现在有两个主要的分支，即 Python2 和 Python3。如果你学过其中的一个，你会发现他们还挺相似的，而且转换起来也不算难。实际上对于初学者来说，他们只有很细微的差别而已。这本书是用 Python3 写的，但也会对 Python2 进行注解。
