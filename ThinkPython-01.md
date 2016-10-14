@@ -96,12 +96,13 @@ In Python 2, the print statement is slightly different; it is not a function, so
 
 This distinction will make more sense soon, but that’s enough to get started.
 这个区别以后会理解更深入，现在说这点就够了。
+
 ##1.4  Arithmetic operators 运算符
 After “Hello, World”, the next step is arithmetic. Python provides operators, which are special symbols that represent computations like addition and multiplication.
 >在『Hello，World！』之后，下一步就是运算了。Python 提供了运算符，就是一些用来表示例如加法、乘法等运算的符号了。
 
 The operators +, -, and * perform addition, subtraction, and multiplication, as in the following examples:
->运算符+，-和*表示加法、减法和乘法，如下所示：
+>运算符 `+`，`-` 和 `*` 表示加法、减法和乘法，如下所示：
 
 ```python
 >>> 40 + 2 
@@ -121,14 +122,14 @@ The operator / performs division:
 You might wonder why the result is 42.0 instead of 42. I’ll explain in the next section.
 >你估计在纳闷为啥结果是 42.0 而不是 42，这个下一章节我再解释。
 
-Finally, the operator ** performs exponentiation; that is, it raises a number to a power:
->最后，再说个运算符 **，它表示乘方，就是前一个数为底数，后一个数为指数的次幂运算：
+Finally, the operator `**` performs exponentiation; that is, it raises a number to a power:
+>最后，再说个运算符 `**`，它表示乘方，就是前一个数为底数，后一个数为指数的次幂运算：
 ```python
 >>> 6**2 + 6 
 42 
 ```
 In some other languages, ^ is used for exponentiation, but in Python it is a bitwise operator called XOR. If you are not familiar with bitwise operators, the result will surprise you:
->在其他的一些编程语言中，^这个符号是乘方的意思，但在 Python 中这是一个位运算操作符叫做『异或』。要是你不熟悉位运算操作符，结果一定让你很惊讶：
+>在其他的一些编程语言中，`^` 这个符号是乘方的意思，但在 Python 中这是一个位运算操作符叫做『异或』。要是你不熟悉位运算操作符，结果一定让你很惊讶：
 ```python
 >>> 6 ^ 2 
 4 
@@ -161,7 +162,7 @@ Not surprisingly, integers belong to the type int, strings belong to str and flo
 >很自然了，整形的就是 int 了，字符串就是 str 了，浮点数就是 float 了。
 
 What about values like '2' and '42.0'? They look like numbers, but they are in quotation marks like strings.
->那'2' 和 '42.0'这种是啥呢？他们看着像是数字，但带了单引号了。
+>那 '2' 和 '42.0' 这种是啥呢？他们看着像是数字，但带了单引号了。
 ```python
 >>> type('2') 
 <class 'str'> 
